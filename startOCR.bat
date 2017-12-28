@@ -1,0 +1,1 @@
+start /SEPARATE  /HIGH "ocr2any" "C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\VeryPDF PDF to Word OCR Converter\verypdf2word.exe"

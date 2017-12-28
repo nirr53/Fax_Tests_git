@@ -1,0 +1,1214 @@
+2017-12-24 11:08:47,454 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 11:08:47,457 [main] INFO  - |                                                                                       |
+2017-12-24 11:08:47,457 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 11:08:47,457 [main] INFO  - |                                                                                       |
+2017-12-24 11:08:47,457 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 11:08:47,457 [main] INFO  -  Test configuration test
+2017-12-24 11:08:47,457 [main] INFO  -    Fax deposit started..
+2017-12-24 11:08:47,457 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 11:08:47,457 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 11:08:47,457 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 11:08:47,458 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 11:08:47,458 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 11:08:47,520 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 11:08:47,620 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 11:08:47,620 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:08:47,620 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:08:47,620 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 11:09:02,650 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:09:02,651 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:09:02,651 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 11:09:07,670 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:09:07,671 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 11:09:22,691 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 11:09:32,693 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 11:09:32,693 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 11:09:33,755 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:09:34,756 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:09:34,957 [main] INFO  -    status  was not detected..
+2017-12-24 11:09:34,958 [main] INFO  -    body-txt  was not detected..
+2017-12-24 11:09:34,958 [main] INFO  -    result-txt  was not detected..
+2017-12-24 11:09:34,958 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 11:09:34,958 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 11:09:34,959 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 11:09:34,959 [main] INFO  -    Fax deposit ended....
+2017-12-24 11:12:21,729 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 11:12:21,732 [main] INFO  - |                                                                                       |
+2017-12-24 11:12:21,733 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 11:12:21,733 [main] INFO  - |                                                                                       |
+2017-12-24 11:12:21,733 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 11:12:21,733 [main] INFO  -  Test configuration test
+2017-12-24 11:12:21,733 [main] INFO  -    Fax deposit started..
+2017-12-24 11:12:21,733 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 11:12:21,733 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 11:12:21,733 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 11:12:21,734 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 11:12:21,734 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 11:12:21,794 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 11:12:21,903 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 11:12:21,903 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:12:21,903 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:12:21,903 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 11:12:36,920 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:12:46,921 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 11:12:56,922 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 11:12:56,922 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 11:12:58,103 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:12:59,104 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:12:59,306 [main] INFO  -    status  was not detected..
+2017-12-24 11:12:59,306 [main] INFO  -    body-txt  was not detected..
+2017-12-24 11:12:59,306 [main] INFO  -    result-txt  was not detected..
+2017-12-24 11:12:59,306 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 11:12:59,307 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 11:12:59,307 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 11:12:59,307 [main] INFO  -    Fax deposit ended....
+2017-12-24 11:19:16,531 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 11:19:16,534 [main] INFO  - |                                                                                       |
+2017-12-24 11:19:16,534 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 11:19:16,534 [main] INFO  - |                                                                                       |
+2017-12-24 11:19:16,534 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 11:19:16,534 [main] INFO  -  Test configuration test
+2017-12-24 11:19:16,534 [main] INFO  -    Fax deposit started..
+2017-12-24 11:19:16,534 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 11:19:16,534 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 11:19:16,534 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 11:19:16,535 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 11:19:16,535 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 11:19:16,578 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 11:19:16,650 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 11:19:16,650 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:19:16,651 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:19:16,651 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 11:19:31,656 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:19:31,656 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:19:31,656 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 11:19:36,709 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:19:36,709 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 11:19:51,755 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 11:20:01,769 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 11:20:01,769 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 11:20:04,226 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:20:05,244 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:20:05,426 [main] INFO  -    status  was not detected..
+2017-12-24 11:20:05,426 [main] INFO  -    body-txt  was not detected..
+2017-12-24 11:20:05,426 [main] INFO  -    result-txt  was not detected..
+2017-12-24 11:20:05,426 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 11:20:05,426 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 11:20:05,426 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 11:20:05,427 [main] INFO  -    Fax deposit ended....
+2017-12-24 11:20:07,670 [main] INFO  -         1   0.000000 JuniperN_3b:6a:81 -> Broadcast    ARP 60 Who has 172.17.113.78? Tell 172.17.113.1
+2017-12-24 11:20:07,670 [main] INFO  -         2   0.029723 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=1 Ack=1 Win=32371 Len=0
+2017-12-24 11:20:07,670 [main] INFO  -         3   0.043298 172.17.113.31 -> 172.17.113.255 NBNS 92 Name query NB AC4PIP.COM<00>
+2017-12-24 11:20:07,670 [main] INFO  -         4   0.076373 172.17.113.30 -> 10.1.0.16    TCP 493 52597 → 13000 [PSH, ACK] Seq=1 Ack=1 Win=32371 Len=439
+2017-12-24 11:20:07,670 [main] INFO  -         5   0.099711 JuniperN_3b:6a:81 -> Broadcast    ARP 60 Who has 172.17.113.40? Tell 172.17.113.1
+2017-12-24 11:20:07,672 [main] INFO  -         6   0.170414 QuantaCo_ed:1b:6e -> Broadcast    ARP 60 Who has 37.142.12.65? Tell 37.142.12.66
+2017-12-24 11:20:07,672 [main] INFO  -         7   0.189836    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=1 Ack=440 Win=32548 Len=1406
+2017-12-24 11:20:07,672 [main] INFO  -         8   0.189868    10.1.0.16 -> 172.17.113.30 TCP 194 13000 → 52597 [PSH, ACK] Seq=1407 Ack=440 Win=32548 Len=140
+2017-12-24 11:20:07,673 [main] INFO  -         9   0.189887 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=440 Ack=1547 Win=32768 Len=0
+2017-12-24 11:20:07,673 [main] INFO  -        10   0.319742 172.17.113.30 -> 172.17.112.100 TCP 55 50424 → 8080 [ACK] Seq=1 Ack=1 Win=252 Len=1
+2017-12-24 11:20:07,673 [main] INFO  -        11   0.319952 172.17.112.100 -> 172.17.113.30 TCP 66 8080 → 50424 [ACK] Seq=1 Ack=2 Win=191 Len=0 SLE=1 SRE=2
+2017-12-24 11:20:07,673 [main] INFO  -        12   0.331680 172.17.113.31 -> 172.17.113.255 NBNS 92 Name query NB AC4PIP.COM<00>
+2017-12-24 11:20:07,673 [main] INFO  -        13   0.458436 AudioCod_55:fa:70 -> CDP/VTP/DTP/PAgP/UDLD CDP 162 Device ID: 00908f55fa70  Port ID: esw0  
+2017-12-24 11:20:07,673 [main] INFO  -        14   0.544245 172.17.114.43 -> 255.255.255.255 UDP 60 9999 → 9999  Len=8
+2017-12-24 11:20:07,673 [main] INFO  -        15   0.574641 172.17.113.31 -> 172.17.113.255 NBNS 92 Name query NB AC4PIP.COM<00>
+2017-12-24 11:20:07,674 [main] INFO  -        16   0.695968 QuantaCo_ed:1b:6e -> Broadcast    ARP 60 Who has 37.142.12.65? Tell 37.142.12.66
+2017-12-24 11:20:07,674 [main] INFO  -        17   0.713619 172.17.113.31 -> 172.17.113.255 NBNS 92 Name query NB AC4PIP.COM<00>
+2017-12-24 11:20:07,674 [main] INFO  -        18   0.794459 172.17.113.31 -> 172.17.113.255 NBNS 92 Name query NB AC4PIP.COM<00>
+2017-12-24 11:20:07,674 [main] INFO  -        19   0.871775 172.17.113.30 -> 10.1.0.16    TCP 485 52597 → 13000 [PSH, ACK] Seq=440 Ack=1547 Win=32768 Len=431
+2017-12-24 11:20:07,674 [main] INFO  -        20   0.899701 JuniperN_3b:6a:81 -> Broadcast    ARP 60 Who has 172.17.113.78? Tell 172.17.113.1
+2017-12-24 11:20:07,674 [main] INFO  -        21   0.953075    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=1547 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,674 [main] INFO  -        22   0.953135    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=2953 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,675 [main] INFO  -        23   0.953162 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=4359 Win=32768 Len=0
+2017-12-24 11:20:07,675 [main] INFO  -        24   0.953181    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=4359 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,675 [main] INFO  -        25   0.953206    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=5765 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,675 [main] INFO  -        26   0.953220 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=7171 Win=32768 Len=0
+2017-12-24 11:20:07,675 [main] INFO  -        27   0.953304    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=7171 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,675 [main] INFO  -        28   0.953510    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=8577 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,675 [main] INFO  -        29   0.953542 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=9983 Win=32768 Len=0
+2017-12-24 11:20:07,676 [main] INFO  -        30   0.953565    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=9983 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,676 [main] INFO  -        31   0.953588    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=11389 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,676 [main] INFO  -        32   0.953616 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=12795 Win=32768 Len=0
+2017-12-24 11:20:07,676 [main] INFO  -        33   0.953725    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=12795 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,676 [main] INFO  -        34   0.953896    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=14201 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,676 [main] INFO  -        35   0.953956 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=15607 Win=32768 Len=0
+2017-12-24 11:20:07,677 [main] INFO  -        36   0.954116    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=15607 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,677 [main] INFO  -        37   0.954139    10.1.0.16 -> 172.17.113.30 TCP 1001 13000 → 52597 [PSH, ACK] Seq=17013 Ack=871 Win=32333 Len=947
+2017-12-24 11:20:07,677 [main] INFO  -        38   0.954171 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=17960 Win=32768 Len=0
+2017-12-24 11:20:07,677 [main] INFO  -        39   0.954644    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=17960 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,678 [main] INFO  -        40   0.954682    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=19366 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,678 [main] INFO  -        41   0.954704 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=20772 Win=32768 Len=0
+2017-12-24 11:20:07,678 [main] INFO  -        42   0.954744    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=20772 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,678 [main] INFO  -        43   0.954764    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=22178 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,678 [main] INFO  -        44   0.954775 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=23584 Win=32768 Len=0
+2017-12-24 11:20:07,678 [main] INFO  -        45   0.954833    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=23584 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,678 [main] INFO  -        46   0.954854    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=24990 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,678 [main] INFO  -        47   0.954872 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=26396 Win=32768 Len=0
+2017-12-24 11:20:07,679 [main] INFO  -        48   0.954909    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=26396 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,679 [main] INFO  -        49   0.955396    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=27802 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,679 [main] INFO  -        50   0.955445 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=29208 Win=32768 Len=0
+2017-12-24 11:20:07,679 [main] INFO  -        51   0.955463    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=29208 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,679 [main] INFO  -        52   0.956368    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=30614 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,679 [main] INFO  -        53   0.956443 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=32020 Win=32768 Len=0
+2017-12-24 11:20:07,679 [main] INFO  -        54   0.958182    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=32020 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,679 [main] INFO  -        55   0.958968    10.1.0.16 -> 172.17.113.30 TCP 1001 13000 → 52597 [PSH, ACK] Seq=33426 Ack=871 Win=32333 Len=947
+2017-12-24 11:20:07,679 [main] INFO  -        56   0.959015 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=34373 Win=32768 Len=0
+2017-12-24 11:20:07,679 [main] INFO  -        57   0.960674    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=34373 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,680 [main] INFO  -        58   0.961157    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=35779 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,680 [main] INFO  -        59   0.961187 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=37185 Win=32768 Len=0
+2017-12-24 11:20:07,680 [main] INFO  -        60   0.962368    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=37185 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,680 [main] INFO  -        61   0.963736    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=38591 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,680 [main] INFO  -        62   0.963770 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=39997 Win=32768 Len=0
+2017-12-24 11:20:07,680 [main] INFO  -        63   0.965317    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=39997 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,680 [main] INFO  -        64   0.965889    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=41403 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,680 [main] INFO  -        65   0.965925 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=42809 Win=32768 Len=0
+2017-12-24 11:20:07,680 [main] INFO  -        66   0.967267    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=42809 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,681 [main] INFO  -        67   0.968424    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=44215 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,681 [main] INFO  -        68   0.968481 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=45621 Win=32768 Len=0
+2017-12-24 11:20:07,681 [main] INFO  -        69   0.969400    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=45621 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,681 [main] INFO  -        70   0.970701    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=47027 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,681 [main] INFO  -        71   0.970833 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=48433 Win=32768 Len=0
+2017-12-24 11:20:07,681 [main] INFO  -        72   0.971664    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=48433 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,681 [main] INFO  -        73   0.973100    10.1.0.16 -> 172.17.113.30 TCP 1001 13000 → 52597 [PSH, ACK] Seq=49839 Ack=871 Win=32333 Len=947
+2017-12-24 11:20:07,681 [main] INFO  -        74   0.973183 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=50786 Win=32768 Len=0
+2017-12-24 11:20:07,681 [main] INFO  -        75   0.974020    10.1.0.16 -> 172.17.113.30 TCP 1166 13000 → 52597 [PSH, ACK] Seq=50786 Ack=871 Win=32333 Len=1112
+2017-12-24 11:20:07,698 [main] INFO  -        76   0.974700    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=51898 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,698 [main] INFO  -        77   0.974746 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=53304 Win=32768 Len=0
+2017-12-24 11:20:07,698 [main] INFO  -        78   0.976158    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=53304 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,698 [main] INFO  -        79   0.977386    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=54710 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,699 [main] INFO  -        80   0.977447 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=56116 Win=32768 Len=0
+2017-12-24 11:20:07,699 [main] INFO  -        81   0.978700    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=56116 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,699 [main] INFO  -        82   0.979480    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=57522 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,699 [main] INFO  -        83   0.979535 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=58928 Win=32768 Len=0
+2017-12-24 11:20:07,699 [main] INFO  -        84   0.981188    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=58928 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,699 [main] INFO  -        85   0.982018    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=60334 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,699 [main] INFO  -        86   0.982051 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=61740 Win=32768 Len=0
+2017-12-24 11:20:07,699 [main] INFO  -        87   0.983450    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=61740 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,700 [main] INFO  -        88   0.984510    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=63146 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,700 [main] INFO  -        89   0.984554 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=64552 Win=32768 Len=0
+2017-12-24 11:20:07,700 [main] INFO  -        90   0.985317    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=64552 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,700 [main] INFO  -        91   0.986951    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=65958 Ack=871 Win=32333 Len=1406
+2017-12-24 11:20:07,700 [main] INFO  -        92   0.986990 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=67364 Win=32768 Len=0
+2017-12-24 11:20:07,700 [main] INFO  -        93   0.988066    10.1.0.16 -> 172.17.113.30 TCP 1001 13000 → 52597 [PSH, ACK] Seq=67364 Ack=871 Win=32333 Len=947
+2017-12-24 11:20:07,700 [main] INFO  -        94   0.989096    10.1.0.16 -> 172.17.113.30 TCP 921 13000 → 52597 [PSH, ACK] Seq=68311 Ack=871 Win=32333 Len=867
+2017-12-24 11:20:07,701 [main] INFO  -        95   0.989147 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=871 Ack=69178 Win=32768 Len=0
+2017-12-24 11:20:07,701 [main] INFO  -        96   0.998576 172.17.113.30 -> 10.1.0.16    TCP 483 52597 → 13000 [PSH, ACK] Seq=871 Ack=69178 Win=32768 Len=429
+2017-12-24 11:20:07,701 [main] INFO  -        97   1.015233    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=69178 Ack=1300 Win=32118 Len=1406
+2017-12-24 11:20:07,701 [main] INFO  -        98   1.015424    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=70584 Ack=1300 Win=32118 Len=1406
+2017-12-24 11:20:07,701 [main] INFO  -        99   1.015444 172.17.113.30 -> 10.1.0.16    TCP 54 52597 → 13000 [ACK] Seq=1300 Ack=71990 Win=32768 Len=0
+2017-12-24 11:20:07,701 [main] INFO  -       100   1.015455    10.1.0.16 -> 172.17.113.30 TCP 1460 13000 → 52597 [ACK] Seq=71990 Ack=1300 Win=32118 Len=1406
+2017-12-24 11:34:49,563 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 11:34:49,563 [main] INFO  - |                                                                                       |
+2017-12-24 11:34:49,563 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 11:34:49,563 [main] INFO  - |                                                                                       |
+2017-12-24 11:34:49,563 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 11:34:49,563 [main] INFO  -  Test configuration test
+2017-12-24 11:34:49,563 [main] INFO  -    Fax deposit started..
+2017-12-24 11:34:49,563 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 11:34:49,563 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 11:34:49,563 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 11:34:49,563 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 11:34:49,563 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 11:34:49,610 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 11:34:49,658 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 11:34:49,658 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:34:49,658 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:34:49,658 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 11:35:04,704 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:35:04,704 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:35:04,704 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 11:35:09,719 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:35:09,719 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 11:35:24,748 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 11:35:34,756 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 11:35:34,756 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 11:35:35,744 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:35:36,783 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:35:36,989 [main] INFO  -    status  was not detected..
+2017-12-24 11:35:36,989 [main] INFO  -    body-txt  was not detected..
+2017-12-24 11:35:36,989 [main] INFO  -    result-txt  was not detected..
+2017-12-24 11:35:36,989 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 11:35:36,989 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 11:35:36,989 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 11:35:36,989 [main] INFO  -    Fax deposit ended....
+2017-12-24 11:39:10,483 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 11:39:10,483 [main] INFO  - |                                                                                       |
+2017-12-24 11:39:10,483 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 11:39:10,483 [main] INFO  - |                                                                                       |
+2017-12-24 11:39:10,483 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 11:39:10,483 [main] INFO  -  Test configuration test
+2017-12-24 11:39:10,483 [main] INFO  -    Fax deposit started..
+2017-12-24 11:39:10,483 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 11:39:10,483 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 11:39:10,483 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 11:39:10,483 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 11:39:10,483 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 11:39:10,530 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 11:39:10,608 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 11:39:10,608 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:39:10,608 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:39:10,608 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 11:39:25,609 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:39:35,609 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 11:39:45,609 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 11:39:45,609 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 11:39:46,774 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:39:47,774 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:39:47,974 [main] INFO  -    status  was not detected..
+2017-12-24 11:39:47,974 [main] INFO  -    body-txt  was not detected..
+2017-12-24 11:39:47,974 [main] INFO  -    result-txt  was not detected..
+2017-12-24 11:39:47,974 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 11:39:47,974 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 11:39:47,974 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 11:39:47,974 [main] INFO  -    Fax deposit ended....
+2017-12-24 11:42:23,637 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 11:42:23,639 [main] INFO  - |                                                                                       |
+2017-12-24 11:42:23,639 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 11:42:23,639 [main] INFO  - |                                                                                       |
+2017-12-24 11:42:23,640 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 11:42:23,640 [main] INFO  -  Test configuration test
+2017-12-24 11:42:23,640 [main] INFO  -    Fax deposit started..
+2017-12-24 11:42:23,640 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 11:42:23,640 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 11:42:23,640 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 11:42:23,640 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 11:42:23,640 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 11:42:23,688 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 11:42:23,760 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 11:42:23,760 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:42:23,760 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:42:23,761 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 11:42:38,770 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:42:48,771 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 11:42:58,772 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 11:42:58,772 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 11:42:59,417 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:43:00,418 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:43:00,619 [main] INFO  -    status  was not detected..
+2017-12-24 11:43:00,620 [main] INFO  -    body-txt  was not detected..
+2017-12-24 11:43:00,620 [main] INFO  -    result-txt  was not detected..
+2017-12-24 11:43:00,620 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 11:43:00,621 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 11:43:00,622 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 11:43:00,622 [main] INFO  -    Fax deposit ended....
+2017-12-24 11:51:27,053 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 11:51:27,055 [main] INFO  - |                                                                                       |
+2017-12-24 11:51:27,056 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 11:51:27,056 [main] INFO  - |                                                                                       |
+2017-12-24 11:51:27,056 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 11:51:27,056 [main] INFO  -  Test configuration test
+2017-12-24 11:51:27,056 [main] INFO  -    Fax deposit started..
+2017-12-24 11:51:27,056 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 11:51:27,056 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 11:51:27,056 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 11:51:27,057 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 11:51:27,057 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 11:51:27,104 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 11:51:27,162 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 11:51:27,162 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:51:27,162 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:51:27,163 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 11:51:42,204 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:51:42,204 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:51:42,205 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 11:51:47,342 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:51:47,342 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 11:52:02,699 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 11:52:12,700 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 11:52:12,700 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 11:52:13,387 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:52:14,389 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:52:14,589 [main] INFO  -    status  was not detected..
+2017-12-24 11:52:14,590 [main] INFO  -    body-txt  was not detected..
+2017-12-24 11:52:14,591 [main] INFO  -    result-txt  was not detected..
+2017-12-24 11:52:14,591 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 11:52:14,591 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 11:52:14,591 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 11:52:14,591 [main] INFO  -    Fax deposit ended....
+2017-12-24 11:56:26,280 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 11:56:26,283 [main] INFO  - |                                                                                       |
+2017-12-24 11:56:26,283 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 11:56:26,283 [main] INFO  - |                                                                                       |
+2017-12-24 11:56:26,283 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 11:56:26,283 [main] INFO  -  Test configuration test
+2017-12-24 11:56:26,283 [main] INFO  -    Fax deposit started..
+2017-12-24 11:56:26,283 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 11:56:26,283 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 11:56:26,283 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 11:56:26,283 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 11:56:26,284 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 11:56:26,343 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 11:56:26,496 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 11:56:26,497 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:56:26,497 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 11:56:26,498 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 11:56:41,586 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:56:41,586 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:56:41,586 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 11:56:46,832 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 11:56:46,832 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 11:57:02,146 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 11:57:12,147 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 11:57:12,147 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 11:57:13,165 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:57:14,167 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 11:57:14,369 [main] INFO  -    status  was not detected..
+2017-12-24 11:57:14,369 [main] INFO  -    body-txt  was not detected..
+2017-12-24 11:57:14,369 [main] INFO  -    result-txt  was not detected..
+2017-12-24 11:57:14,370 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 11:57:14,370 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 11:57:14,370 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 11:57:14,370 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:00:55,971 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:00:55,974 [main] INFO  - |                                                                                       |
+2017-12-24 12:00:55,974 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:00:55,974 [main] INFO  - |                                                                                       |
+2017-12-24 12:00:55,974 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:00:55,975 [main] INFO  -  Test configuration test
+2017-12-24 12:00:55,975 [main] INFO  -    Fax deposit started..
+2017-12-24 12:00:55,975 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:00:55,975 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:00:55,976 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:00:55,976 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:00:55,976 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:00:56,030 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:00:56,104 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:00:56,104 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:00:56,105 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:00:56,105 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:01:11,155 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:01:21,156 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:01:31,158 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:01:31,158 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:01:31,647 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:01:32,650 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:01:32,851 [main] INFO  -    status  was not detected..
+2017-12-24 12:01:32,851 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:01:32,852 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:01:32,852 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:01:32,852 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:01:32,852 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:01:32,852 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:04:31,436 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:04:31,439 [main] INFO  - |                                                                                       |
+2017-12-24 12:04:31,439 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:04:31,439 [main] INFO  - |                                                                                       |
+2017-12-24 12:04:31,439 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:04:31,439 [main] INFO  -  Test configuration test
+2017-12-24 12:04:31,439 [main] INFO  -    Fax deposit started..
+2017-12-24 12:04:31,439 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:04:31,439 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:04:31,439 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:04:31,440 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:04:31,440 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:04:31,492 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:04:31,613 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:04:31,614 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:04:31,615 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:04:31,615 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:04:46,626 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:04:46,626 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:04:46,626 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 12:04:51,672 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:04:51,672 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 12:05:06,857 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:05:16,859 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:05:16,859 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:05:17,409 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:05:18,411 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:05:18,612 [main] INFO  -    status  was not detected..
+2017-12-24 12:05:18,613 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:05:18,613 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:05:18,613 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:05:18,614 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:05:18,614 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:05:18,614 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:07:51,064 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:07:51,066 [main] INFO  - |                                                                                       |
+2017-12-24 12:07:51,066 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:07:51,066 [main] INFO  - |                                                                                       |
+2017-12-24 12:07:51,066 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:07:51,066 [main] INFO  -  Test configuration test
+2017-12-24 12:07:51,067 [main] INFO  -    Fax deposit started..
+2017-12-24 12:07:51,067 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:07:51,067 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:07:51,067 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:07:51,067 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:07:51,067 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:07:51,110 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:07:51,177 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:07:51,177 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:07:51,177 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:07:51,177 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:08:06,192 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:08:16,194 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:08:26,196 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:08:26,196 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:08:27,142 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:08:28,143 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:08:28,344 [main] INFO  -    status  was not detected..
+2017-12-24 12:08:28,345 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:08:28,345 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:08:28,346 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:08:28,346 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:08:28,346 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:08:28,346 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:15:14,775 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:15:14,778 [main] INFO  - |                                                                                       |
+2017-12-24 12:15:14,778 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:15:14,778 [main] INFO  - |                                                                                       |
+2017-12-24 12:15:14,778 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:15:14,778 [main] INFO  -  Test configuration test
+2017-12-24 12:15:14,778 [main] INFO  -    Fax deposit started..
+2017-12-24 12:15:14,778 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:15:14,778 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:15:14,779 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:15:14,779 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:15:14,779 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:15:14,831 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:15:14,947 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:15:14,947 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:15:14,947 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:15:14,947 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:15:29,964 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:15:29,964 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:15:29,964 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 12:15:35,048 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:15:35,048 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 12:15:50,095 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:16:00,097 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:16:00,097 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:16:01,207 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:16:02,190 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:16:02,390 [main] INFO  -    status  was not detected..
+2017-12-24 12:16:02,391 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:16:02,391 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:16:02,391 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:16:02,391 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:16:02,392 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:16:02,392 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:19:44,237 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:19:44,239 [main] INFO  - |                                                                                       |
+2017-12-24 12:19:44,239 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:19:44,239 [main] INFO  - |                                                                                       |
+2017-12-24 12:19:44,239 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:19:44,240 [main] INFO  -  Test configuration test
+2017-12-24 12:19:44,240 [main] INFO  -    Fax deposit started..
+2017-12-24 12:19:44,240 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:19:44,240 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:19:44,240 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:19:44,240 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:19:44,240 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:19:44,281 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:19:44,352 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:19:44,352 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:19:54,353 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:19:54,353 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:19:54,353 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 12:19:59,364 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:19:59,364 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 12:20:14,451 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:20:24,453 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:20:24,453 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:20:25,160 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:20:25,162 [main] INFO  -    Failed message was detected but raiseError set to  0 ....
+2017-12-24 12:20:25,162 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:22:59,814 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:22:59,814 [main] INFO  - |                                                                                       |
+2017-12-24 12:22:59,814 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:22:59,814 [main] INFO  - |                                                                                       |
+2017-12-24 12:22:59,814 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:22:59,814 [main] INFO  -  Test configuration test
+2017-12-24 12:22:59,814 [main] INFO  -    Fax deposit started..
+2017-12-24 12:22:59,814 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:22:59,814 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:22:59,814 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:22:59,814 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:22:59,814 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:22:59,877 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:22:59,965 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:22:59,965 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:22:59,965 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:22:59,965 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:23:14,982 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:23:14,983 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:23:14,983 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 12:23:20,082 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:23:20,082 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 12:23:35,270 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:23:45,272 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:23:45,272 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:23:45,821 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:23:46,853 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:23:47,055 [main] INFO  -    status  was not detected..
+2017-12-24 12:23:47,055 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:23:47,055 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:23:47,056 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:23:47,056 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:23:47,056 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:23:47,056 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:26:59,834 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:26:59,837 [main] INFO  - |                                                                                       |
+2017-12-24 12:26:59,837 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:26:59,837 [main] INFO  - |                                                                                       |
+2017-12-24 12:26:59,837 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:26:59,837 [main] INFO  -  Test configuration test
+2017-12-24 12:26:59,837 [main] INFO  -    Fax deposit started..
+2017-12-24 12:26:59,837 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:26:59,837 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:26:59,837 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:26:59,837 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:26:59,838 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:26:59,883 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:26:59,956 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:26:59,956 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:26:59,957 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:26:59,957 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:27:14,983 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:27:24,988 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:27:35,023 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:27:35,023 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:27:35,508 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:27:36,536 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:27:36,741 [main] INFO  -    status  was not detected..
+2017-12-24 12:27:36,741 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:27:36,741 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:27:36,741 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:27:36,741 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:27:36,741 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:27:36,741 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:32:42,614 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:32:42,614 [main] INFO  - |                                                                                       |
+2017-12-24 12:32:42,614 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:32:42,614 [main] INFO  - |                                                                                       |
+2017-12-24 12:32:42,614 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:32:42,614 [main] INFO  -  Test configuration test
+2017-12-24 12:32:42,614 [main] INFO  -    Fax deposit started..
+2017-12-24 12:32:42,614 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:32:42,614 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:32:42,614 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:32:42,614 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:32:42,614 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:32:42,647 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:32:42,726 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:32:42,726 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:32:42,726 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:32:42,726 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:32:57,729 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:32:57,729 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:32:57,729 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 12:33:02,738 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:33:02,738 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 12:33:17,765 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:33:27,767 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:33:27,767 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:33:28,573 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:33:29,574 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:33:29,775 [main] INFO  -    status  was not detected..
+2017-12-24 12:33:29,776 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:33:29,776 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:33:29,776 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:33:29,777 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:33:29,777 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:33:29,777 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:35:29,188 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:35:29,191 [main] INFO  - |                                                                                       |
+2017-12-24 12:35:29,191 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:35:29,191 [main] INFO  - |                                                                                       |
+2017-12-24 12:35:29,191 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:35:29,191 [main] INFO  -  Test configuration test
+2017-12-24 12:35:29,191 [main] INFO  -    Fax deposit started..
+2017-12-24 12:35:29,191 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:35:29,191 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:35:29,191 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:35:29,191 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:35:29,192 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:35:29,228 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:35:29,299 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:35:29,300 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:35:29,300 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:35:29,300 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:35:44,315 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:35:54,335 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:36:04,357 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:36:04,357 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:36:05,074 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:36:06,091 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:36:06,292 [main] INFO  -    status  was not detected..
+2017-12-24 12:36:06,292 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:36:06,292 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:36:06,292 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:36:06,307 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:36:06,307 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:36:06,307 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:38:50,770 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:38:50,772 [main] INFO  - |                                                                                       |
+2017-12-24 12:38:50,772 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:38:50,772 [main] INFO  - |                                                                                       |
+2017-12-24 12:38:50,772 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:38:50,772 [main] INFO  -  Test configuration test
+2017-12-24 12:38:50,772 [main] INFO  -    Fax deposit started..
+2017-12-24 12:38:50,772 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:38:50,772 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:38:50,772 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:38:50,773 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:38:50,773 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:38:50,813 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:38:50,886 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:38:50,886 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:38:50,886 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:38:50,886 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:39:05,906 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:39:05,906 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:39:05,907 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 12:39:10,917 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:39:10,917 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 12:39:25,959 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:39:35,960 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:39:35,960 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:39:36,891 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:39:37,892 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:39:38,092 [main] INFO  -    status  was not detected..
+2017-12-24 12:39:38,092 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:39:38,092 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:39:38,092 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:39:38,092 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:39:38,092 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:39:38,092 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:43:08,495 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:43:08,495 [main] INFO  - |                                                                                       |
+2017-12-24 12:43:08,495 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:43:08,495 [main] INFO  - |                                                                                       |
+2017-12-24 12:43:08,495 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:43:08,495 [main] INFO  -  Test configuration test
+2017-12-24 12:43:08,495 [main] INFO  -    Fax deposit started..
+2017-12-24 12:43:08,495 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:43:08,495 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:43:08,495 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:43:08,495 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:43:08,495 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:43:08,526 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:43:08,604 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:43:08,604 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:43:08,604 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:43:08,604 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:43:23,635 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:43:33,636 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:43:43,644 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:43:43,644 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:43:44,270 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:43:45,284 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:43:45,487 [main] INFO  -    status  was not detected..
+2017-12-24 12:43:45,487 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:43:45,487 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:43:45,487 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:43:45,487 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:43:45,487 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:43:45,487 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:53:53,030 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:53:53,033 [main] INFO  - |                                                                                       |
+2017-12-24 12:53:53,033 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:53:53,033 [main] INFO  - |                                                                                       |
+2017-12-24 12:53:53,033 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:53:53,033 [main] INFO  -  Test configuration test
+2017-12-24 12:53:53,033 [main] INFO  -    Fax deposit started..
+2017-12-24 12:53:53,033 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:53:53,033 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:53:53,033 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:53:53,034 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:53:53,034 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:53:53,079 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:53:53,121 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:53:53,122 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:53:53,122 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:53:53,122 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:54:08,192 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:54:08,192 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:54:08,192 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 12:54:13,227 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:54:13,227 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 12:54:28,304 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:54:38,343 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:54:38,343 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:54:39,262 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:54:39,263 [main] INFO  -    Failed message was detected but raiseError set to  0 ....
+2017-12-24 12:54:39,263 [main] INFO  -    Fax deposit ended....
+2017-12-24 12:58:48,427 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 12:58:48,427 [main] INFO  - |                                                                                       |
+2017-12-24 12:58:48,427 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 12:58:48,427 [main] INFO  - |                                                                                       |
+2017-12-24 12:58:48,427 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 12:58:48,427 [main] INFO  -  Test configuration test
+2017-12-24 12:58:48,427 [main] INFO  -    Fax deposit started..
+2017-12-24 12:58:48,427 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 12:58:48,427 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 12:58:48,427 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 12:58:48,427 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 12:58:48,427 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 12:58:48,458 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 12:58:48,505 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 12:58:48,505 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:58:48,505 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 12:58:48,505 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 12:59:03,555 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:59:03,555 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:59:03,555 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 12:59:08,542 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 12:59:08,542 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 12:59:23,556 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 12:59:33,558 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 12:59:33,558 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 12:59:34,086 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:59:35,087 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 12:59:35,288 [main] INFO  -    status  was not detected..
+2017-12-24 12:59:35,288 [main] INFO  -    body-txt  was not detected..
+2017-12-24 12:59:35,288 [main] INFO  -    result-txt  was not detected..
+2017-12-24 12:59:35,288 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 12:59:35,288 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 12:59:35,288 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 12:59:35,288 [main] INFO  -    Fax deposit ended....
+2017-12-24 13:02:31,579 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 13:02:31,579 [main] INFO  - |                                                                                       |
+2017-12-24 13:02:31,579 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 13:02:31,579 [main] INFO  - |                                                                                       |
+2017-12-24 13:02:31,579 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 13:02:31,579 [main] INFO  -  Test configuration test
+2017-12-24 13:02:31,579 [main] INFO  -    Fax deposit started..
+2017-12-24 13:02:31,579 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 13:02:31,579 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 13:02:31,579 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 13:02:31,579 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 13:02:31,579 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 13:02:31,643 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 13:02:31,722 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 13:02:31,722 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 13:02:31,722 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 13:02:31,722 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 13:02:46,776 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 13:02:56,759 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 13:03:06,761 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 13:03:06,761 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 13:03:07,372 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 13:03:08,373 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 13:03:08,574 [main] INFO  -    status  was not detected..
+2017-12-24 13:03:08,575 [main] INFO  -    body-txt  was not detected..
+2017-12-24 13:03:08,575 [main] INFO  -    result-txt  was not detected..
+2017-12-24 13:03:08,575 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 13:03:08,575 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 13:03:08,575 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 13:03:08,575 [main] INFO  -    Fax deposit ended....
+2017-12-24 14:18:56,618 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 14:18:56,621 [main] INFO  - |                                                                                       |
+2017-12-24 14:18:56,621 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 14:18:56,621 [main] INFO  - |                                                                                       |
+2017-12-24 14:18:56,621 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 14:18:56,621 [main] INFO  -  Test configuration test
+2017-12-24 14:18:56,621 [main] INFO  -    Fax deposit started..
+2017-12-24 14:18:56,621 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 14:18:56,621 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 14:18:56,622 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 14:18:56,622 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 14:18:56,622 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 14:18:56,666 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 14:18:56,717 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 14:18:56,717 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:18:56,717 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:18:56,718 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 14:19:11,732 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:19:11,732 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:19:11,732 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 14:19:16,786 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:19:16,786 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 14:19:31,861 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 14:19:41,862 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 14:19:41,862 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 14:19:42,845 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:19:43,889 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:19:44,114 [main] INFO  -    status  was not detected..
+2017-12-24 14:19:44,114 [main] INFO  -    body-txt  was not detected..
+2017-12-24 14:19:44,114 [main] INFO  -    result-txt  was not detected..
+2017-12-24 14:19:44,114 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 14:19:44,114 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 14:19:44,114 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 14:19:44,114 [main] INFO  -    Fax deposit ended....
+2017-12-24 14:25:16,830 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 14:25:16,830 [main] INFO  - |                                                                                       |
+2017-12-24 14:25:16,830 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 14:25:16,830 [main] INFO  - |                                                                                       |
+2017-12-24 14:25:16,830 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 14:25:16,830 [main] INFO  -  Test configuration test
+2017-12-24 14:25:16,830 [main] INFO  -    Fax deposit started..
+2017-12-24 14:25:16,830 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 14:25:16,830 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 14:25:16,830 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 14:25:16,830 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 14:25:16,830 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 14:25:16,894 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 14:25:16,966 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 14:25:16,966 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:25:16,966 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:25:16,966 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 14:25:32,005 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:25:42,013 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 14:25:52,028 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 14:25:52,028 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 14:25:52,883 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:25:53,901 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:25:54,106 [main] INFO  -    status  was not detected..
+2017-12-24 14:25:54,106 [main] INFO  -    body-txt  was not detected..
+2017-12-24 14:25:54,106 [main] INFO  -    result-txt  was not detected..
+2017-12-24 14:25:54,106 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 14:25:54,106 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 14:25:54,106 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 14:25:54,106 [main] INFO  -    Fax deposit ended....
+2017-12-24 14:28:36,877 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 14:28:36,877 [main] INFO  - |                                                                                       |
+2017-12-24 14:28:36,877 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 14:28:36,877 [main] INFO  - |                                                                                       |
+2017-12-24 14:28:36,877 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 14:28:36,877 [main] INFO  -  Test configuration test
+2017-12-24 14:28:36,877 [main] INFO  -    Fax deposit started..
+2017-12-24 14:28:36,877 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 14:28:36,877 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 14:28:36,877 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 14:28:36,877 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 14:28:36,877 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 14:28:36,893 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 14:28:36,971 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 14:28:36,971 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:28:36,971 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:28:36,971 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 14:28:51,949 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:29:01,951 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 14:29:11,954 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 14:29:11,954 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 14:29:12,907 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:29:13,910 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:29:14,111 [main] INFO  -    status  was not detected..
+2017-12-24 14:29:14,111 [main] INFO  -    body-txt  was not detected..
+2017-12-24 14:29:14,112 [main] INFO  -    result-txt  was not detected..
+2017-12-24 14:29:14,112 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 14:29:14,112 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 14:29:14,112 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 14:29:14,112 [main] INFO  -    Fax deposit ended....
+2017-12-24 14:36:50,657 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 14:36:50,657 [main] INFO  - |                                                                                       |
+2017-12-24 14:36:50,657 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 14:36:50,657 [main] INFO  - |                                                                                       |
+2017-12-24 14:36:50,657 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 14:36:50,657 [main] INFO  -  Test configuration test
+2017-12-24 14:36:50,657 [main] INFO  -    Fax deposit started..
+2017-12-24 14:36:50,657 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 14:36:50,657 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 14:36:50,657 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 14:36:50,657 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 14:36:50,657 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 14:36:50,688 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 14:36:50,735 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 14:36:50,735 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:36:50,735 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:36:50,735 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 14:37:05,928 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:37:05,928 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:37:05,928 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 14:37:10,957 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:37:10,957 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 14:37:25,990 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 14:37:35,986 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 14:37:35,986 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 14:37:37,611 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:37:38,626 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:37:38,830 [main] INFO  -    status  was not detected..
+2017-12-24 14:37:38,830 [main] INFO  -    body-txt  was not detected..
+2017-12-24 14:37:38,830 [main] INFO  -    result-txt  was not detected..
+2017-12-24 14:37:38,830 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 14:37:38,830 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 14:37:38,830 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 14:37:38,830 [main] INFO  -    Fax deposit ended....
+2017-12-24 14:50:33,387 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 14:50:33,387 [main] INFO  - |                                                                                       |
+2017-12-24 14:50:33,387 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 14:50:33,387 [main] INFO  - |                                                                                       |
+2017-12-24 14:50:33,387 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 14:50:33,387 [main] INFO  -  Test configuration test
+2017-12-24 14:50:33,387 [main] INFO  -    Fax deposit started..
+2017-12-24 14:50:33,387 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 14:50:33,387 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 14:50:33,387 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 14:50:33,387 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 14:50:33,387 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 14:50:33,434 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 14:50:33,481 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 14:50:33,481 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:50:33,481 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 14:50:33,481 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 14:50:48,468 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:50:48,468 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:50:48,468 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 14:50:53,489 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 14:50:53,489 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 14:51:08,508 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 14:51:18,526 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 14:51:18,526 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 14:51:21,661 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:51:22,687 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 14:51:22,892 [main] INFO  -    status  was not detected..
+2017-12-24 14:51:22,892 [main] INFO  -    body-txt  was not detected..
+2017-12-24 14:51:22,892 [main] INFO  -    result-txt  was not detected..
+2017-12-24 14:51:22,892 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 14:51:22,892 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 14:51:22,892 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 14:51:22,892 [main] INFO  -    Fax deposit ended....
+2017-12-24 14:51:59,072 [main] INFO  -         1   0.000000  10.21.10.45 -> 172.17.113.30 SIP/SDP 704 Request: INVITE sip:0565599612@172.17.113.30:5067 | 
+2017-12-24 14:51:59,072 [main] INFO  -         2   0.381204  10.21.10.45 -> 172.17.113.30 SIP/SDP 704 Request: INVITE sip:0565599612@172.17.113.30:5067 | 
+2017-12-24 14:51:59,072 [main] INFO  -         3   1.393600  10.21.10.45 -> 172.17.113.30 SIP/SDP 704 Request: INVITE sip:0565599612@172.17.113.30:5067 | 
+2017-12-24 15:46:49,818 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 15:46:49,821 [main] INFO  - |                                                                                       |
+2017-12-24 15:46:49,822 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 15:46:49,822 [main] INFO  - |                                                                                       |
+2017-12-24 15:46:49,822 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 15:46:49,822 [main] INFO  -  Test configuration test
+2017-12-24 15:46:49,822 [main] INFO  -    Fax deposit started..
+2017-12-24 15:46:49,822 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 15:46:49,822 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 15:46:49,822 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 15:46:49,823 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 15:46:49,823 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 15:46:49,885 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 15:46:49,969 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 15:46:49,969 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 15:46:49,969 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 15:46:49,970 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 15:47:04,989 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 15:47:04,990 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 15:47:04,991 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 15:47:10,150 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 15:47:10,150 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 15:47:25,166 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 15:47:35,176 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 15:47:35,176 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 15:47:37,300 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 15:47:38,356 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 15:47:38,565 [main] INFO  -    status  was not detected..
+2017-12-24 15:47:38,565 [main] INFO  -    body-txt  was not detected..
+2017-12-24 15:47:38,565 [main] INFO  -    result-txt  was not detected..
+2017-12-24 15:47:38,565 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 15:47:38,565 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 15:47:38,565 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 15:47:38,565 [main] INFO  -    Fax deposit ended....
+2017-12-24 15:47:38,565 [main] INFO  -  Set capture filter
+2017-12-24 15:47:38,565 [main] INFO  -  Step 1 -Capture trace
+2017-12-24 15:47:38,565 [main] INFO  -       tsharkPath - C:\Program Files\Wireshark\tshark.exe
+2017-12-24 15:47:38,565 [main] INFO  -       maxPackNum - 21
+2017-12-24 15:47:38,565 [main] INFO  -       filter - -f port 5067
+2017-12-24 15:47:38,565 [main] INFO  -       outputPath - Test28.txt
+2017-12-24 15:47:38,565 [main] INFO  -        Activate Tshark capture
+2017-12-24 15:57:49,232 [main] INFO  -  Step 2 - Check headers of the failure message
+2017-12-24 16:20:53,129 [main] INFO  - +---------------------------------------------------------------------------------------+
+2017-12-24 16:20:53,129 [main] INFO  - |                                                                                       |
+2017-12-24 16:20:53,129 [main] INFO  - |   Fax_Tests.Test28    
+2017-12-24 16:20:53,129 [main] INFO  - |                                                                                       |
+2017-12-24 16:20:53,129 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2017-12-24 16:20:53,129 [main] INFO  -  Test configuration test
+2017-12-24 16:20:53,129 [main] INFO  -    Fax deposit started..
+2017-12-24 16:20:53,129 [main] INFO  -       Non default max-wait-time is defined - 1
+2017-12-24 16:20:53,129 [main] INFO  -       Non default raiseError is defined - 0
+2017-12-24 16:20:53,129 [main] INFO  -       outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2017-12-24 16:20:53,129 [main] INFO  -       The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2017-12-24 16:20:53,129 [main] INFO  -       Close all command-line instances (if exists)
+2017-12-24 16:20:53,192 [main] INFO  -       Close all acrobat instances (if exists)
+2017-12-24 16:20:53,240 [main] INFO  -       Delete all the files from the previous try
+2017-12-24 16:20:53,240 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 16:20:53,240 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2017-12-24 16:20:53,240 [main] INFO  -       Delete file - Send_Fax_Status.txt
+2017-12-24 16:21:08,266 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 16:21:08,266 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 16:21:08,266 [main] INFO  -       Delete file - att_Failed_to_send_fax.pdf
+2017-12-24 16:21:13,413 [main] INFO  -       prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2017-12-24 16:21:13,413 [main] INFO  -       Delete file - Failed_to_send_fax.txt
+2017-12-24 16:21:28,431 [main] INFO  -       dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2017-12-24 16:21:38,447 [main] INFO  -       Deposit a fax using the Fax-injector tool
+2017-12-24 16:21:38,447 [main] INFO  -       SMTP_INj/smtpinjct /h 10.21.10.45 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2017-12-24 16:21:40,353 [main] INFO  -       0 seconds passed. (maxWaitTime - 1)
+2017-12-24 16:21:41,344 [main] INFO  -       1 seconds passed. (maxWaitTime - 1)
+2017-12-24 16:21:41,544 [main] INFO  -    status  was not detected..
+2017-12-24 16:21:41,544 [main] INFO  -    body-txt  was not detected..
+2017-12-24 16:21:41,544 [main] INFO  -    result-txt  was not detected..
+2017-12-24 16:21:41,544 [main] INFO  -    body-pdf  was not detected..
+2017-12-24 16:21:41,544 [main] INFO  -    result-pdf  was not detected..
+2017-12-24 16:21:41,544 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2017-12-24 16:21:41,544 [main] INFO  -    Fax deposit ended....
+2017-12-24 16:21:41,544 [main] INFO  -  Set capture filter

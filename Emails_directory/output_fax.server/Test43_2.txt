@@ -1,0 +1,41 @@
+Return-Path: <ron@fax.server>
+Received: from isr021731989 (10.21.0.71) by cpmail.corp.audiocodes.com (7.0.043)
+        id 3F09748F00000013 for lironn@fastwebnet.it; Mon, 21 Jul 2003 16:28:58 +0300
+Message-ID: <AC07EEBD96BA45E69CA0510BC6BC3B9A@corp.audiocodes.com>
+From: "Nir Klieman_1" <nir.klieman@audiocodes.com>
+To: <0545599607@fax.server>
+Subject: Test 43.2 - Empty message body
+Date: Mon, 21 Jul 2014 16:29:16 +0300
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_025D_01CFA500.EA55AC60"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_025D_01CFA500.EA55AC60
+Content-Type: text/plain;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+
+------=_NextPart_000_025D_01CFA500.EA55AC60
+Content-Type: text/html;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1255" =
+http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23507">
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV>&nbsp;</DIV></BODY></HTML>
+
+------=_NextPart_000_025D_01CFA500.EA55AC60--
+

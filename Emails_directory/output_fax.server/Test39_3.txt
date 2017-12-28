@@ -1,0 +1,72 @@
+Return-Path: <ron@fax.server>
+Received: from cti2.com (192.168.200.4) by cticell.cpload.cti2.com (6.7.012)
+        id 3DAA6DB000000014 for ron@cpload.cti2.com; Mon, 14 Oct 2002 10:44:55 +0300
+X-MIMEOLE: Produced By Microsoft Exchange V6.0.6249.0
+content-class: urn:content-classes:message
+Subject: Test 39.3 - Fax with signature that has a url
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----_=_NextPart_001_01C27356.086E365C"
+Date: Mon, 14 Oct 2002 09:48:06 +0200
+Message-ID: <CC92E7C2663B1D498A745BD686C45E1F40EFB2@exch2000.cti2.com>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: Outlook urgent
+Thread-Index: AcJzVghuZVB2M9RxTjGjnXY7lGbuqg==
+X-Priority: 1
+Priority: Urgent
+Importance: high
+From: "Nir Klieman_1" <nir.klieman@audiocodes.com>
+To: <0545599607@fax.server>
+
+This is a multi-part message in MIME format.
+
+------_=_NextPart_001_01C27356.086E365C
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+IA0K
+sd
+f
+sdf
+sd
+fsd
+fsd
+f
+sdf
+sdf
+sd
+fsd
+fsd
+fsd
+------_=_NextPart_001_01C27356.086E365C
+Content-Type: text/plain;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+message with url signature
+
+signature with web-site
+www.google.com
+
+------_=_NextPart_001_01C27356.086E365C
+Content-Type: text/html;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1255" =
+http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23507">
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT size=3D2 face=3DArial><SPAN lang=3DEN>
+<P>message with url signature</P>
+<P>signature with web-site<BR><A=20
+href=3D"http://www.google.com">www.google.com</A></P></SPAN></FONT></DIV>=
+</BODY></HTML>
+
+------_=_NextPart_001_01C27356.086E365C--

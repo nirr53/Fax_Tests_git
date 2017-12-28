@@ -1,0 +1,39 @@
+Return-Path: nir.klieman@audiocodes.com
+Received: from nirk-PC (Unknown [172.17.113.33])
+	by APPS-NIR with ESMTP
+	; Thu, 1 Jan 2015 13:34:17 +0200
+Message-ID: <2EDE31CC-9A14-435E-B10F-EAE9EDCC4A60@APPS-NIR>
+MIME-Version: 1.0
+From: "Source- name" <nir.klieman@audiocodes.com>
+To: "To - name  0545599607" <0545599607@fax.server>
+Date: 1 Jan 2015 13:34:04 +0200
+Subject: =?utf-8?B?IFsxXVRlc3Q0Mi4xIC0gZmF4IHdpdGggb25lIGh0bWwgYXR0YWNobWVudA==?=
+Content-Type: multipart/mixed; boundary=--boundary_1_8c4559e0-c89c-4251-812c-345b4060ced3
+
+
+----boundary_1_8c4559e0-c89c-4251-812c-345b4060ced3
+Content-Type: multipart/alternative; boundary=--boundary_0_8e6ccaa7-c0e4-48b7-8940-1b02ffd9b141
+
+
+----boundary_0_8e6ccaa7-c0e4-48b7-8940-1b02ffd9b141
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+
+ZmF4IHdpdGggb25lIGh0bWwgYXR0YWNobWVudA0KIFRlc3QgQXMgVGV4dCBQbGFpbg==
+----boundary_0_8e6ccaa7-c0e4-48b7-8940-1b02ffd9b141--
+
+----boundary_1_8c4559e0-c89c-4251-812c-345b4060ced3
+Content-Type: multipart/mixed; boundary=--boundary_2_3428a478-3a06-424b-afa1-dbf922dadc43
+
+
+----boundary_2_3428a478-3a06-424b-afa1-dbf922dadc43
+Content-Type: application/octet-stream; name=html.html
+Content-Transfer-Encoding: base64
+
+PGhlYWQ+DQoNCjx0cj4gU3RhcnQgPC90cj4NCjxicj4NCjxicj4NCg0KDQoNCjwvaGVhZD4N
+Cg0KDQoNCjxCb2R5Pg0KDQo8dHI+RW5kPC90cj4NCg0KDQo8L2JvZHk+
+----boundary_2_3428a478-3a06-424b-afa1-dbf922dadc43--
+
+----boundary_1_8c4559e0-c89c-4251-812c-345b4060ced3--
+
+

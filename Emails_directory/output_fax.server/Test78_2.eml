@@ -1,0 +1,48 @@
+Return-Path: <ron@fax.server>
+Received: from isr021731989 (10.21.0.71) by cpmail.corp.audiocodes.com (7.0.043)
+        id 3F36405C00000025 for lironn@fastwebnet.it; Tue, 26 Aug 2003 14:24:41 +0300
+Message-ID: <E0675B00044F459F828D587C90196261@corp.audiocodes.com>
+From: "Nir Klieman_1" <nir.klieman@audiocodes.com>
+To: <0545599607@fax.server>
+Subject: Test78.2 - Fax without coverpage when coverpage is not checked
+Date: Tue, 26 Aug 2014 14:24:36 +0300
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_00BB_01CFC139.769DBF60"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_00BB_01CFC139.769DBF60
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_00BC_01CFC139.769DBF60"
+
+
+------=_NextPart_001_00BC_01CFC139.769DBF60
+Content-Type: text/plain;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+Fax with jpg-coverpage
+
+------=_NextPart_001_00BC_01CFC139.769DBF60
+Content-Type: text/html;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1255" =
+http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23507">
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT size=3D2 face=3DArial><SPAN lang=3DEN>
+<P>Fax with jpg-coverpage</P></SPAN></FONT></DIV></BODY></HTML>
+
+------=_NextPart_001_00BC_01CFC139.769DBF60--
+

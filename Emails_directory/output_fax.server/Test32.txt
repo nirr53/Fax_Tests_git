@@ -1,0 +1,37 @@
+Return-Path: <ron@fax.server>
+Received: from cti2.com (192.168.200.4) by cticell.cpload.cti2.com (6.7.012)
+        id 3DAA6DB000000014 for ron@cpload.cti2.com; Mon, 14 Oct 2002 10:44:55 +0300
+X-MIMEOLE: Produced By Microsoft Exchange V6.0.6249.0
+content-class: urn:content-classes:message
+Subject: Test 32 - NA-Error retries interval-time
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----_=_NextPart_001_01C27356.086E365C"
+Date: Mon, 14 Oct 2002 09:48:06 +0200
+Message-ID: <CC92E7C2663B1D498A745BD686C45E1F40EFB2@exch2000.cti2.com>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: Outlook urgent
+Thread-Index: AcJzVghuZVB2M9RxTjGjnXY7lGbuqg==
+X-Priority: 1
+Priority: Urgent
+Importance: high
+From: "Nir Klieman" <nir.klieman@audiocodes.com>
+To: <0565599612@fax.server>
+
+This is a multi-part message in MIME format.
+
+------_=_NextPart_001_01C27356.086E365C
+
+Content-Type: text/plain;
+	name="switch_log_3G.txt"
+Content-Transfer-Encoding:  base64
+Content-Disposition: attachment;
+	filename="switch_log_3G.txt"
+	
+	
+Body1
+Body2
+Body3
+
+------_=_NextPart_001_01C27356.086E365C--

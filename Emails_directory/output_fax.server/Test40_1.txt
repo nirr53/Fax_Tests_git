@@ -1,0 +1,42 @@
+Return-Path: <ron@fax.server>
+Received: from isr021731989 (10.21.0.71) by cpmail.corp.audiocodes.com (7.0.043)
+        id 3F09748F00000008 for lironn@fastwebnet.it; Sun, 20 Jul 2003 17:49:35 +0300
+Message-ID: <EC024778CF694C3DA29369C498911554@corp.audiocodes.com>
+From: "Nir Klieman_1" <nir.klieman@audiocodes.com>
+To: <0545599607@fax.server>
+Subject: Test 40.1 - High Imporatnce message
+Date: Sun, 20 Jul 2014 17:49:50 +0300
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_01F0_01CFA443.016D0600"
+X-Priority: 1
+X-MSMail-Priority: High
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_01F0_01CFA443.016D0600
+Content-Type: text/plain;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+Message with high imporatnce
+------=_NextPart_000_01F0_01CFA443.016D0600
+Content-Type: text/html;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1255" =
+http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23507">
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT size=3D2 face=3DArial>Message with high=20
+imporatnce</FONT></DIV></BODY></HTML>
+
+------=_NextPart_000_01F0_01CFA443.016D0600--
+

@@ -1,0 +1,51 @@
+Return-Path: <ron@fax.server>
+Received: from null (10.21.0.71) by cpmail.corp.audiocodes.com (7.0.043)
+        id 3FEE74D100000004 for lironn@fastwebnet.it; Tue, 10 Feb 2004 12:14:34 +0300
+Message-ID: <EDCD9A973D504FE19B30C55C931EB9E0@corp.audiocodes.com>
+From: <nir.klieman@audiocodes.com>
+To: <0545599607@fax.server>
+Cc: <0545599608@fax.server>
+Subject: Test110.2 - To and cc have different address
+Date: Tue, 10 Feb 2015 11:12:20 +0200
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_000F_01D04522.7038A730"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_000F_01D04522.7038A730
+Content-Type: text/plain;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+This is the body of the message
+This is the body of the message
+This is the body of the message
+------=_NextPart_000_000F_01D04522.7038A730
+Content-Type: text/html;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1255" =
+http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23588">
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT size=3D2 face=3DArial>This is the body of the =
+message</FONT></DIV>
+<DIV>
+<DIV><FONT size=3D2 face=3DArial>This is the body of the =
+message</FONT></DIV>
+<DIV>
+<DIV><FONT size=3D2 face=3DArial>This is the body of the=20
+message</FONT></DIV></DIV></DIV></BODY></HTML>
+
+------=_NextPart_000_000F_01D04522.7038A730--
+

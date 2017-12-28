@@ -1,0 +1,309 @@
+Return-Path: <ron@fax.server>
+Received: from isr021731989 (10.21.0.71) by cpmail.corp.audiocodes.com (7.0.043)
+        id 3F36405C00000026 for lironn@fastwebnet.it; Tue, 26 Aug 2003 14:26:42 +0300
+Message-ID: <61435C411DB6421D826D52DF27C01608@corp.audiocodes.com>
+From: "Nir Klieman_1" <nir.klieman@audiocodes.com>
+To: <0545599607@fax.server>
+Subject: Test76.2 - fax with html coverpage
+Date: Tue, 26 Aug 2014 14:26:37 +0300
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_00C2_01CFC139.BEA5B060"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_00C2_01CFC139.BEA5B060
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_00C3_01CFC139.BEA5B060"
+
+
+------=_NextPart_001_00C3_01CFC139.BEA5B060
+Content-Type: text/plain;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+Test76.2 - fax with html coverpage
+
+------=_NextPart_001_00C3_01CFC139.BEA5B060
+Content-Type: text/html;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1255" =
+http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23507">
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT size=3D2 face=3DArial><SPAN lang=3DEN>
+<P dir=3Dltr>Test76.2 - fax with html=20
+coverpage</P></SPAN></FONT></DIV></BODY></HTML>
+
+------=_NextPart_001_00C3_01CFC139.BEA5B060--
+
+------=_NextPart_000_00C2_01CFC139.BEA5B060
+Content-Type: text/html;
+	name="coverpage.html"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: attachment;
+	filename="coverpage.html"
+
+<?xml version=3D"1.0" encoding=3D"UTF-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE html [=0A=
+  <!ENTITY % htmlDTD=0A=
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"=0A=
+    "DTD/xhtml1-strict.dtd">=0A=
+  %htmlDTD;=0A=
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">=0A=
+  %globalDTD;=0A=
+  <!ENTITY % aboutHomeDTD SYSTEM "chrome://browser/locale/aboutHome.dtd">=0A=
+  %aboutHomeDTD;=0A=
+<!ENTITY % syncBrandDTD SYSTEM "chrome://browser/locale/syncBrand.dtd">=0A=
+%syncBrandDTD;=0A=
+=0A=
+<!-- These strings are used in the about:home page -->=0A=
+=0A=
+<!ENTITY abouthome.pageTitle "&brandFullName; Start Page">=0A=
+=0A=
+<!ENTITY abouthome.searchEngineButton.label "Search">=0A=
+=0A=
+<!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):=0A=
+     text in <a/> will be linked to the Firefox features page on =
+mozilla.com=0A=
+-->=0A=
+<!ENTITY abouthome.defaultSnippet1.v1 "Thanks for choosing Firefox! To =
+get the most out of your browser, learn more about the <a>latest =
+features</a>.">=0A=
+<!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):=0A=
+     text in <a/> will be linked to the featured add-ons on =
+addons.mozilla.org=0A=
+-->=0A=
+<!ENTITY abouthome.defaultSnippet2.v1 "It's easy to customize your =
+Firefox exactly the way you want it. <a>Choose from thousands of =
+add-ons</a>.">=0A=
+<!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be =
+linked to about:rights -->=0A=
+<!ENTITY abouthome.rightsSnippet "&brandFullName; is free and open =
+source software from the non-profit Mozilla Foundation. <a>Know your =
+rights=E2=80=A6</a>">=0A=
+=0A=
+<!ENTITY abouthome.bookmarksButton.label "Bookmarks">=0A=
+<!ENTITY abouthome.historyButton.label   "History">=0A=
+<!ENTITY abouthome.settingsButton.label  "Settings">=0A=
+<!ENTITY abouthome.addonsButton.label    "Add-ons">=0A=
+<!ENTITY abouthome.appsButton.label      "Marketplace">=0A=
+<!ENTITY abouthome.downloadsButton.label "Downloads">=0A=
+<!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">=0A=
+=0A=
+  <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd" >=0A=
+  %browserDTD;=0A=
+]>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" hasBrowserHandlers=3D"true" =
+snippetsURL=3D"https://snippets.mozilla.com/4/Firefox/26.0/20131205075310=
+/WINNT_x86-msvc/en-US/release/Windows_NT%205.1/default/default/" =
+showKnowYourRights=3D"true" snippetsVersion=3D"4" =
+searchEngineName=3D"Google">
+  <head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8" =
+/>
+    <title>Mozilla Firefox Start Page</title>
+
+    <link rel=3D"icon" type=3D"image/png" id=3D"favicon" =
+href=3D"chrome://branding/content/icon32.png" />
+    <link rel=3D"stylesheet" type=3D"text/css" media=3D"all" =
+href=3D"html_att_files/aboutHome.css" />
+
+    <script type=3D"text/javascript;version=3D1.8" =
+src=3D"html_att_files/aboutHome.js"></script>
+  </head>
+
+  <body dir=3D"ltr">
+    <div class=3D"spacer"></div>
+    <div id=3D"topSection">
+      <div id=3D"brandLogo"></div>
+
+      <div id=3D"searchContainer">
+        <form name=3D"searchForm" id=3D"searchForm" =
+onsubmit=3D"onSearchSubmit(event)">
+          <div id=3D"searchLogoContainer"><img id=3D"searchEngineLogo" =
+src=3D"data:image/png;base64,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" =
+alt=3D"Google" /></div>
+          <input type=3D"text" name=3D"q" id=3D"searchText" =
+maxlength=3D"256" autofocus=3D"autofocus" placeholder=3D"" />
+          <input type=3D"submit" id=3D"searchSubmit" value=3D"Search" />
+        </form>
+      </div>
+
+      <div id=3D"snippetContainer">
+        <div hidden=3D"true" id=3D"defaultSnippets">
+          <span id=3D"defaultSnippet1">Thanks for choosing Firefox! To =
+get the most out of your browser, learn more about the <a>latest =
+features</a>.</span>
+          <span id=3D"defaultSnippet2">It's easy to customize your =
+Firefox exactly the way you want it. <a>Choose from thousands of =
+add-ons</a>.</span>
+        </div>
+       =20
+        <div id=3D"snippets"><span id=3D"rightsSnippet">Mozilla Firefox =
+is free and open source software from the non-profit Mozilla Foundation. =
+<a href=3D"about:rights">Know your rights=E2=80=A6</a></span></div>
+      </div>
+    </div>
+    <div class=3D"spacer"></div>
+
+    <div id=3D"launcher" session=3D"true">
+      <button class=3D"launchButton" id=3D"downloads">Downloads</button>
+      <button class=3D"launchButton" id=3D"bookmarks">Bookmarks</button>
+      <button class=3D"launchButton" id=3D"history">History</button>
+      <button hidden=3D"true" class=3D"launchButton" =
+id=3D"apps">Marketplace</button>
+      <button class=3D"launchButton" id=3D"addons">Add-ons</button>
+      <button class=3D"launchButton" id=3D"sync">Sync</button>
+      <button class=3D"launchButton" id=3D"settings">Settings</button>
+      <div id=3D"restorePreviousSessionSeparator"></div>
+      <button class=3D"launchButton" =
+id=3D"restorePreviousSession">Restore Previous Session</button>
+    </div>
+
+    <a id=3D"aboutMozilla" =
+href=3D"https://www.mozilla.org/about/?utm_source=3Dabout-home&amp;utm_me=
+dium=3DReferral"></a>
+  </body>
+</html>
+------=_NextPart_000_00C2_01CFC139.BEA5B060--
+

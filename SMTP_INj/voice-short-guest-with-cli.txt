@@ -1,0 +1,23 @@
+From: "(Guest) voice mail (CLI=1234567890)" <voice_mail@dummy.com>
+Sender: "voice_mail" <voice_mail@dummy.com>
+Subject: (Guest) Voice Mail with CLI=1234567890
+Date: Mon, 17 Dec 2001 14:05:28 +0200
+X-Cli-Number: T1234567890
+To: "test 11" <test11@telcotest.cti2.com>
+MIME-Version: 1.0 (Voice 2.0)
+Content-Type: multipart/voice-message;
+	boundary="===MIME.0.434.342.17122001140528.65675376"
+
+--===MIME.0.434.342.17122001140528.65675376
+Content-Type: audio/vox;
+	name="~#1~#voice00075b55.vox"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename="~#1~#voice00075b55.vox"
+
+UklGRrYAAABXQVZFZm10IBQAAAAxAAEAQB8AAFkGAABBAAAAAgBAAWZhY3QEAAAAQwEAAGRhdGGC
+AAAAnbncoYgCoBvJlCQpW2DdyG0eiVKAHElO5Obcd9xGGprmcCgeTiyofv82l5NBlDS9XMltYZhy
+sty2bXYSAGkhK6+iiFnWdE6BTUiOJwklgBxJkhxZJ4AjSZIjOQdgJEmSJDlkUiFNRgRIkuTIcSgA
+SJIkSZIoAEiSJEmScABIkiRJkg==
+
+--===MIME.0.434.342.17122001140528.65675376--

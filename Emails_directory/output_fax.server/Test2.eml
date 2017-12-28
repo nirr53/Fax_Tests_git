@@ -1,0 +1,28 @@
+Return-Path: <ron@fax.server>
+Received: from nirk-PC (Unknown [172.17.113.33])
+	by APPS-NIR with ESMTP
+	; Tue, 30 Dec 2014 13:44:33 +0200
+Message-ID: <9D83F649-4BB9-4DD7-974A-3DAB31F1286F@APPS-NIR>
+MIME-Version: 1.0
+From: "Nir Klieman_1" <nir.klieman@audiocodes.com>
+To: 0545599607 <0545599607@fax.server>
+Date: 30 Dec 2014 13:44:32 +0200
+Subject: =?utf-8?B?IFsxXVRlc3QgMiAtIFRlc3QgRmF4IHN0YXR1cyBub3JtYWw=?=
+Content-Type: multipart/alternative;
+ boundary=--boundary_0_b40b447e-3641-4174-9d72-4544a78acb3b
+
+
+----boundary_0_b40b447e-3641-4174-9d72-4544a78acb3b
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+PGRpdj5Cb2R5PC9icj5Cb2R5PC9icj5Cb2R5PC9icj4gVGVzdCBBcyBU
+ZXh0IEhUTUw8L2Rpdj48L2JvZHk+PC9odG1sPg==
+----boundary_0_b40b447e-3641-4174-9d72-4544a78acb3b
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div>Body</br>Body</br>Body</br> Test As Text HTML</div></body></html>
+----boundary_0_b40b447e-3641-4174-9d72-4544a78acb3b--
+
+

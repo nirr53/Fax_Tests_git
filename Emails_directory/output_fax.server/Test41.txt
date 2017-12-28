@@ -1,0 +1,50 @@
+Return-Path: <ron@fax.server>
+Received: from isr021731989 (10.21.0.71) by cpmail.corp.audiocodes.com (7.0.043)
+        id 3F09748F00000007 for lironn@fastwebnet.it; Sun, 20 Jul 2003 17:21:59 +0300
+Message-ID: <43930AD64ACA485D826A55913F697DE2@corp.audiocodes.com>
+From: "Nir Klieman_1" <nir.klieman@audiocodes.com>
+To: <0545599607@fax.server>
+Subject: Test 41 - Diffrent fonts and sizes
+Date: Sun, 20 Jul 2014 17:21:38 +0300
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_01E1_01CFA43F.23981CA0"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_01E1_01CFA43F.23981CA0
+Content-Type: text/plain;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+This is mail
+with diffrent sizes
+and
+difffrent fonts
+OK ?
+------=_NextPart_000_01E1_01CFA43F.23981CA0
+Content-Type: text/html;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1255" =
+http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23507">
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT size=3D2 face=3DArial>This is mail</FONT></DIV>
+<DIV><FONT size=3D6 face=3DArial>with diffrent sizes</FONT></DIV>
+<DIV><FONT size=3D6 face=3DNarkisim>and</FONT></DIV>
+<DIV><FONT size=3D6 face=3DChiller>difffrent fonts</FONT></DIV>
+<DIV><FONT size=3D7 face=3D"Times New Roman">OK =
+?</FONT></DIV></BODY></HTML>
+
+------=_NextPart_000_01E1_01CFA43F.23981CA0--
+

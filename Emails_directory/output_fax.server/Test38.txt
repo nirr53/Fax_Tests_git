@@ -1,0 +1,974 @@
+Return-Path: <ron@fax.server>
+Received: from cti2.com (192.168.200.4) by cticell.cpload.cti2.com (6.7.012)
+        id 3DAA6DB000000014 for ron@cpload.cti2.com; Mon, 14 Oct 2002 10:44:55 +0300
+X-MIMEOLE: Produced By Microsoft Exchange V6.0.6249.0
+content-class: urn:content-classes:message
+Subject: Test 38 - Fax with table in his body
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----_=_NextPart_001_01C27356.086E365C"
+Date: Mon, 14 Oct 2002 09:48:06 +0200
+Message-ID: <CC92E7C2663B1D498A745BD686C45E1F40EFB2@exch2000.cti2.com>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: Outlook urgent
+Thread-Index: AcJzVghuZVB2M9RxTjGjnXY7lGbuqg==
+X-Priority: 1
+Priority: Urgent
+Importance: high
+From: "Nir Klieman_1" <nir.klieman@audiocodes.com>
+To: <0545599607@fax.server>
+
+This is a multi-part message in MIME format.
+
+------_=_NextPart_001_01C27356.086E365C
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+IA0K
+sd
+f
+sdf
+sd
+fsd
+fsd
+f
+sdf
+sdf
+sd
+fsd
+fsd
+fsd
+------_=_NextPart_001_01C27356.086E365C
+Content-Type: text/plain;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+       Body1
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+
+      Body2 =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      Body3 =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+      =20
+     =20
+     =20
+     =20
+    =20
+
+------_=_NextPart_001_01C27356.086E365C
+Content-Type: text/html;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1255" =
+http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23507">
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT size=3D2 face=3DArial>
+<TABLE=20
+style=3D"BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; =
+BORDER-COLLAPSE: collapse; BORDER-TOP: medium none; BORDER-RIGHT: medium =
+none; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; =
+mso-padding-alt: 0in 5.4pt 0in 5.4pt"=20
+class=3DMsoTableGrid border=3D1 cellSpacing=3D0 cellPadding=3D0>
+  <TBODY>
+  <TR style=3D"mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; =
+PADDING-TOP: 0in; mso-border-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><?xml:namespace prefix =3D o ns =3D=20
+      "urn:schemas-microsoft-com:office:office" /><o:p><FONT=20
+      face=3DCalibri>&nbsp;</FONT><FONT size=3D2=20
+face=3DArial>Body1</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 1">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 2">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 3">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 4">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 5; mso-yfti-lastrow: yes">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT=20
+  =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR></TBODY></TABLE></FONT></=
+DIV>
+<TABLE=20
+style=3D"BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; =
+BORDER-COLLAPSE: collapse; BORDER-TOP: medium none; BORDER-RIGHT: medium =
+none; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; =
+mso-padding-alt: 0in 5.4pt 0in 5.4pt"=20
+class=3DMsoTableGrid border=3D1 cellSpacing=3D0 cellPadding=3D0>
+  <TBODY>
+  <TR style=3D"mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; =
+PADDING-TOP: 0in; mso-border-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148><FONT size=3D2 =
+face=3DArial>Body2</FONT></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 1">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 2">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 3">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 4">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 5; mso-yfti-lastrow: yes">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT=20
+  face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR></TBODY></TABLE>
+<TABLE=20
+style=3D"BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; =
+BORDER-COLLAPSE: collapse; BORDER-TOP: medium none; BORDER-RIGHT: medium =
+none; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; =
+mso-padding-alt: 0in 5.4pt 0in 5.4pt"=20
+class=3DMsoTableGrid border=3D1 cellSpacing=3D0 cellPadding=3D0>
+  <TBODY>
+  <TR style=3D"mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; =
+PADDING-TOP: 0in; mso-border-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148><FONT size=3D2 =
+face=3DArial>Body3</FONT></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 1">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 2">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 3">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 4">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 5; mso-yfti-lastrow: yes">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: =
+transparent; PADDING-LEFT: 5.4pt; WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; =
+BORDER-TOP: #ece9d8; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: =
+0in; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: #ece9d8; =
+PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; =
+WIDTH: 110.7pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D148>
+      <P style=3D"LINE-HEIGHT: normal; MARGIN: 0in 0in 0pt"=20
+      class=3DMsoNormal><o:p><FONT=20
+  =
+face=3DCalibri>&nbsp;</FONT></o:p></P></TD></TR></TBODY></TABLE></BODY></=
+HTML>
+
+------_=_NextPart_001_01C27356.086E365C--

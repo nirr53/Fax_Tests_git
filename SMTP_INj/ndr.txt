@@ -1,0 +1,80 @@
+Received:  from cpmail.cp.cti2.com ([192.168.200.69]) by cti2.com with Microsoft SMTPSVC(5.0.2195.5329); Mon, 23 Dec 2002 10:10:10 +0200
+Received:  by cpmail.cp.cti2.com (6.7.014) id 3DE6496700000130 for ron@cti2.com; Mon, 23 Dec 2002 10:09:23 +0200
+MIME-Version: 1.0
+Content-Type: multipart/report;
+	boundary="----_=_NextPart_001_01C2AA5A.B6B2F158";
+	report-type=delivery-status
+Return-Path: 
+X-MIMEOLE: Produced By Microsoft Exchange V6.0.6334.0
+X-OriginalArrivalTime: 23 Dec 2002 08:10:10.0562 (UTC) FILETIME=[B6831E20:01C2AA5A]
+content-class: urn:content-classes:dsn
+Subject: Undeliverable: Test
+Date: Mon, 23 Dec 2002 10:10:10 +0200
+Message-ID: <3DE649670000012F@cpmail.cp.cti2.com>
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+Thread-Topic: Test
+Thread-Index: AcKqWrWvA8jNpjzlRUq3s+71Gye5DQAAAECy
+From: "System Administrator" <postmaster@cti2.com>
+To: "Ron Avriel" <ron@cti2.com>
+
+This is a multi-part message in MIME format.
+
+------_=_NextPart_001_01C2AA5A.B6B2F158
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+WW91ciBtZXNzYWdlDQoNCiAgVG86ICAgICAgcm9uQGNwLmN0aTIuY29tDQogIFN1YmplY3Q6IFRl
+c3QNCiAgU2VudDogICAgTW9uLCAyMyBEZWMgMjAwMiAxMDoxMDowOSArMDIwMA0KDQpkaWQgbm90
+IHJlYWNoIHRoZSBmb2xsb3dpbmcgcmVjaXBpZW50KHMpOg0KDQpyb25AY3AuY3RpMi5jb20gb24g
+TW9uLCAyMyBEZWMgMjAwMiAxMDowOToyMyArMDIwMA0KICAgIFlvdSBkbyBub3QgaGF2ZSBwZXJt
+aXNzaW9uIHRvIHNlbmQgdG8gdGhpcyByZWNpcGllbnQuICBGb3INCmFzc2lzdGFuY2UsIGNvbnRh
+Y3QgeW91ciBzeXN0ZW0gYWRtaW5pc3RyYXRvci4NCiAgICA8IGNwbWFpbC5jcC5jdGkyLmNvbSAj
+NS43LjE+DQoNCg==
+
+------_=_NextPart_001_01C2AA5A.B6B2F158
+Content-Type: message/delivery-status
+Content-Transfer-Encoding: 7bit
+
+Reporting-MTA: dns; exch2000.cti2.com
+
+Final-Recipient: RFC822; ron@cp.cti2.com
+Action: failed
+Status: 5.7.1
+X-Supplementary-Info: < cpmail.cp.cti2.com #5.7.1>
+X-Display-Name: ron@cp.cti2.com
+
+------_=_NextPart_001_01C2AA5A.B6B2F158
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 7bit
+
+Received: by exch2000.cti2.com 
+	id <01C2AA5A.9A29BB80@exch2000.cti2.com>; Mon, 23 Dec 2002 10:09:23 +0200
+content-class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+Return-Path: <ron@cti2.com>
+X-MIMEOLE: Produced By Microsoft Exchange V6.0.6334.0
+X-OriginalArrivalTime: 23 Dec 2002 08:10:10.0099 (UTC) FILETIME=[B63C7830:01C2AA5A]
+Subject: Test
+Date: Mon, 23 Dec 2002 10:10:09 +0200
+Message-ID: <CC92E7C2663B1D498A745BD686C45E1F40F139@exch2000.cti2.com>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: Test
+Thread-Index: AcKqWrWvA8jNpjzlRUq3s+71Gye5DQ==
+From: "Ron Avriel" <ron@cti2.com>
+To: <ron@cp.cti2.com>
+
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgSFRUUC1FUVVJVj0iQ29udGVudC1UeXBlIiBDT05U
+RU5UPSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPg0KDQoNCg0KDQo8TUVUQSBjb250ZW50PSJN
+U0hUTUwgNi4wMC4yNjAwLjAiIG5hbWU9R0VORVJBVE9SPjwvSEVBRD4NCjxCT0RZPg0KPERJVj4m
+bmJzcDs8L0RJVj48L0JPRFk+PC9IVE1MPg0K
+
+------_=_NextPart_001_01C2AA5A.B6B2F158--
+)
+

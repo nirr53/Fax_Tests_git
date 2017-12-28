@@ -1,0 +1,55 @@
+Return-Path: <ron@fax.com.local>
+Received: from isr021731989 (10.21.0.71) by cpmail.corp.audiocodes.com (7.0.043)
+        id 4003928B00000416 for lironn@fastwebnet.it; Sat, 2 Apr 2005 17:55:24 +0300
+Message-ID: <AFB96EA381F441CA8D2BE8F68B767B6C@corp.audiocodes.com>
+From: "Should be in Hebrew" <nir.klieman@audiocodes.com>
+To: <0545599610@fax.com.local>
+Subject: =?windows-1255?B?4ePp9+Qg+ewg9PfxIOHy4fjp+g==?=
+Date: Mon, 14 Oct 2002 09:48:06 +0200
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0009_01CF4F63.CE8011D0"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+
+This is a multi-part message in MIME format.
+
+
+------=_NextPart_000_0009_01CF4F63.CE8011D0
+Content-Type: text/plain;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+=E6=E4=E5 =F4=F7=F1 =E1=E3=E9=F7=E4 =E1=F2=E1=F8=E9=FA
+=E6=E4=E5 =F4=F7=F1 =E1=E3=E9=F7=E4 =E1=F2=E1=F8=E9=FA
+=E6=E4=E5 =F4=F7=F1 =E1=E3=E9=F7=E4 =E1=F2=E1=F8=E9=FA.
+
+
+
+------=_NextPart_000_0009_01CF4F63.CE8011D0
+Content-Type: text/html;
+	charset="windows-1255"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1255" =
+http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.23507">
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT size=3D2 face=3DArial>=E6=E4=E5 =F4=F7=F1 =E1=E3=E9=F7=E4 =
+=E1=F2=E1=F8=E9=FA</FONT></DIV>
+<DIV><FONT size=3D2 face=3DArial>=E6=E4=E5 =F4=F7=F1 =E1=E3=E9=F7=E4 =
+=E1=F2=E1=F8=E9=FA</FONT></DIV>
+<DIV><FONT size=3D2 face=3DArial>=E6=E4=E5 =F4=F7=F1 =E1=E3=E9=F7=E4 =
+=E1=F2=E1=F8=E9=FA.</FONT></DIV>
+<DIV><FONT size=3D2 face=3DArial></FONT>&nbsp;</DIV>
+<DIV><FONT size=3D2 face=3DArial></FONT>&nbsp;</DIV>
+<DIV>&nbsp;</DIV></BODY></HTML>
+
+------=_NextPart_000_0009_01CF4F63.CE8011D0--
+
