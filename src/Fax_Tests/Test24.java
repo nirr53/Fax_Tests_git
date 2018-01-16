@@ -13,7 +13,7 @@ import Fax_Tests.GlobalFuncs;
 
 /**
 * ----------------
-* This test tests a send of a fax with xls attchment
+* This test tests a send of a fax with xls attachment
 * -----------------
 * Tests:
 *    1. Send a fax with one xls attachment

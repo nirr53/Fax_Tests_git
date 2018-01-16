@@ -410,7 +410,7 @@ public class GlobalFuncs {
 				}
 			}
 			
-			// Check for Body-attachemnt message
+			// Check for Body-attachment message
 			File f4  = new File(pathBodyAtt), f41 = new File(pathBodyAtt2);
 			if((f4.exists() && !f4.isDirectory()) || (f41.exists() && !f41.isDirectory())) { 
 				
@@ -421,7 +421,7 @@ public class GlobalFuncs {
 				}
 			}
 			
-			// Check for Result-attachemnt message
+			// Check for Result-attachment message
 			File f5  = new File(pathResultAtt), f51 = new File(pathResultAtt2);
 			if((f5.exists() && !f5.isDirectory()) || (f51.exists() && !f51.isDirectory())) { 
 				
@@ -540,7 +540,7 @@ public class GlobalFuncs {
 	  }
 	  
 	  /**
-	  *  Detected a speicific header in a speicific location
+	  *  Detected a specific header in a specific location
 	  *  @param txt 	 - Fax OCR path
 	  *  @param rootDir 	 - Root of the emails directory
 	  *  @param	convFileName - Name of the file that should be converted
