@@ -80,13 +80,13 @@ public class Test78 {
 		
 	  // Step 1 - Deposit a fax with coverpage attachment when coverpage is not checked
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with coverpage attachment when coverpage is not checked");
-	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test78)1.eml");
+	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test78_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");   
 	  testFuncs.detectHeader(bodyMsg, "Fax contains:", "2 page(s)");
 	  
-	  // Step 2 - Deposit a aax coverpage without coverpage attachment when coverpage is not checked
-	  testFuncs.myDebugPrinting("Step 2 - Deposit a aax coverpage without coverpage attachment when coverpage is not checked");
+	  // Step 2 - Deposit a fax coverpage without coverpage attachment when coverpage is not checked
+	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax coverpage without coverpage attachment when coverpage is not checked");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test78_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");   

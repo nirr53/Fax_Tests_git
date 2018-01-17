@@ -66,7 +66,7 @@ public class Test109 {
   }
 
   @Test
-  public void Test108___Fax_with_attachment_that_has_speicel_characters() throws Exception {
+  public void Test108___Fax_with_attachment_that_has_special_characters() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();

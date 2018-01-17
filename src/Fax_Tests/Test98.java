@@ -16,7 +16,7 @@ import Fax_Tests.GlobalFuncs;
 * This test tests a Multiple-sendings to invalid user
 * -----------------
 * Tests:
-*    1. Deposit a fax with muliple invalid numbers as a target
+*    1. Deposit a fax with multiple invalid numbers as a target
 * 
 * Results:
 *    1. The following 2 fax parts should arrive

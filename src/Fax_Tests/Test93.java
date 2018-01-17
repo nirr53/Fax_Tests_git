@@ -18,7 +18,7 @@ import Fax_Tests.GlobalFuncs;
 * This test tests Attachment-name with special characters
 * -----------------
 * Tests:
-* 	 - Change the Attachmant-name field to have special characters
+* 	 - Change the Attachment-name field to have special characters
 *    1. Deposit a fax
 * 
 * Results:

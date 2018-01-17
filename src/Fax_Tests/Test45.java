@@ -13,10 +13,10 @@ import Fax_Tests.GlobalFuncs;
 
 /**
 * ----------------
-* This test tests a send of a fax with different attachmant names.
+* This test tests a send of a fax with different attachment names.
 * -----------------
 * Tests:
-*      1. Send a fax with attachment that has speicel characters in its name
+*      1. Send a fax with attachment that has special characters in its name
 *      2. Send a fax with attachment that has a long body
 * 
 * Results:
@@ -67,8 +67,8 @@ public class Test45 {
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
 		
-	  // Step 1 - Send a fax with attachment that has speicel characters in its name
-	  testFuncs.myDebugPrinting("Step 1 - Send a fax with attachment that has speicel characters in its name");
+	  // Step 1 - Send a fax with attachment that has special characters in its name
+	  testFuncs.myDebugPrinting("Step 1 - Send a fax with attachment that has special characters in its name");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test45_1.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  

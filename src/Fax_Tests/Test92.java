@@ -18,7 +18,7 @@ import Fax_Tests.GlobalFuncs;
 * This test tests Attachment-name with place-holders
 * -----------------
 * Tests:
-* 	 - Change the Attachmant-name field 
+* 	 - Change the Attachment-name field 
 *    1. Deposit a fax
 * 
 * Results:

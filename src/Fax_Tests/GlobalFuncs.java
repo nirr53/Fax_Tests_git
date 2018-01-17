@@ -551,11 +551,11 @@ public class GlobalFuncs {
 		int pivot = txt.indexOf(pivotStr);
 		if (pivot != -1) {
 			
-			myAssertTrue("searchedStr <" + searchedStr + "> was not detected from index <" + pivot + "> !!",
+			myAssertTrue("searchedStr <" + searchedStr + "> was not detected from index <" + pivot + "> !! \ntxt - " + txt,
 					     txt.indexOf(searchedStr, pivot) != -1);	
 		} else {
 			
-			myFail("pivotStr <" + pivotStr + "> was not detected !!");
+			myFail("pivotStr <" + pivotStr + "> was not detected !! \ntxt - " + txt);
 		}
 	  }
 }

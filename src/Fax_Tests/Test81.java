@@ -77,7 +77,7 @@ public class Test81 {
 	  testFuncs.detectHeader(statusMsg, "To:", "+0545599607");
 	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");   
 	  testFuncs.myAssertTrue("Header was not detected !!", bodyMsg.contains("Fax-In-User (with +)"));
-	  String resMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");   
+	  String resMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");   
 	  testFuncs.detectHeader(resMsg, "To Fax Numbers:", "+0545599607");
 	  testFuncs.detectHeader(resMsg, "+0545599607"    , "Succeeded to send");  
   }
