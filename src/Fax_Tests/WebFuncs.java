@@ -71,6 +71,9 @@ public class WebFuncs {
             	paths[1] = SYSTEM_SETTINGS_SECTION;
             	paths[2] = GENERAL_SETTINGS_SECTION;
             	break;
+			case "General_Settings_open":
+            	paths[0] = GENERAL_SETTINGS_SECTION;
+            	break;
             	
             // Fax-In menu
 			case "Fax_in_numbers":
@@ -254,7 +257,10 @@ public class WebFuncs {
 			case 93:
 			case 94:
 	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "General_Settings", "From Email Address");
+				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+				setFaxOutFaxId(extraData[1]);
+				submitPage(driver);
+				enterMenu(driver, "General_Settings_open", "From Email Address");
 	    		testFuncs.myDebugPrinting("Attachment name - " + extraData[0], testVars.MINOR);
 	    	    driver.switchTo().frame(1);
 				mySendKeys(By.xpath("//*[@id='att_name']"), extraData[0], 2000);

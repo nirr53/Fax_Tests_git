@@ -16,7 +16,7 @@ import Fax_Tests.GlobalFuncs;
 * This test tests a Multiple-sendings to same user
 * -----------------
 * Tests:
-*    1. Deposit a fax with muliple same number as a target
+*    1. Deposit a fax with multiple same number as a target
 * 
 * Results:
 *    1. The following 5 fax parts should arrive

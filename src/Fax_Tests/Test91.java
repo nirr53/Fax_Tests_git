@@ -73,7 +73,7 @@ public class Test91 {
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
-	  String[] extraData = {attname};
+	  String[] extraData = {attname, "From Number Settings"};
 	  webFuncs.setConfiguration(91, "General Settings - Attachment name", extraData);
 		
 	  // Step 1 - Deposit a fax
@@ -110,7 +110,7 @@ public class Test91 {
   @After
   public void tearDown() throws Exception {
 	  
-	String[] extraData = {"%PH_from%_%PH_to%"};
+	String[] extraData = {"%PH_from%_%PH_to%", "From Number Settings"};
 	webFuncs.setConfiguration(91, "General Settings - Attachment name", extraData);
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
