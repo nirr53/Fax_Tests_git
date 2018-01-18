@@ -80,7 +80,7 @@ public class Test99 {
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with multiple valid and invalid users");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test99.eml");
 	  dataMap.put("raiseError"		 ,  "0");
-	  dataMap.put("fileNumber"		 ,  "5");
+	  dataMap.put("fileNumber"		 ,  "7");
 	  dataMap.put("isMultipleTargets",  "1");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
 	  
@@ -88,8 +88,8 @@ public class Test99 {
 	  testFuncs.myDebugPrinting("Step 2 - Check fax");
 	  resMessage = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");    
 	  testFuncs.detectHeader(resMessage, "0545599607"	  , "Succeeded to send");  
+	  testFuncs.detectHeader(resMessage, "0245599607"	  , "Reject");  
 	  testFuncs.detectHeader(resMessage, "0345599607"	  , "Reject");  
-	  testFuncs.detectHeader(resMessage, "0445599607"	  , "Reject");  
 	  testFuncs.detectHeader(resMessage, "To Fax Numbers:", "0245599607, 0345599607, 0545599607"); 
   }
 

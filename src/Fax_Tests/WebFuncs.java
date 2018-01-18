@@ -236,9 +236,9 @@ public class WebFuncs {
 				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
 				setFaxOutFaxId(extraData[0]);
 	    		testFuncs.myDebugPrinting("Fax-ID - "       + extraData[1], testVars.MINOR);
-				mySendKeys(By.xpath("//*[@id='fax_id']"), extraData[1], 2000);
+				mySendKeys(By.xpath("//*[@id='d_n']"), extraData[1], 2000);
 	    		testFuncs.myDebugPrinting("Default CLI - "  + extraData[2], testVars.MINOR);
-				mySendKeys(By.xpath("//*[@id='d_n']"), extraData[2], 2000);
+				mySendKeys(By.xpath("//*[@id='default_cli']"), extraData[2], 2000);
 				submitPage(driver);
 				break;
 				
@@ -294,7 +294,7 @@ public class WebFuncs {
 				String newfaxInDisplayName  = "new" + extraData[1];
 				String newfaxInEmail	    = "new" + extraData[2];
 				String newfaxInFaxId 		= "new" + extraData[3];
-				editFaxInUser(extraData[0], newfaxInNumber,newfaxInEmail,  newfaxInDisplayName, newfaxInFaxId);
+				editFaxInUser(extraData[0], newfaxInNumber, newfaxInDisplayName, newfaxInEmail, newfaxInFaxId);
 				enterMenu(driver, "Fax_in_numbers_open", "Sort By");
 			    driver.switchTo().frame(1);
 				deleteFaxInUser(newfaxInNumber, newfaxInDisplayName);
@@ -396,26 +396,21 @@ public class WebFuncs {
 				enterMenu(driver, "Received_faxes" , "From (CLI)");	  
 	    	    driver.switchTo().frame(1);
 				String bodyText     = driver.findElement(By.tagName("body")).getText();
-				testFuncs.myAssertTrue("Timezone <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||
-																							  						  bodyText.contains(extraData[1]) ||
-																							  					      bodyText.contains(extraData[2]) ||
-																							  						  bodyText.contains(extraData[3]));
+				testFuncs.myAssertTrue("Timezone <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||																		  						  bodyText.contains(extraData[3]));
 	    	    driver.switchTo().defaultContent();
 				enterMenu(driver, "Sent_faxes_open", "From Email");	
 	    	    driver.switchTo().frame(1);
 				bodyText     = driver.findElement(By.tagName("body")).getText();
-				testFuncs.myAssertTrue("Timezone <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||
-																							  						  bodyText.contains(extraData[1]) ||
-																							  					      bodyText.contains(extraData[2]) ||																			  						  bodyText.contains(extraData[3]));
+				testFuncs.myAssertTrue("Timezone <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||																				  					      bodyText.contains(extraData[2]) ||																			  						  bodyText.contains(extraData[3]));
 				break;
 				
 			default:   
-//				driver.quit();
+				driver.quit();
 				testFuncs.myFail("Step Number <" + stepNumber + "> is not recognized !!");		
 		}
 		
 		// Close the driver
-//		driver.quit();		
+		driver.quit();		
 	}
 	
 	/**

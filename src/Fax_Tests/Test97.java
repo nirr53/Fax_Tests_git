@@ -80,6 +80,7 @@ public class Test97 {
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with multiple sendings");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test97.eml");
 	  dataMap.put("isMultipleTargets",  "1");
+	  dataMap.put("fileNumber"		 ,  "7");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
 	  
 	  // Step 2 - Check fax
