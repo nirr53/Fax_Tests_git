@@ -76,7 +76,7 @@ public class Test26 {
 	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Start"));
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("End"));
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("here"));
+	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Here"));
   
 	  // Step 2 - Deposit fax with office-97 attachments (doc, xls, ppt)
 	  testFuncs.myDebugPrinting("Step 2 - Deposit fax with office-97 attachments (doc, xls, ppt)");
@@ -86,7 +86,6 @@ public class Test26 {
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Start"));
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("End"));
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("here"));	  
   }
 
   @After
