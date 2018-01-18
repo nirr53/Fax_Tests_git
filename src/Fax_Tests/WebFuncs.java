@@ -334,7 +334,7 @@ public class WebFuncs {
 				String newOutgoingRuleName	 = "OutgoingRuleName" + newId;
 				String newOutgoingRulePrefix = newId;
 				String newOutgoingRuleFrom 	 = newId;
-				String newOutgoingRuleTo	 = newId;
+				String newOutgoingRuleTo	 = String.valueOf(Integer.valueOf(newId) + 1);
 				editOutgoingRule(extraData[0], newOutgoingRuleName, newOutgoingRulePrefix, newOutgoingRuleFrom, newOutgoingRuleTo);
 			    deleteOutgoingRule(newOutgoingRuleName, newOutgoingRulePrefix);
 				break;
@@ -490,6 +490,10 @@ public class WebFuncs {
 		
 		// Fill data
 		testFuncs.myDebugPrinting("Fill data", testVars.MINOR);
+		testFuncs.myDebugPrinting("outgoingRuleName - "   + outgoingRuleName  , testVars.MINOR);
+		testFuncs.myDebugPrinting("outgoingRuleFrom - "   + outgoingRuleFrom  , testVars.MINOR);
+		testFuncs.myDebugPrinting("outgoingRuleTo - "     + outgoingRuleTo    , testVars.MINOR);
+		testFuncs.myDebugPrinting("outgoingRulePrefix - " + outgoingRulePrefix, testVars.MINOR);
 		mySendKeys(By.xpath("//*[@id='name']"), outgoingRuleName, 2000);
 		mySendKeys(By.xpath("//*[@id='min']") , outgoingRuleFrom, 2000);
 		mySendKeys(By.xpath("//*[@id='max']") , outgoingRuleTo	, 2000);

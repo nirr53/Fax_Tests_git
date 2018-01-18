@@ -3,6 +3,8 @@ package Fax_Tests;
 import static org.junit.Assert.fail;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Random;
+
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -32,6 +34,7 @@ public class Test104 {
   GlobalVars 			testVars;
   GlobalFuncs			testFuncs;
   WebFuncs				webFuncs;
+  Random				rand;
 
   // Default constructor for print the name of the used browser 
   public Test104(String browser) {
@@ -58,6 +61,7 @@ public class Test104 {
 	testVars  = new GlobalVars();
     testFuncs = new GlobalFuncs(); 
     webFuncs  = new WebFuncs();
+	rand 	  = new Random();
   }
 
   @Test
@@ -67,8 +71,9 @@ public class Test104 {
 	  
 	  // Test outgoing-rule actions
 	  testFuncs.myDebugPrinting("Test outgoing-rule actions");
-	  String id = testFuncs.getId();
-	  String[] extraData = {"OutgoingRuleName" + id, id, id, id};
+	  int  from = rand.nextInt(8) + 1;
+	  String id  = testFuncs.getId();
+	  String[] extraData = {"OutgoingRuleName" + id, id, String.valueOf(from), String.valueOf(from + 1)};
 	  webFuncs.setConfiguration(104, "Test GW", extraData);
   }  
   
