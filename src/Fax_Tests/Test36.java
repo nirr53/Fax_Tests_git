@@ -72,8 +72,8 @@ public class Test36 {
 	  testFuncs.myDebugPrinting("Step 1 - Deposit fax with one csv attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test36_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.csv");
+	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");  
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Body3"));
 	  
 	  // Step 2 - Deposit fax with multiple csv attachments
@@ -81,7 +81,7 @@ public class Test36 {
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test36_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.csv");
+	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Fax Contains: 5 page(s)"));
   }
 
