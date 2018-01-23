@@ -89,9 +89,9 @@ public class Test28 {
 	  testFuncs.myWait(300000);
 	  testFuncs.myDebugPrinting("Step 2 - Check headers of the failure message");
 	  String errorMsg = testFuncs.readFile(testVars.getRootDir()  + "\\error\\" +  testVars.getFaxFailureHeader() + ".txt");
-	  testFuncs.detectHeader(errorMsg, "To Fax Numbers:", "0545599612");
+	  testFuncs.detectHeader(errorMsg, "To Fax Numbers:", "0565599612");
 	  testFuncs.detectHeader(errorMsg, "Subject:"       , "Failed_to_send_fax");
-	  testFuncs.detectHeader(errorMsg, "0545599612:"    , "Other FMS error");  
+	  testFuncs.detectHeader(errorMsg, "0565599612"     , "Other FMS error");  
   }
 
   @After
