@@ -1,6 +1,13 @@
 package Fax_Tests;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.Inet4Address;
+import java.net.URLDecoder;
+import java.net.UnknownHostException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -35,9 +42,13 @@ public class WebFuncs {
 	
 	// Status and Diagnostics paths
 	private final String STTS_DIGTCS_SECTION 	   = "//*[@id='tab_names']/tbody/tr/td[2]/table/tbody/tr[1]/td[3]/a";
+	private final String LOGS 		   	   	   	   = "//*[@id='plus_minus_5']";
+	private final String APPLICATION_LOGS  		   = "//*[@id='c5.1']";	
 	private final String CALL_LOGS 		   	   	   = "//*[@id='plus_minus_6']";
 	private final String RECEIVED_FAXES 		   = "//*[@id='c6.1']";
 	private final String SENT_FAXES 		   	   = "//*[@id='c6.2']";
+	private final String USER_MANUALLS 		   	   = "//*[@id='plus_minus_8']";
+	private final String ADMIN_USER_MANUALLS 	   = "//*[@id='c8.1']";
 	
 	// Default constructor
 	public WebFuncs() {
@@ -105,7 +116,17 @@ public class WebFuncs {
     			paths[2] = OUTGOING_RULES;	
     			break;   			
     			
-    		// Status & diagnostics
+    		// Status & diagnostics	
+        	case "Application_logs":
+    			paths[0] = STTS_DIGTCS_SECTION;  
+    			paths[1] = LOGS;    
+    			paths[2] = APPLICATION_LOGS;          	
+        		break; 		
+        		
+        	case "Application_logs_open":
+    			paths[0] = APPLICATION_LOGS;          	
+        		break; 
+        		
         	case "Received_faxes":
     			paths[0] = STTS_DIGTCS_SECTION;          	
     			paths[1] = CALL_LOGS;
@@ -118,6 +139,11 @@ public class WebFuncs {
         		break;
         	case "Sent_faxes_open":
     			paths[0] = SENT_FAXES;	
+        		break;
+        	case "Admin_User_Manuals":
+    			paths[0] = STTS_DIGTCS_SECTION;  
+    			paths[1] = USER_MANUALLS;    
+    			paths[2] = ADMIN_USER_MANUALLS;          	
         		break;
         		
 			default:
@@ -133,8 +159,10 @@ public class WebFuncs {
 	*  @param stepNumber  - given step-number
 	*  @param description - given step-description
 	*  @param extraData   - Extra data array for data which is needed for the test
+	* @throws UnsupportedEncodingException 
+	* @throws UnknownHostException 
 	*/
-	public void setConfiguration(int stepNumber, String description, String[] extraData) {
+	public void setConfiguration(int stepNumber, String description, String[] extraData) throws UnsupportedEncodingException, UnknownHostException {
 			
 		// Create a driver and login the site
 		testFuncs.myDebugPrinting("Description - " + description, testVars.NORMAL);
@@ -363,10 +391,129 @@ public class WebFuncs {
 	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
 				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
 			    driver.switchTo().frame(1);
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);			
 				mySendKeys(By.xpath("//*[@id='send_multi']")		, extraData[0], 4000);	
 				submitPage(driver);
 			    driver.switchTo().defaultContent();		
+				break;
+				
+			case 116:
+			case 117:
+			case 118:
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
+				enterMenu(driver, "Application_logs", "Application Logs");
+			    driver.switchTo().frame(1);
+	    		
+	    		// Enter the menu
+    			String filePrefix   = "";
+    			String logForSearch = "";
+	    		switch (extraData[0]) {
+	    		
+		    		case "Fax In Service":
+		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[2]/td[3]/a"), 7000);
+		    			searchStr("f2e.log");
+		    			filePrefix = "service.";
+		    			logForSearch = " Info ";
+		    			break;
+		    		case "Fax Out Service":
+		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[3]/td[3]/a"), 7000);
+		    			searchStr("m2fhm.log");
+		    			filePrefix = "emailToFax.service.";
+		    			break;
+		    		case "Auto Attendant Service":
+		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[4]/td[3]/a"), 7000);   			  
+		    			if (driver.findElement(By.tagName("body")).getText().contains("No log files.")) {
+		    				  	  
+		    				testFuncs.myDebugPrinting("No log lines were detected !!",  testVars.MINOR);
+		    				return;
+		    			}     			
+		    			break;			
+		    		case "System Watchdog":
+		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[5]/td[3]/a"), 7000);
+		    			searchStr("f2mw.log");
+		    			filePrefix = "faxToEmail.Watchdog.";
+		    			break;
+		    		case "Fax Server":
+		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[6]/td[3]/a"), 7000);
+		    			searchStr("FaxServer_");
+		    			filePrefix = "Fax Server.";		
+		    		    DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+		    		    Date date     = new Date();
+		    			logForSearch = dateFormat.format(date) + ",";	
+		    			break;
+		    		case "Web Admin":
+		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[8]/td[3]/a"), 7000);
+		    			searchStr("log.txt");
+		    			filePrefix = "web.admin.";
+		    			logForSearch = Inet4Address.getLocalHost().getHostAddress();
+		    			break;
+		    		case "Activity":
+		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[9]/td[3]/a"), 7000);
+		    			searchStr("log.txt");
+		    			filePrefix = "activity.";
+		    		    DateFormat dateFormat3 = new SimpleDateFormat("yyyy-MM-dd");
+		    		    Date date3     = new Date();
+		    			logForSearch = dateFormat3.format(date3);
+		    			break;
+		    		case "Backup":
+		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[10]/td[3]/a"), 7000);
+		    			searchStr("log.txt");
+		    			filePrefix = "faxToEmail.Backup.";
+		    		    DateFormat dateFormat4 = new SimpleDateFormat("yyyy-MM-dd");
+		    		    Date date4     = new Date();
+		    			logForSearch = dateFormat4.format(date4);
+		    			break;
+		    		default:				
+		    			testFuncs.myFail("Wrong service name <" + extraData[0] + ">");
+	    		}
+	    		
+	    		// Check Display options, log-level and download current log
+	    		testFuncs.myDebugPrinting("Check Display options, log-level and download current log", testVars.MINOR);	
+	    		checkDisplayOptions(driver, logForSearch);
+	    		checkLogLevel(driver, extraData[0]);
+	    		downloadCurrLog(filePrefix);
+	    		checkArchive(driver, extraData[0], filePrefix);
+	    		
+	    		// Return to service menu
+	    		testFuncs.myDebugPrinting("Return to service menu", testVars.MINOR);    		
+			    driver.switchTo().defaultContent();
+				myClick(By.xpath("//*[@id='back_img']"), 5000);
+				break;
+				
+			case 119:
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
+				enterMenu(driver, "Admin_User_Manuals", "User Manuals");
+			    driver.switchTo().frame(1);
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);	
+	    		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td", "User Manuals");
+	    		
+	    		// Check for pdf icons
+	    		for (int i = 2; i < 7; ++i) {
+	    			
+		    		WebElement elm = driver.findElement(By.xpath("//*[@id='trunkTBL']/table/tbody/tr[" + i + "]/td[2]/a/img"));
+		    		testFuncs.myAssertTrue("PDF icon was not detected !!", elm.getAttribute("src").contains("pdf_icon.gif"));
+	    		}
+	    		
+	    		// Download each of the manuals
+	    		testFuncs.myDebugPrinting("Download each of the manuals", testVars.MINOR);	  	      
+	    		String winHandleBefore = driver.getWindowHandle();
+	    		for (int i = 2; i < 7; ++i) {
+	    			
+	    			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr["+ i + "]/td[2]/a"), 20000);
+	    			java.util.Set<java.lang.String> windowHandles = driver.getWindowHandles(); 	      
+	    			for (String window : windowHandles) {
+	    				    	    
+	    				  if(!window.equals(winHandleBefore)) {
+	    				        	   		  
+	    					  driver.switchTo().window(window); 
+	    					  String decoded = URLDecoder.decode(driver.getCurrentUrl(), "UTF-8");
+	    					  testFuncs.myDebugPrinting("decoded - " + decoded, testVars.MINOR);	  	      
+	    					  testFuncs.myAssertTrue("Guide was not opened properly !! <" + decoded + ">", decoded.contains(extraData[i -2]));
+	    					  driver.close();  
+	    				  }
+	    				  driver.switchTo().window(winHandleBefore);  
+	    			  }
+				    driver.switchTo().frame(1);
+	    		}
 				break;
 				
 			case 125:
@@ -404,6 +551,36 @@ public class WebFuncs {
 				testFuncs.myAssertTrue("Timezone <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||																				  					      bodyText.contains(extraData[2]) ||																			  						  bodyText.contains(extraData[3]));
 				break;
 				
+			case 129:
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
+				enterMenu(driver, "Application_logs", "Application Logs");
+			    driver.switchTo().frame(1);   
+			    
+			    // Download file
+	    		testFuncs.myDebugPrinting("The searched prefix is <" + extraData[0] + ">", testVars.MINOR);
+			    myClick(By.xpath("//*[@id='trunkTBL']/table[2]/tbody/tr/td/a"), 20000);
+				testFuncs.myAssertTrue("File was not downloaded successfully !!", testFuncs.findFilesByGivenPrefix(testVars.getDownloadsPath(), extraData[0]));
+				
+				// Delete file
+				testFuncs.deleteFilesByPrefix(testVars.getDownloadsPath(), extraData[0]);
+			    break;
+			    
+			case 130:
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
+				enterMenu(driver, "Application_logs", "Application Logs");
+			    driver.switchTo().frame(1);  
+			    
+			    // Enter menu and search files
+	    		testFuncs.myDebugPrinting("Enter menu and search files:", testVars.NORMAL);
+    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[7]/td[3]/a"), 7000);
+    			for (int i = 0; i < (extraData.length - 1); ++i) {
+    						
+    				searchStr(extraData[i]);   
+    			}		
+    			checkFaxEngineDisplayOptions(extraData);
+    			checkFaxEngineDownloadLog(extraData);
+    			break;
+			    
 			default:   
 				driver.quit();
 				testFuncs.myFail("Step Number <" + stepNumber + "> is not recognized !!");		
@@ -413,6 +590,196 @@ public class WebFuncs {
 		driver.quit();		
 	}
 	
+	
+	/**
+	* Check Fax engine services download files option
+	* @param driver    - given driver
+	* @param extraData - array of services names at Fax engine section
+	*/	
+	private void checkFaxEngineDownloadLog(String[] extraData) {
+		
+		// For each service download the log
+		testFuncs.myDebugPrinting("For each service download the log", testVars.NORMAL);
+		String fileName = extraData[extraData.length-1];
+		testFuncs.myDebugPrinting("fileName - " + fileName, testVars.MINOR);
+		for (int i = 2; i < (extraData.length + 1); ++i) {
+			
+			// Download file
+    		testFuncs.myDebugPrinting("Download file <" + (i) + ">", testVars.NORMAL);
+			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr/td/table/tbody/tr[" + i + "]/td[3]/a"), 20000);
+			testFuncs.myAssertTrue("File was not downloaded successfully !!", testFuncs.findFilesByGivenPrefix(testVars.getDownloadsPath(), fileName));
+			
+			// Delete file
+    		testFuncs.myDebugPrinting("Delete file", testVars.MINOR);
+			testFuncs.deleteFilesByPrefix(testVars.getDownloadsPath(), fileName);    				
+		    driver.switchTo().defaultContent(); 
+			enterMenu(driver, "Application_logs_open", "Application Logs");
+		    driver.switchTo().frame(1);  
+			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[7]/td[3]/a"), 7000);
+			
+		} 		
+	}
+
+	/**
+	* Check Display options of Fax engine
+	* @param driver - given driver
+	* @param extraData - array of services names at Fax enfine section
+	*/
+	private void checkFaxEngineDisplayOptions(String[] extraData) {
+			
+		// For each service check the display options
+		testFuncs.myDebugPrinting("For each service check the display options", testVars.NORMAL);
+		  	String[] disOptions = {"Hide log lines"		   , "Show last 10 log lines",
+		  						   "Show last 20 log lines", "Show last 30 log lines",
+		  						   "Show last 40 log lines", "Show last 50 log lines",
+			       			   	   "Show last 100 log lines"};
+		for (int i = 0; i < (extraData.length - 1); ++i) {
+			
+			int disNum = i;
+			if (i > 4) { disNum += 1;}	
+			testFuncs.myDebugPrinting("Set service <" + disNum + ">", testVars.MINOR);
+			Select dispOptionsSelect = new Select(driver.findElement(By.xpath("//*[@id='loglines" + disNum + "']")));
+ 			for (int j = 0; j < disOptions.length; ++j) {
+				
+				testFuncs.myDebugPrinting("Set the option <" + disOptions[j] + ">", testVars.DEBUG);
+				dispOptionsSelect.selectByIndex(j);
+				testFuncs.myWait(10000);
+			}	
+		}	
+	}
+
+	/**
+	* Check if Archive menu exits and if so check it
+	* @param driver     - given driver
+	* @param service    - name of current service
+	* @param archPrefix - name of archive prefix
+	*/
+	private void checkArchive(WebDriver driver, String service, String archPrefix) {
+		
+		// Check if Archive exists
+		testFuncs.myDebugPrinting("Check if Archive exists", testVars.MINOR);
+		String bodyText     = driver.findElement(By.tagName("body")).getText();	  
+		if (bodyText.contains("Archive Files")) {
+			
+			// Enter Archive menu
+    		testFuncs.myDebugPrinting("Enter Archive menu", testVars.MINOR);
+			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr[1]/td/table/tbody/tr[2]/td[3]/a"), 20000);
+    		searchStr(service + " Archive Files");
+    		
+    		// Download one of the files
+    		bodyText     = driver.findElement(By.tagName("body")).getText();	  
+    		if (!bodyText.contains("Activity Archive Files") && !bodyText.contains("Fax Server Archive Files")) {
+    					
+	    		testFuncs.myDebugPrinting("Download one of the files", testVars.MINOR);
+				myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/a"), 10000);		
+				testFuncs.myAssertTrue("File was not downloaded successfully !!", testFuncs.findFilesByGivenPrefix(testVars.getDownloadsPath(), archPrefix));
+    		}
+    		
+			// Delete file
+    		testFuncs.myDebugPrinting("Delete file", testVars.MINOR);
+			testFuncs.deleteFilesByPrefix(testVars.getDownloadsPath(), archPrefix);
+			
+			// Return to service menu
+    		testFuncs.myDebugPrinting("Return to service menu", testVars.MINOR);
+			driver.switchTo().defaultContent();
+			myClick(By.xpath("//*[@id='back_img']"), 5000);
+		    driver.switchTo().frame(1);
+		} else {
+			
+    		testFuncs.myDebugPrinting("Archive menu was not detected !!", testVars.MINOR);
+		}
+	}
+
+	/**
+	* Download current log
+	* @param filePrefix - prefix for current log file
+	*/
+	private void downloadCurrLog(String filePrefix) {
+
+	    String fileName  = filePrefix;
+	    
+	    // Download file
+		testFuncs.myDebugPrinting("Download <" + fileName + ">", testVars.MINOR);
+		if (driver.findElement(By.tagName("body")).getText().contains("Archive Files")) {
+			
+			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr[1]/td/table/tbody/tr[3]/td[3]/a"), 5000);
+		} else {
+			
+			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr[1]/td/table/tbody/tr[2]/td[3]/a"), 5000);
+		}
+		testFuncs.myAssertTrue("File was not downloaded successfully !!", testFuncs.findFilesByGivenPrefix(testVars.getDownloadsPath(), fileName));
+		
+		// Delete file
+		testFuncs.deleteFilesByPrefix(testVars.getDownloadsPath(), fileName);
+	}
+
+	/**
+	* Check Log level options at given Service Logs menu
+	* @param driver  - given driver
+	* @param service - name of current service
+	*/
+	private void checkLogLevel(WebDriver driver, String service) {
+		
+		// Log level change is not available
+		String bodyText     = driver.findElement(By.tagName("body")).getText();
+		if (!bodyText.contains("Log Level")) {
+			
+			return;
+		}
+		
+	  	// Change the log-level
+		Select logLevelSelect = new Select(driver.findElement(By.xpath("//*[@id='loglevel']")));
+		for (int i = 0; i < logLevelSelect.getAllSelectedOptions().size(); ++i) {
+			
+			logLevelSelect.selectByIndex(i);
+			testFuncs.myWait(4000);
+			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a"), 5000);
+    		verifyStrByXpath(driver, "//*[@id='jqi_state_state0']/div[1]/table/tbody/tr[1]/th", "Change " + service + " Log Level");
+    		String level = logLevelSelect.getAllSelectedOptions().get(0).getText();
+			testFuncs.myDebugPrinting("Set the option <" + level + ">", testVars.MINOR);
+    		verifyStrByXpath(driver, "//*[@id='promt_div_id']", "Are you sure you want to change the " + service + " log level to " + level + " ?");
+			myClick(By.xpath("//*[@id='jqi_state0_buttonYes']"), 5000);
+			verifyStrByXpath(driver, "//*[@id='jqi_state_state0']/div[1]/table/tbody/tr[1]/th", "Change " + service + " Log Level");	
+    		verifyStrByXpath(driver, "//*[@id='promt_div_id']", " updated successfully.");
+			myClick(By.xpath("//*[@id='jqi_state0_buttonOk']"), 5000);
+		}
+	}
+
+	/**
+	* Check Display options at given Service Logs menu
+	* @param driver - given driver
+	* @param logTxt - string of displayed logs for search
+	*/
+	private void checkDisplayOptions(WebDriver 	driver, String logTxt) {
+		
+		Select dispOptionsSelect = new Select(driver.findElement(By.xpath("//*[@id='loglines']")));
+	  	String[] disOptions = {"Hide log lines",
+	  						   "Show last 10 log lines",
+	  						   "Show last 20 log lines",
+	  						   "Show last 30 log lines",
+	  						   "Show last 40 log lines",
+	  						   "Show last 50 log lines",
+  						       "Show last 100 log lines"};
+
+		for (int i = 0; i < disOptions.length; ++i) {
+			
+			testFuncs.myDebugPrinting("Set the option <" + disOptions[i] + ">", testVars.MINOR);
+			dispOptionsSelect.selectByIndex(i);
+			testFuncs.myWait(10000);
+			
+			// Search for displayed logs if display is NOT 'Hide log lines'
+			if (i > 0) {
+				
+				searchStr(logTxt);
+			}
+			
+	        if (!dispOptionsSelect.getAllSelectedOptions().get(0).getText().equals(disOptions[i])) {
+	        	
+	        	testFuncs.myFail("The Value " + disOptions[i] + " was not detected !! (" + dispOptionsSelect.getAllSelectedOptions().get(0).getText() + ")");
+	        }
+		}
+	}
+
 	/**
 	* Delete an existing Outgoing Rule
 	* @param newOutgoingruleName   - New Outgoing Rule name
@@ -1169,9 +1536,10 @@ public class WebFuncs {
 	public void verifyStrByXpath(WebDriver 	driver, String elemXpath, String strName) {
 		 
 		markElemet(driver, driver.findElement(By.xpath(elemXpath)));
-		if (!driver.findElement(By.xpath(elemXpath)).getText().contains(strName)) {
-				
-			testFuncs.myFail("The string <" + strName + "> was not detected !!");
+		String txt =driver.findElement(By.xpath(elemXpath)).getText();
+		if (!txt.contains(strName)) {				
+			
+			testFuncs.myFail("The string <" + strName + "> was not detected !! (current string - <" + txt +">");
 			driver.quit();	
 		}	  
 	}

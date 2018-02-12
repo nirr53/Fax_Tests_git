@@ -15,6 +15,7 @@ public class GlobalVars {
 	*  faxServerName   - Fax domain name 			              (I.e fax.server).
 	*  url  		   - Default url for access the system        (created by IP).
 	*  defEmailAddress - Default email address for the fax-server (I.e kairat.zimat@audiocodes.com)
+	*  downloadsPath   - Downloads path
 	*  
 	*  // Login data
 	*  mainPageStr    - Main page welcome string                  
@@ -45,7 +46,8 @@ public class GlobalVars {
 	private  String faxServerName	 = "fax.server";
     private  String url  		     = faxIp + ":" + faxPort + "/";   
 	private  String defEmailAddress	 = "kairat.zimat@audiocodes.com";
-    
+	private  String downloadsPath    = "";
+
 	// Login to web data
     private  String mainPageStr		 = "Application Web Administration";
     private  String sysUsername      = "Admin";
@@ -77,80 +79,88 @@ public class GlobalVars {
     */
     public GlobalVars() {
     	
-    	rootDir = System.getProperty("user.dir")  + "\\Emails_directory";
+    	rootDir 	  = System.getProperty("user.dir")  + "\\Emails_directory";
+    	downloadsPath = "C:\\Users\\" + System.getProperty("user.name") + "\\Downloads";
+
 	}
     
 	/**
     *  Default method for return the url variable
     *  @return url of the system
     */
-	public String getUrl()         {  return this.url;             }
+	public String getUrl()         {  return url;             }
+	
+    /**
+    *  Default method for return the downloads path
+    *  @return version
+    */
+	public String getDownloadsPath() { return  downloadsPath;  }
 	
 	/**
     *  Default method for return the mainPageStr variable
     *  @return main string of the system
     */
-	public String getMainPageStr() { return this.mainPageStr;      }
+	public String getMainPageStr() { return mainPageStr;      }
 	
     /**
     *  Default method for return the username variable
     *  @return username of the system for Admin
     */
-	public String getSysUsername() { return this.sysUsername; 	   }
+	public String getSysUsername() { return sysUsername; 	   }
 	
     /**
     *  Default method for return the password variable
     *  @return password of the system for Admin
     */
-	public String getSysPassword() { return this.sysPassword;      }
+	public String getSysPassword() { return sysPassword;      }
 	
     /**
     *  Default method for return the main-str variable
     *  @return sysStr of the system
     */
-	public String getSysMainStr() { return this.sysMainStr;        }
+	public String getSysMainStr() { return sysMainStr;        }
 	
     /**
     *  Default method for return the Chrome driver path
     *  @return chromeDrvPath of the system
     */
-	public String getchromeDrvPath() { 	return this.chromeDrvPath; }
+	public String getchromeDrvPath() { 	return chromeDrvPath; }
 	
     /**
     *  Default method for return the default IP of the Fax server
     *  @return faxIpAdress
     */
-	public String getFaxServerIpAddress() { return this.faxIp; 			}
+	public String getFaxServerIpAddress() { return faxIp; 			}
 
     /**
     *  Default method for return the default IP of the Fax server
     *  @return port
     */
-	public String getFaxServerIpPort()  { return this.faxPort; 		    }
+	public String getFaxServerIpPort()  { return faxPort; 		    }
 	
     /**
     *  Default method for return the default Fax-server name of the Fax server
     *  @return faxServerName
     */
-	public String getServerName()  { return this.faxServerName; 		    }
+	public String getServerName()  { return faxServerName; 		    }
 
     /**
     *  Default method for return the used browsers in the current test
     *  @return browsersList
     */
-	public Object[][] getBrowsers() 	 { return this.browsersList;   }
+	public Object[][] getBrowsers() 	 { return browsersList;   }
 	
     /**
     *  Default method for return the names of the differnt fax-body parts
     *  @return faxHeaders[]
     */
-	public String[] getFaxHeaders()     {	return this.faxHeaders;				}	
+	public String[] getFaxHeaders()     {	return faxHeaders;				}	
 	
     /**
     *  Default method for return the default failure header
     *  @return port
     */
-	public String getFaxFailureHeader() {	return this.faxFailureHeader;		}
+	public String getFaxFailureHeader() {	return faxFailureHeader;		}
 
     /**
     *  Default method for return the output source path
@@ -158,36 +168,36 @@ public class GlobalVars {
     */
 	public String getOutputDirPath() {
 
-		return this.rootDir + "\\output_" + getServerName() + "\\";
+		return (rootDir + "\\output_" + getServerName() + "\\");
 	}
 	
     /**
     *  Default method for return the root directory
     *  @return path of the output based on local directory + <output> + server name
     */
-	public String getRootDir() { return this.rootDir; 							}
+	public String getRootDir() { return rootDir; 							}
 
     /**
     *  Default method for return the Fax-OCR path
     *  @return path of the OCR converter
     */
-	public String getOCRPath() { return this.faxOCRPath;						}
+	public String getOCRPath() { return faxOCRPath;						}
 	
     /**
     *  Default method for return the default-email-address
     *  @return default email-address of the dax-server
     */
-	public String getDefEmail() {return this.defEmailAddress;					}
+	public String getDefEmail() {return defEmailAddress;					}
 	
     /**
     *  Default method for return the default-Tshark path
     *  @return default Tshark-path
     */
-	public String getTsharkPath() {return this.defTsharkPath;					}
+	public String getTsharkPath() {return defTsharkPath;					}
 
     /**
     *  Default method for return the default-Tshark NA port
     *  @return default Tshark-NA-port
     */
-	public String getTsharkNaPort() { return this.defTsharkNAport; 				}
+	public String getTsharkNaPort() { return defTsharkNAport; 				}
 }
