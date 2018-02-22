@@ -41,7 +41,7 @@ public class GlobalVars {
 	*  faxOCRPath		- Default path for the OCR converter
 	*/
 	// General data
-	private  String faxIp            = "10.21.10.45";
+	private  String faxIp            = "10.21.8.50";
 	private  String faxPort          = "8090";
 	private  String faxServerName	 = "fax.server";
     private  String url  		     = faxIp + ":" + faxPort + "/";   
@@ -151,7 +151,7 @@ public class GlobalVars {
 	public Object[][] getBrowsers() 	 { return browsersList;   }
 	
     /**
-    *  Default method for return the names of the differnt fax-body parts
+    *  Default method for return the names of the different fax-body parts
     *  @return faxHeaders[]
     */
 	public String[] getFaxHeaders()     {	return faxHeaders;				}	

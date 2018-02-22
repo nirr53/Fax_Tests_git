@@ -55,6 +55,30 @@ public class GlobalFuncs {
 	  }
 	  
 	  /**
+	  *  Find files in a given directory by a given prefix
+	  *  @param dir - given directory path
+	  *  @param prefix - a given prefix
+	  *  @return true if files were found
+	  */
+	  public boolean findFilesByGivenPrefix(String dir, String prefix) {
+	    	
+			myDebugPrinting("dir    - " + dir   ,  testVars.MINOR);
+			myDebugPrinting("prefix - " + prefix,  testVars.MINOR);
+	    	File[] dirFiles = new File(dir).listFiles();
+	    	int filesNum = dirFiles.length;
+	    	for (int i = 0; i < filesNum; i++) {
+	    		
+	    	    if (dirFiles[i].getName().startsWith(prefix, 0)) {
+	    			
+	    	    	myDebugPrinting("Find a file ! (" + dirFiles[i].getName() + ")",  testVars.MINOR);
+	    	        return true;
+	    	    }
+	    	}
+	    	
+	    	return false;
+	  }
+	  
+	  /**
 	  *  Delete all files in directory by given prefix
 	  *  @param dir    - given directory path
 	  *  @param prefix - given prefix
@@ -68,17 +92,17 @@ public class GlobalFuncs {
     		
     		if (!prefix.isEmpty()) {
     			
-    			myDebugPrinting("prefix - " + prefix,  testVars.MINOR);
+    			myDebugPrinting("prefix - " + prefix,  testVars.DEBUG);
 	    	    if (dirFiles[i].getName().startsWith(prefix, 0)) {
 	    	    	
-	    			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  testVars.MINOR);
+	    			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  testVars.DEBUG);
 	    	        new File(dir + "\\" + dirFiles[i].getName()).delete();
 	    		    myWait(5000);    
 	    	    }	    	    
     		} else {
     			
-    			myDebugPrinting("prefix  is empty, delete all files on dir - " + dir,  testVars.MINOR);		
-    			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  testVars.MINOR);
+    			myDebugPrinting("prefix  is empty, delete all files on dir - " + dir,  testVars.DEBUG);		
+    			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  testVars.DEBUG);
     	        new File(dir + "\\" + dirFiles[i].getName()).delete();
     		    myWait(5000);	
     		}

@@ -63,7 +63,7 @@ public class Test105 {
   }
 
   @Test
-  public void Test105___Two_Gws_samw_IP_differnt_port() throws Exception {
+  public void Test105___Two_Gws_samw_IP_different_port() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  
