@@ -15,7 +15,7 @@ import Fax_Tests.GlobalFuncs;
 
 /**
 * ----------------
-* This test tests a Change of Multi Destinations subject Format
+* This test tests a Change of multiple Destinations subject Format
 * -----------------
 * Tests:
 *    1. Deposit a fax for multiple valid targets
@@ -73,8 +73,8 @@ public class Test112 {
 
 //	  // Activate script with the needed configuration
 //	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
-//	  String[] extraData = {"FaxSubject Fax to multi destinations results111"};
-//	  webFuncs.setConfiguration(112, "Change Multi Destinations subject Format", extraData);  
+//	  String[] extraData = {"FaxSubject Fax to multiple destinations results111"};
+//	  webFuncs.setConfiguration(112, "Change multiple Destinations subject Format", extraData);  
 	  
 	  // Step 1 - Deposit a fax for multiple valid targets
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax for multiple valid targets");

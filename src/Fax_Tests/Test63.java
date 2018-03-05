@@ -93,7 +93,7 @@ public class Test63 {
 //	  dataMap.put("maxWaitTime", "600");
 //	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
 //	  
-//	  // Set vars
+//	  // Set variables
 //	  String []faxHeaders   = testVars.getFaxHeaders();
 //	  String inputPath      =  testVars.getRootDir()  + "\\input\\";
 //	  String defSuffix      = ".txt";

@@ -391,8 +391,8 @@ public class GlobalFuncs {
 		// At any-time, if error message arrive, inform about error.
 		while (true) {
 			
-			// Since we loop 5 times for second, only every 5th loop should be printed.
-			if ((timeIdx % 5) == 0) {
+			// Since we loop 5 times for second, only every 50th loop should be printed.
+			if ((timeIdx % 50) == 0) {
 				
 				myDebugPrinting((timeIdx / 5) + " seconds passed. (maxWaitTime - " + maxWaitTime + ")", testVars.MINOR);
 			}

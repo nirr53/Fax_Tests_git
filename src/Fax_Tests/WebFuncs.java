@@ -29,26 +29,26 @@ public class WebFuncs {
 	
 	// Management paths
 	private final String MENAGMENT_SECTION 		   = "//*[@id='tab_names']/tbody/tr/td[2]/table/tbody/tr[1]/td[2]/a";
-	private final String SYSTEM_SETTINGS_SECTION   = "//*[@id='plus_minus_5']";
-	private final String GENERAL_SETTINGS_SECTION  = "//*[@id='c5.1']";	
-	private final String FAX_IN_SETTINGS_SECTION   = "//*[@id='c5.3']";	
-	private final String FAX_OUT_SETTINGS_SECTION  = "//*[@id='c5.4']";	
-	private final String FAX_IN 				   = "//*[@id='plus_minus_6']";
-	private final String FAX_IN_NUMBERS 		   = "//*[@id='c6.1']";
-	private final String FAX_OUT 				   = "//*[@id='plus_minus_7']";
-	private final String FAX_OUT_NUMBERS 		   = "//*[@id='c7.1']";
-	private final String GATEWAYS 		   		   = "//*[@id='c7.3']";
-	private final String OUTGOING_RULES 		   = "//*[@id='c7.4']";
+	private final String SYSTEM_SETTINGS_SECTION   = "//*[@id='plus_minus_6']";
+	private final String GENERAL_SETTINGS_SECTION  = "//*[@id='c6.1']";	
+	private final String FAX_IN_SETTINGS_SECTION   = "//*[@id='c6.3']";	
+	private final String FAX_OUT_SETTINGS_SECTION  = "//*[@id='c6.4']";	
+	private final String FAX_IN 				   = "//*[@id='plus_minus_7']";
+	private final String FAX_IN_NUMBERS 		   = "//*[@id='c7.1']";
+	private final String FAX_OUT 				   = "//*[@id='plus_minus_8']";
+	private final String FAX_OUT_NUMBERS 		   = "//*[@id='c8.1']";
+	private final String GATEWAYS 		   		   = "//*[@id='c8.3']";
+	private final String OUTGOING_RULES 		   = "//*[@id='c8.4']";
 	
 	// Status and Diagnostics paths
 	private final String STTS_DIGTCS_SECTION 	   = "//*[@id='tab_names']/tbody/tr/td[2]/table/tbody/tr[1]/td[3]/a";
-	private final String LOGS 		   	   	   	   = "//*[@id='plus_minus_5']";
-	private final String APPLICATION_LOGS  		   = "//*[@id='c5.1']";	
-	private final String CALL_LOGS 		   	   	   = "//*[@id='plus_minus_6']";
-	private final String RECEIVED_FAXES 		   = "//*[@id='c6.1']";
-	private final String SENT_FAXES 		   	   = "//*[@id='c6.2']";
-	private final String USER_MANUALLS 		   	   = "//*[@id='plus_minus_8']";
-	private final String ADMIN_USER_MANUALLS 	   = "//*[@id='c8.1']";
+	private final String LOGS 		   	   	   	   = "//*[@id='plus_minus_13']";
+	private final String APPLICATION_LOGS  		   = "//*[@id='c13.1']";	
+	private final String CALL_LOGS 		   	   	   = "//*[@id='plus_minus_14']";
+	private final String RECEIVED_FAXES 		   = "//*[@id='c14.1']";
+	private final String SENT_FAXES 		   	   = "//*[@id='c14.2']";
+	private final String USER_MANUALLS 		   	   = "//*[@id='plus_minus_16']";
+	private final String ADMIN_USER_MANUALLS 	   = "//*[@id='c16.1']";
 	
 	// Default constructor
 	public WebFuncs() {
@@ -181,7 +181,7 @@ public class WebFuncs {
 				setFaxInFaxId(extraData[0]);
 				submitPage(driver);
 				break;
-		
+				
 			case 48:
 			case 49:
 			case 78:
@@ -582,12 +582,12 @@ public class WebFuncs {
     			break;
 			    
 			default:   
-				driver.quit();
+//				driver.quit();
 				testFuncs.myFail("Step Number <" + stepNumber + "> is not recognized !!");		
 		}
 		
 		// Close the driver
-		driver.quit();		
+//		driver.quit();		
 	}
 	
 	

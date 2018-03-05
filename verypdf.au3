@@ -72,47 +72,49 @@ myToolTip("2.1 $iReturn  - " & $iReturn & "           ")
 If  $iReturn = 0 Then
    exitWithError("2.2 Very-PDF was not created successfully !!")
 EndIf
-Sleep(2500)
+Sleep(5500)
 
 ; Get hWnd
 $hWnd = WinGetHandle("[CLASS:#32770]")
 myToolTip("2.3 $hWnd  - " & $hWnd & "           ")
-Sleep(1500)
+Sleep(5500)
 
 ; Set output options
 myToolTip("3. Set output options .. ")
 ControlClick($hWnd, "", "[ID:1034]")
+Sleep(3500)
 ControlSend($hWnd, "" , "[ID:1034]", "8")
+Sleep(3500)
 ControlSend($hWnd, "" , "[ID:1034]", "{ENTER}")
-Sleep(1500)
+Sleep(5500)
 
 ; Set RTF output
 myToolTip("4. Set RTF format .. ")
 ControlClick($hWnd, "", "[CLASSNN:Button5]")
-Sleep(1500)
+Sleep(3500)
 
 ; Disable display after converting
 myToolTip("5. Disable display after converting .. ")
 ControlClick($hWnd, "", "[ID:1013]")
-Sleep(1500)
+Sleep(3500)
 
 ; Add PDF for convert
 myToolTip("6. Add PDF for convert .. ")
 ControlClick($hWnd, "", "[CLASSNN:Button1]")
 Sleep(2000)
 ControlSend($hWnd, "", "", $inLocation)
-Sleep(1500)
+Sleep(3500)
 ControlSend($hWnd, "", "", "{ENTER}")
-Sleep(1500)
+Sleep(3500)
 
 ; Add target for convert
 myToolTip("7. Add target for convert .. ")
 ControlClick($hWnd, "", "[CLASSNN:Button9]")
-Sleep(2000)
+Sleep(5000)
 ControlSend($hWnd, "", "", $outLocation)
-Sleep(1500)
+Sleep(4500)
 ControlSend($hWnd, "", "", "{ENTER}")
-Sleep(1500)
+Sleep(5500)
 
 ; Wait for the converted file
 $Timeout = 0
@@ -134,7 +136,7 @@ while 1 = 1
    EndIf
 
 WEnd
-Sleep(1500)
+Sleep(4500)
 myToolTip("9. Convert was ended successfully !!")
 WinClose($hWnd)
 Exit 0

@@ -26,7 +26,7 @@ public class GlobalTshark {
 	*/
 	public void StartCapture(String maxPackNum, String filter, String outputPath) throws IOException {
 		
-		// Set vars
+		// Set variables
 		testFuncs.myDebugPrinting("tsharkPath - " + tsharkPath, testVars.MINOR);	
 		testFuncs.myDebugPrinting("maxPackNum - " + maxPackNum, testVars.MINOR);	
 		testFuncs.myDebugPrinting("filter - "     + filter    , testVars.MINOR);	
