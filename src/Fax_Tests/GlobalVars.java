@@ -53,7 +53,7 @@ public class GlobalVars {
     private  String sysUsername      = "Admin";
 	private  String sysPassword      = "Admin";
 	private  String sysMainStr       = "Welcome To Application Web Administration";
-	private  String chromeDrvPath    = "C:\\Users\\nirk\\Desktop\\Selenium\\chromedriver_win32\\chromedriver.exe";
+	private  String chromeDrvPath    = "C:\\Users\\nirk\\Desktop\\Selenium\\chromedriver_win32_4\\chromedriver.exe";
 	private  Object[][] browsersList = {{"Chrome"}};
 	
 	// Tshark data

@@ -81,12 +81,12 @@ public class Test9 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Subject'Test\\_9 I subject") || bodyMsg.contains("Subject:Test\\_9\\_1 subject"));
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("From: \"Test 9t string\"")   || bodyMsg.contains("Test 91 string"));
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Fax to"));
+	  testFuncs.myAssertTrue("Title was not detected !!\nbodyMsg - " + bodyMsg, bodyMsg.contains("Subject: Test\\_9\\_l\\_subject") || bodyMsg.contains("Subject'Test\\_9 I subject") || bodyMsg.contains("Subject:Test\\_9\\_1 subject"));
+	  testFuncs.myAssertTrue("Title was not detected !!\nbodyMsg - " + bodyMsg, bodyMsg.contains("From: \"Test 9t string\"")   || bodyMsg.contains("Test 91 string"));
+	  testFuncs.myAssertTrue("Title was not detected !!\nbodyMsg - " + bodyMsg, bodyMsg.contains("Fax to"));
 	  
 	  // Step 2 - Deposit a fax with empty subject and attributes
-	  testFuncs.myDebugPrinting("Step 1 -Deposit a fax with empty subject and attributes");
+	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax with empty subject and attributes");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test9_2.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");

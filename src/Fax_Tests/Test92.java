@@ -72,10 +72,10 @@ public class Test92 {
 	  String attname 	 = "attName_%PH_from%_%PH_to%";
 	  String searchedAtt = "attName_039764000_0545599607";
 	  
-	  // Activate script with the needed configuration
-	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
-	  String[] extraData = {attname, "From Number Settings"};
-	  webFuncs.setConfiguration(92, "General Settings - Attachment name", extraData);
+//	  // Activate script with the needed configuration
+//	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
+//	  String[] extraData = {attname, "From Number Settings"};
+//	  webFuncs.setConfiguration(92, "General Settings - Attachment name", extraData);
 		
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");
@@ -111,8 +111,8 @@ public class Test92 {
   @After
   public void tearDown() throws Exception {
 	  
-	String[] extraData = {"%PH_from%_%PH_to%", "From Number Settings"};
-	webFuncs.setConfiguration(92, "General Settings - Attachment name", extraData);
+//	String[] extraData = {"%PH_from%_%PH_to%", "From Number Settings"};
+//	webFuncs.setConfiguration(92, "General Settings - Attachment name", extraData);
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
     	

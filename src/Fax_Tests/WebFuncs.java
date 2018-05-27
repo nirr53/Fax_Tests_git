@@ -42,13 +42,13 @@ public class WebFuncs {
 	
 	// Status and Diagnostics paths
 	private final String STTS_DIGTCS_SECTION 	   = "//*[@id='tab_names']/tbody/tr/td[2]/table/tbody/tr[1]/td[3]/a";
-	private final String LOGS 		   	   	   	   = "//*[@id='plus_minus_13']";
-	private final String APPLICATION_LOGS  		   = "//*[@id='c13.1']";	
-	private final String CALL_LOGS 		   	   	   = "//*[@id='plus_minus_14']";
-	private final String RECEIVED_FAXES 		   = "//*[@id='c14.1']";
-	private final String SENT_FAXES 		   	   = "//*[@id='c14.2']";
-	private final String USER_MANUALLS 		   	   = "//*[@id='plus_minus_16']";
-	private final String ADMIN_USER_MANUALLS 	   = "//*[@id='c16.1']";
+	private final String LOGS 		   	   	   	   = "//*[@id='plus_minus_6']";
+	private final String APPLICATION_LOGS  		   = "//*[@id='c6.1']";	
+	private final String CALL_LOGS 		   	   	   = "//*[@id='plus_minus_7']";
+	private final String RECEIVED_FAXES 		   = "//*[@id='c7.1']";
+	private final String SENT_FAXES 		   	   = "//*[@id='c7.2']";
+	private final String USER_MANUALLS 		   	   = "//*[@id='plus_minus_9']";
+	private final String ADMIN_USER_MANUALLS 	   = "//*[@id='c9.1']";
 	
 	// Default constructor
 	public WebFuncs() {
@@ -84,6 +84,10 @@ public class WebFuncs {
             	break;
 			case "General_Settings_open":
             	paths[0] = GENERAL_SETTINGS_SECTION;
+            	break;
+			case "Menagement_general_section_open":
+            	paths[0] = MENAGMENT_SECTION;
+            	paths[1] = GENERAL_SETTINGS_SECTION;
             	break;
             	
             // Fax-In menu
@@ -121,12 +125,10 @@ public class WebFuncs {
     			paths[0] = STTS_DIGTCS_SECTION;  
     			paths[1] = LOGS;    
     			paths[2] = APPLICATION_LOGS;          	
-        		break; 		
-        		
+        		break; 		     		
         	case "Application_logs_open":
     			paths[0] = APPLICATION_LOGS;          	
-        		break; 
-        		
+        		break;
         	case "Received_faxes":
     			paths[0] = STTS_DIGTCS_SECTION;          	
     			paths[1] = CALL_LOGS;
@@ -212,7 +214,7 @@ public class WebFuncs {
 				enterMenu(driver, "Fax_in_Settings", "Default Email");
 				setFaxInFaxId(extraData[0]);
 	    		testFuncs.myDebugPrinting("Fax-ID - "  + extraData[1], testVars.MINOR);
-				mySendKeys(By.xpath("//*[@id='fax_id']"), extraData[1], 2000);			
+				mySendKeys(By.id("fax_id"), extraData[1], 9000);			
 				submitPage(driver);
 				break;
 				
@@ -258,13 +260,14 @@ public class WebFuncs {
 				
 			case 82:
 			case 83:
+			case 84:
 			case 86:
 			case 87:
 	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
 				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
 				setFaxOutFaxId(extraData[0]);
 	    		testFuncs.myDebugPrinting("Fax-ID - "       + extraData[1], testVars.MINOR);
-				mySendKeys(By.xpath("//*[@id='d_n']"), extraData[1], 2000);
+				mySendKeys(By.xpath("//*[@id='fax_id']"), extraData[1], 2000);
 	    		testFuncs.myDebugPrinting("Default CLI - "  + extraData[2], testVars.MINOR);
 				mySendKeys(By.xpath("//*[@id='default_cli']"), extraData[2], 2000);
 				submitPage(driver);
@@ -275,7 +278,7 @@ public class WebFuncs {
 				enterMenu(driver, "General_Settings", "From Email Address");
 	    		testFuncs.myDebugPrinting("Email - " + extraData[0], testVars.MINOR);
 	    	    driver.switchTo().frame(1);
-				mySendKeys(By.xpath("//*[@id='email']"), extraData[0], 2000);
+				mySendKeys(By.xpath("//*[@id='email']"), extraData[0], 10000);
 				submitPage(driver);
 			    driver.switchTo().defaultContent();
 				break;
@@ -285,13 +288,22 @@ public class WebFuncs {
 			case 93:
 			case 94:
 	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
-				setFaxOutFaxId(extraData[1]);
-				submitPage(driver);
-				enterMenu(driver, "General_Settings_open", "From Email Address");
+//				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+//				setFaxOutFaxId(extraData[1]);
+//				submitPage(driver);
+//				enterMenu(driver, "Application_logs"	   		   , "Application Logs");
+//				enterMenu(driver, "Menagement_general_section_open", "From Email Address");
+
+//				enterMenu(driver, "General_Settings_open", "From Email Address");
+				enterMenu(driver, "General_Settings", "From Email Address");
 	    		testFuncs.myDebugPrinting("Attachment name - " + extraData[0], testVars.MINOR);
 	    	    driver.switchTo().frame(1);
-				mySendKeys(By.xpath("//*[@id='att_name']"), extraData[0], 2000);
+	    	    testFuncs.myWait(2000);
+	    	    
+	    		  driver.findElement(By.xpath("//*[@id='att_name']")).sendKeys("123");
+	    		  testFuncs.myWait(2000); 
+	    	    
+//				mySendKeys(By.xpath("//*[@id='att_name']"), /*extraData[0]*/ "gg", 9000);
 				submitPage(driver);
 			    driver.switchTo().defaultContent();
 				break;
@@ -543,12 +555,18 @@ public class WebFuncs {
 				enterMenu(driver, "Received_faxes" , "From (CLI)");	  
 	    	    driver.switchTo().frame(1);
 				String bodyText     = driver.findElement(By.tagName("body")).getText();
-				testFuncs.myAssertTrue("Timezone <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||																		  						  bodyText.contains(extraData[3]));
+				testFuncs.myAssertTrue("None of the Timezones <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||
+																													     		   bodyText.contains(extraData[1]) ||
+																													     		   bodyText.contains(extraData[2]) ||
+																													     		   bodyText.contains(extraData[3]));
 	    	    driver.switchTo().defaultContent();
 				enterMenu(driver, "Sent_faxes_open", "From Email");	
 	    	    driver.switchTo().frame(1);
 				bodyText     = driver.findElement(By.tagName("body")).getText();
-				testFuncs.myAssertTrue("Timezone <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||																				  					      bodyText.contains(extraData[2]) ||																			  						  bodyText.contains(extraData[3]));
+				testFuncs.myAssertTrue("None of the Timezones <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||
+			     		   																										   bodyText.contains(extraData[1]) ||
+			     		   																										   bodyText.contains(extraData[2]) ||
+			     		   																										   bodyText.contains(extraData[3]));			     		   
 				break;
 				
 			case 129:
@@ -577,7 +595,10 @@ public class WebFuncs {
     						
     				searchStr(extraData[i]);   
     			}		
-    			checkFaxEngineDisplayOptions(extraData);
+    			checkFaxEngineDisplayOptions(extraData);   			
+    		    driver.switchTo().defaultContent(); 
+    			enterMenu(driver, "Application_logs_open", "Application Logs");
+    		    driver.switchTo().frame(1);	
     			checkFaxEngineDownloadLog(extraData);
     			break;
 			    
@@ -606,7 +627,7 @@ public class WebFuncs {
 			
 			// Download file
     		testFuncs.myDebugPrinting("Download file <" + (i) + ">", testVars.NORMAL);
-			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr/td/table/tbody/tr[" + i + "]/td[3]/a"), 20000);
+			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr/td/table/tbody/tr[" + i + "]/td[3]/a"), 90000);
 			testFuncs.myAssertTrue("File was not downloaded successfully !!", testFuncs.findFilesByGivenPrefix(testVars.getDownloadsPath(), fileName));
 			
 			// Delete file
@@ -615,7 +636,7 @@ public class WebFuncs {
 		    driver.switchTo().defaultContent(); 
 			enterMenu(driver, "Application_logs_open", "Application Logs");
 		    driver.switchTo().frame(1);  
-			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[7]/td[3]/a"), 7000);
+			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[7]/td[3]/a"), 15000);
 			
 		} 		
 	}
@@ -1355,7 +1376,7 @@ public class WebFuncs {
 		testFuncs.myDebugPrinting("setFaxInFaxId option -  " + option, testVars.MINOR);
 	    driver.switchTo().frame(1);
 	    new Select (driver.findElement(By.xpath("//*[@id='method_id']"))).selectByVisibleText(option);
-	    testFuncs.myWait(3000);
+	    testFuncs.myWait(10000);
 	}
 	
 	/**
@@ -1469,6 +1490,7 @@ public class WebFuncs {
 	private void mySendKeys(By byType, String currUsr, int timeOut) {
 		  
 	  driver.findElement(byType).clear();
+	  testFuncs.myWait(500);  
 	  driver.findElement(byType).sendKeys(currUsr);
 	  testFuncs.myWait(timeOut);  
 	}
@@ -1524,6 +1546,7 @@ public class WebFuncs {
 			}
 		}  
 		driver.switchTo().defaultContent();
+	    testFuncs.myWait(5000);
 		testFuncs.myDebugPrinting("enterMenu  - " +  menuName + " ended successfully !!", testVars.NORMAL);
     }
 	

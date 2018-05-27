@@ -110,9 +110,9 @@ Sleep(3500)
 ; Add target for convert
 myToolTip("7. Add target for convert .. ")
 ControlClick($hWnd, "", "[CLASSNN:Button9]")
-Sleep(5000)
+Sleep(8500)
 ControlSend($hWnd, "", "", $outLocation)
-Sleep(4500)
+Sleep(8500)
 ControlSend($hWnd, "", "", "{ENTER}")
 Sleep(5500)
 

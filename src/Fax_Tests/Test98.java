@@ -73,7 +73,7 @@ public class Test98 {
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"3"};
-	  webFuncs.setConfiguration(98, "Multiple sendings - inavlid users", extraData);
+	  webFuncs.setConfiguration(98, "Multiple sendings - invalid users", extraData);
 		
 	  // Step 1 - Deposit a fax with multiple invalid users
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with multiple invalid users");

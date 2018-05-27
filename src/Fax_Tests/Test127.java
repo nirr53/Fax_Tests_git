@@ -118,6 +118,10 @@ public class Test127 {
 			  				sdf.format(calendar1.getTime()),
 			  				sdf.format(calendar2.getTime()),
 			  				sdf.format(calendar3.getTime())};
+	  testFuncs.myDebugPrinting("extraData[0] - " + extraData[0], testVars.MINOR);
+	  testFuncs.myDebugPrinting("extraData[1] - " + extraData[1], testVars.MINOR);
+	  testFuncs.myDebugPrinting("extraData[2] - " + extraData[2], testVars.MINOR);
+	  testFuncs.myDebugPrinting("extraData[3] - " + extraData[3], testVars.MINOR);
 	  webFuncs.setConfiguration(127, "Timezone", extraData);
   }
 

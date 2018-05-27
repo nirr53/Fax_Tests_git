@@ -69,15 +69,15 @@ public class Test24 {
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
 	  dataMap.put("maxWaitTime",  "1500");
+	  String bodyMsg;
 		
 	  // Step 1 - Deposit fax with one xls attachment
 	  testFuncs.myDebugPrinting("Step 1 -  Deposit fax with one xls attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test24_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
+	   bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Start"));
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Here"));
   
 	  // Step 2 - Deposit fax with multiple xls attachments
 	  testFuncs.myDebugPrinting("Step 2 - Deposit fax with multiple xls attachments");

@@ -84,7 +84,8 @@ public class Test57 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("To: Nir Klieman Display"));	  
+	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("To: Nir Klieman Display") ||
+			  											  bodyMsg.contains("To: Nit Klieman Display"));	  
 	  
 	  // Step 2 - Deposit a fax for a user that has Fax-ID
 	  testFuncs.myDebugPrinting("Step 2 - Check the headers of body-part");
@@ -94,7 +95,9 @@ public class Test57 {
 	  testFuncs.myAssertTrue("Header was not detected !!", bodyMsg.contains("FaxIn_FaxID"));	  
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("To: FaxIn_FaxID") ||  bodyMsg.contains("To: FaxIn Fa{\\'d7}ID"));
+	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("To: FaxIn_FaxID") ||
+			  											  bodyMsg.contains("To: FaxIn FaxID") ||
+			  											  bodyMsg.contains("To: FaxIn Fa{\\'d7}ID"));
   }
 
   @After

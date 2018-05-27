@@ -71,19 +71,19 @@ public class Test43 {
 	  // Step 1 - Deposit a fax with very long body
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with very long body");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test43_1.txt");
-	  dataMap.put("maxWaitTime", "3000");
+	  dataMap.put("maxWaitTime", "4000");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  
 	  // Step 2 - Deposit a fax with empty body
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax with empty body");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test43_2.txt");
-	  dataMap.put("maxWaitTime", "3000");
+	  dataMap.put("maxWaitTime", "4000");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  
 	  // Step 3 - Deposit a fax with bold body
 	  testFuncs.myDebugPrinting("Step 3 - Deposit a fax with bold body");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test43_3.txt");
-	  dataMap.put("maxWaitTime", "3000");
+	  dataMap.put("maxWaitTime", "4000");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
   }
 
