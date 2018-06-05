@@ -111,7 +111,7 @@ public class Test94 {
   public void tearDown() throws Exception {
 	  
 	String[] extraData = {"%PH_from%_%PH_to%", "From Number Settings"};
-//	webFuncs.setConfiguration(94, "General Settings - Attachment name", extraData);
+	webFuncs.setConfiguration(94, "General Settings - Attachment name", extraData);
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
     	

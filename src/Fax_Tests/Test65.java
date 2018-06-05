@@ -73,42 +73,42 @@ public class Test65 {
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
-//	  // Activate script with the needed configuration
-//	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
-//	  String[] extraData = {"disabled"};
-//	  webFuncs.setConfiguration(65, "Archive Fax mechanism - archive is disabled", extraData);
-//	  
-//	  // Get date format
-//	  testFuncs.myDebugPrinting("Get date format", testVars.MINOR);  
-//	  SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
-//	  Calendar calendar  = Calendar.getInstance(); 
-//	  Calendar calendar1 = Calendar.getInstance();
-//	  Calendar calendar2 = Calendar.getInstance();
-//	  Calendar calendar3 = Calendar.getInstance();	  
-//	  calendar1.add(Calendar.MINUTE, 1);
-//	  calendar2.add(Calendar.MINUTE, 2);
-//	  calendar3.add(Calendar.MINUTE, 3);
-//	  testFuncs.myDebugPrinting("calendar - "  + sdf.format(calendar.getTime()), testVars.MINOR);
-//	  testFuncs.myDebugPrinting("calendar1 - " + sdf.format(calendar1.getTime()), testVars.MINOR);
-//	  testFuncs.myDebugPrinting("calendar2 - " + sdf.format(calendar2.getTime()), testVars.MINOR);
-//	  testFuncs.myDebugPrinting("calendar3 - " + sdf.format(calendar3.getTime()), testVars.MINOR);
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
+	  String[] extraData = {"disabled"};
+	  webFuncs.setConfiguration(65, "Archive Fax mechanism - archive is disabled", extraData);
+	  
+	  // Get date format
+	  testFuncs.myDebugPrinting("Get date format", testVars.MINOR);  
+	  SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+	  Calendar calendar  = Calendar.getInstance(); 
+	  Calendar calendar1 = Calendar.getInstance();
+	  Calendar calendar2 = Calendar.getInstance();
+	  Calendar calendar3 = Calendar.getInstance();	  
+	  calendar1.add(Calendar.MINUTE, 1);
+	  calendar2.add(Calendar.MINUTE, 2);
+	  calendar3.add(Calendar.MINUTE, 3);
+	  testFuncs.myDebugPrinting("calendar - "  + sdf.format(calendar.getTime()), testVars.MINOR);
+	  testFuncs.myDebugPrinting("calendar1 - " + sdf.format(calendar1.getTime()), testVars.MINOR);
+	  testFuncs.myDebugPrinting("calendar2 - " + sdf.format(calendar2.getTime()), testVars.MINOR);
+	  testFuncs.myDebugPrinting("calendar3 - " + sdf.format(calendar3.getTime()), testVars.MINOR);
 	  
 	  // Step 1 - Deposit fax and check archive
 	  testFuncs.myDebugPrinting("Step 1 - Deposit fax and check archive");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-//	  String[] extraData2 = {"check_disabled"};
-//	  webFuncs.setConfiguration(65, "Archive Fax mechanism - check that archive is disabled", extraData2);
+	  String[] extraData2 = {"check_disabled"};
+	  webFuncs.setConfiguration(65, "Archive Fax mechanism - check that archive is disabled", extraData2);
 	  
-//	  // Activate script with the needed configuration
-//	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
-//	  String[] extraData2 = {"1"};
-//	  webFuncs.setConfiguration(65, "Archive Fax mechanism - archive is enabled", extraData2);
-//	  
-//	  // Step 2 - Deposit fax
-//	  testFuncs.myDebugPrinting("Step 2 - Deposit fax");
-//	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test1.eml");
-//	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
+	  String[] extraData21 = {"1"};
+	  webFuncs.setConfiguration(65, "Archive Fax mechanism - archive is enabled", extraData21);
+	  
+	  // Step 2 - Deposit fax
+	  testFuncs.myDebugPrinting("Step 2 - Deposit fax");
+	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test1.eml");
+	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
   }
 
   @After
