@@ -82,7 +82,7 @@ public class Test126 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
 	  
 	  // Check headers via Fax OCR converter
-	  testFuncs.myDebugPrinting("Check headers via Fax OCR converter", testVars.MINOR);
+	  testFuncs.myDebugPrinting("Check headers via Fax OCR converter", enumsClass.logModes.MINOR);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !! <" + bodyMsg + ">", bodyMsg.contains("Start"));
@@ -93,7 +93,7 @@ public class Test126 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
 	  
 	  // Check headers via Fax OCR converter
-	  testFuncs.myDebugPrinting("Check headers via Fax OCR converter", testVars.MINOR);
+	  testFuncs.myDebugPrinting("Check headers via Fax OCR converter", enumsClass.logModes.MINOR);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !! <" + bodyMsg + ">", bodyMsg.contains("Body"));
@@ -104,7 +104,7 @@ public class Test126 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
 	  
 	  // Check headers via Fax OCR converter
-	  testFuncs.myDebugPrinting("Check headers via Fax OCR converter", testVars.MINOR);
+	  testFuncs.myDebugPrinting("Check headers via Fax OCR converter", enumsClass.logModes.MINOR);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !! <" + bodyMsg + ">", bodyMsg.contains("End"));

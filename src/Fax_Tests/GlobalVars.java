@@ -6,7 +6,7 @@ package Fax_Tests;
 * @version 1.00
 */
 
-public class GlobalVars {
+public class GlobalVars extends enumsClass{
 	
 	/**
 	*  // General data 
@@ -28,9 +28,6 @@ public class GlobalVars {
 	*  // Tshark data
 	*  defTsharkPath    - Tshark full path (I.e "C:\\Program Files\\Wireshark\\tshark.exe"_
 	*  defTsharkNAport  - Tshark NA port   (I.e 5067)
-	*  
-	*  // Logger data
-	*  <MAJOR = 0, NORMAL, MINOR, DEBUG>  - int variables that display the log line in different levels.
 	*
 	*  // Fax Deposit data
 	*  faxHeaders 	    - An array of strings that represent the names of fax parts.
@@ -58,13 +55,7 @@ public class GlobalVars {
 	
 	// Tshark data
 	private String defTsharkPath	 = "C:\\Program Files\\Wireshark\\tshark.exe";
-	private String defTsharkNAport	 = "5067";	
-	
-	// Logger levels
-	int MAJOR  = 0;
-	int NORMAL = 1;
-	int MINOR  = 2;
-	int DEBUG  = 3;
+	private String defTsharkNAport	 = "5067";
 	
 	// Fax Deposit data
 	private String[] faxHeaders 	  = {"Send_Fax_Status", "Fax_Message_Body", "Send_Fax_Result"};
@@ -200,4 +191,25 @@ public class GlobalVars {
     *  @return default Tshark-NA-port
     */
 	public String getTsharkNaPort() { return defTsharkNAport; 				}
+	
+	
+	// Select types
+	public enum selectTypes      { INDEX, NAME, GIVEN_TEXT;}
+	
+	// Browser types
+	public enum browserTypes     { CHROME, FF, IE; }
+	  	
+	// Log modes
+	public enum logModes {
+		 	 
+		MAJOR(""), NORMAL(" "), MINOR("  "), DEBUG("   ");  		 
+		private String level = "";
+		
+		private logModes(String level) {		 
+			this.level = level;   	 
+		}
+		public String getLevel() {   		 
+			return level;    
+		}
+	 }
 }

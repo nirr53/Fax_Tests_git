@@ -10,7 +10,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +17,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
+import Fax_Tests.enumsClass.*;
 
 public class WebFuncs {
 	
@@ -25,8 +25,6 @@ public class WebFuncs {
 	private GlobalFuncs testFuncs;
 	private GlobalVars  testVars;
 	private WebDriver 	driver;
-
-	// Menu paths
 	
 	// Management paths
 	private final String MENAGMENT_SECTION 		   = "//*[@id='tab_names']/tbody/tr/td[2]/table/tbody/tr[1]/td[2]/a";
@@ -59,99 +57,95 @@ public class WebFuncs {
 	}
 	
 	// Main Switch-Case function
-	public String[] getPaths(String menuName) {
+	public String[] getPaths(menuNames menuName) {	
 		
 		String[] paths = {"", "", "", ""};
 		switch (menuName) {
 		
 			// System Settings menu 
-			case "Fax_in_Settings":
+			case FAX_IN_SETTINGS:
 	        	paths[0] = MENAGMENT_SECTION;          	
 	        	paths[1] = SYSTEM_SETTINGS_SECTION;
 	        	paths[2] = FAX_IN_SETTINGS_SECTION;
 	        	break;        	
-			case "Fax_in_Settings_open":
+			case FAX_IN_SETTINGS_OPEN:
 	        	paths[0] = FAX_IN_SETTINGS_SECTION;
 	        	break;	
-			case "Fax_out_Settings":
+			case FAX_OUT_SETTINGS:
             	paths[0] = MENAGMENT_SECTION;          	
             	paths[1] = SYSTEM_SETTINGS_SECTION;
             	paths[2] = FAX_OUT_SETTINGS_SECTION;
             	break;          	
-			case "General_Settings":
+			case GENERAL_SETTINGS:
             	paths[0] = MENAGMENT_SECTION;          	
             	paths[1] = SYSTEM_SETTINGS_SECTION;
             	paths[2] = GENERAL_SETTINGS_SECTION;
             	break;
-			case "General_Settings_open":
+			case GENERAL_SETTINGS_OPEN:
             	paths[0] = GENERAL_SETTINGS_SECTION;
             	break;
-			case "Menagement_general_section_open":
+			case MNG_GENERAL_SECTION:
             	paths[0] = MENAGMENT_SECTION;
             	paths[1] = GENERAL_SETTINGS_SECTION;
             	break;
             	
             // Fax-In menu
-			case "Fax_in_numbers":
+			case FAX_IN_NUMBERS:
             	paths[0] = MENAGMENT_SECTION;          	
             	paths[1] = FAX_IN;
             	paths[2] = FAX_IN_NUMBERS;
             	break;	
-			case "Fax_in_numbers_open":
+			case FAX_IN_NUMBERS_OPEN:
             	paths[0] = FAX_IN_NUMBERS;
             	break;	
             	
             // Fax-Out menu
-    		case "Fax_out_numbers":
+    		case FAX_OUT_NUMBERS:
     			paths[0] = MENAGMENT_SECTION;          	
     			paths[1] = FAX_OUT;
     			paths[2] = FAX_OUT_NUMBERS;	
     			break;
-    		case "Fax_out_numbers_open":
+    		case FAX_OUT_NUMBERS_OPEN:
     			paths[0] = FAX_OUT_NUMBERS;	
     			break;
-        	case "Gateways":
+        	case GATEWAYS:
         		paths[0] = MENAGMENT_SECTION;          	
         		paths[1] = FAX_OUT;
         		paths[2] = GATEWAYS;	
         		break;	
-        	case "Outgoing_Rules":
+        	case OUTGOING_RULES:
     			paths[0] = MENAGMENT_SECTION;          	
     			paths[1] = FAX_OUT;
     			paths[2] = OUTGOING_RULES;	
     			break;   			
     			
     		// Status & diagnostics	
-        	case "Application_logs":
+        	case APPLICATION_LOGS:
     			paths[0] = STTS_DIGTCS_SECTION;  
     			paths[1] = LOGS;    
     			paths[2] = APPLICATION_LOGS;          	
         		break; 		     		
-        	case "Application_logs_open":
+        	case APPLICATION_LOGS_OPEN:
     			paths[0] = APPLICATION_LOGS;          	
         		break;
-        	case "Received_faxes":
+        	case RECEIVED_FAXES:
     			paths[0] = STTS_DIGTCS_SECTION;          	
     			paths[1] = CALL_LOGS;
     			paths[2] = RECEIVED_FAXES;	
         		break;
-        	case "Sent_faxes":
+        	case SENT_FAXES:
     			paths[0] = STTS_DIGTCS_SECTION;          	
     			paths[1] = CALL_LOGS;
     			paths[2] = SENT_FAXES;	
         		break;
-        	case "Sent_faxes_open":
+        	case SENT_FAXES_OPEN:
     			paths[0] = SENT_FAXES;	
         		break;
-        	case "Admin_User_Manuals":
+        	case ADMIN_USER_MANUALS:
     			paths[0] = STTS_DIGTCS_SECTION;  
     			paths[1] = USER_MANUALLS;    
     			paths[2] = ADMIN_USER_MANUALLS;          	
-        		break;
-        		
-			default:
-	        	 GlobalFuncs testFuncs = new GlobalFuncs();
-	             testFuncs.myFail("Menu name is not recognized !!");    
+        		break;  
 			}
 		
 		return paths;  
@@ -162,13 +156,13 @@ public class WebFuncs {
 	*  @param stepNumber  - given step-number
 	*  @param description - given step-description
 	*  @param extraData   - Extra data array for data which is needed for the test
-	* @throws UnsupportedEncodingException 
-	* @throws UnknownHostException 
+	*  @throws UnsupportedEncodingException 
+	*  @throws UnknownHostException 
 	*/
 	public void setConfiguration(int stepNumber, String description, String[] extraData) throws UnsupportedEncodingException, UnknownHostException {
 			
 		// Create a driver and login the site
-		testFuncs.myDebugPrinting("Description - " + description, testVars.NORMAL);
+		testFuncs.myDebugPrinting("Description - " + description, enumsClass.logModes.NORMAL);
 		driver = defineUsedBrowser();
 		login(driver, testVars.getSysUsername(), testVars.getSysPassword(), testVars.getSysMainStr()); 
 		
@@ -176,11 +170,11 @@ public class WebFuncs {
 		switch (stepNumber) {
 		
 			case 9:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 				setFaxOutFaxId(extraData[0]);
 				submitPage(driver);
-				enterMenu(driver, "Fax_in_Settings_open", "Default Email");
+				enterMenu(driver, enumsClass.menuNames.FAX_IN_SETTINGS_OPEN, "Default Email");
 				setFaxInFaxId(extraData[0]);
 				submitPage(driver);
 				break;
@@ -188,73 +182,73 @@ public class WebFuncs {
 			case 48:
 			case 49:
 			case 78:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 				checkCoverPage(extraData[0].equals("1"));
 				submitPage(driver);
 				break;
 				
 			case 54:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 				setFaxOutFaxId(extraData[0]);
 				submitPage(driver);
 				break;
 				
 			case 55:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 				setFaxOutFaxId(extraData[0]);
-	    		testFuncs.myDebugPrinting("Fax-ID - "  + extraData[1], testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Fax-ID - "  + extraData[1], enumsClass.logModes.MINOR);
 				mySendKeys(By.xpath("//*[@id='fax_id']"), extraData[1], 2000);
 				submitPage(driver);
 				break;
 				
 			case 56:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_in_Settings", "Default Email");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_IN_SETTINGS, "Default Email");
 				setFaxInFaxId(extraData[0]);
-	    		testFuncs.myDebugPrinting("Fax-ID - "  + extraData[1], testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Fax-ID - "  + extraData[1], enumsClass.logModes.MINOR);
 				mySendKeys(By.id("fax_id"), extraData[1], 9000);			
 				submitPage(driver);
 				break;
 				
 			case 57:
 			case 58:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_in_Settings", "Default Email");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_IN_SETTINGS, "Default Email");
 				setFaxInFaxId(extraData[0]);
 				submitPage(driver);
 				break;
 				
 			case 59:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 				checkEmailConfirmation(extraData[0].equals("off"));
 				submitPage(driver);
 				break;
 				
 			case 61:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 				checkDisplayRemoteId(extraData[0].equals("off"));
 				submitPage(driver);
 				break;
 				
 			case 65:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
 	    		
 	    		if (extraData[0].equals("disabled") || extraData[0].equals("enabled")) {
 	    			
-					enterMenu(driver, "General_Settings", "From Email Address");
+					enterMenu(driver, enumsClass.menuNames.GENERAL_SETTINGS, "From Email Address");
 					checkArchiveCheckbox(extraData[0].equals("disabled"));
 					submitPage(driver);
 				    driver.switchTo().defaultContent();
 	    		} else if (extraData[0].equals("check_disabled")) {
 	    			
-					enterMenu(driver, "Sent_faxes", "From Email");	
+					enterMenu(driver, enumsClass.menuNames.SENT_FAXES, "From Email");	
 	    		}
-//				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+//				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 //				checkDisplayRemoteId(extraData[0].equals("off"));
 //				submitPage(driver);
 				break;
@@ -264,20 +258,20 @@ public class WebFuncs {
 			case 84:
 			case 86:
 			case 87:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 				setFaxOutFaxId(extraData[0]);
-	    		testFuncs.myDebugPrinting("Fax-ID - "       + extraData[1], testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Fax-ID - "       + extraData[1], enumsClass.logModes.MINOR);
 				mySendKeys(By.xpath("//*[@id='fax_id']"), extraData[1], 2000);
-	    		testFuncs.myDebugPrinting("Default CLI - "  + extraData[2], testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Default CLI - "  + extraData[2], enumsClass.logModes.MINOR);
 				mySendKeys(By.xpath("//*[@id='default_cli']"), extraData[2], 2000);
 				submitPage(driver);
 				break;
 				
 			case 90:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "General_Settings", "From Email Address");
-	    		testFuncs.myDebugPrinting("Email - " + extraData[0], testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.GENERAL_SETTINGS, "From Email Address");
+	    		testFuncs.myDebugPrinting("Email - " + extraData[0], enumsClass.logModes.MINOR);
 	    	    driver.switchTo().frame(1);
 				mySendKeys(By.xpath("//*[@id='email']"), extraData[0], 10000);
 				submitPage(driver);
@@ -288,16 +282,16 @@ public class WebFuncs {
 			case 92:
 			case 93:
 			case 94:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-//				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+//				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 //				setFaxOutFaxId(extraData[1]);
 //				submitPage(driver);
-//				enterMenu(driver, "Application_logs"	   		   , "Application Logs");
+//				enterMenu(driver, enumsClass.menuNames.APPLICATION_LOGS	   		   , "Application Logs");
 //				enterMenu(driver, "Menagement_general_section_open", "From Email Address");
 
 //				enterMenu(driver, "General_Settings_open", "From Email Address");
-				enterMenu(driver, "General_Settings", "From Email Address");
-	    		testFuncs.myDebugPrinting("Attachment name - " + extraData[0], testVars.MINOR);
+				enterMenu(driver, enumsClass.menuNames.GENERAL_SETTINGS, "From Email Address");
+	    		testFuncs.myDebugPrinting("Attachment name - " + extraData[0], enumsClass.logModes.MINOR);
 	    	    driver.switchTo().frame(1);
 	    	    testFuncs.myWait(2000);
 	    	    
@@ -314,9 +308,9 @@ public class WebFuncs {
 			case 99:
 			case 114:
 			case 115:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
-	    		testFuncs.myDebugPrinting("Max Fax Recipients - " + extraData[0], testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Max Fax Recipients - " + extraData[0], enumsClass.logModes.MINOR);
 	    	    driver.switchTo().frame(1);
 				mySendKeys(By.xpath("//*[@id='max_rec']"), extraData[0], 2000);
 				submitPage(driver);
@@ -324,40 +318,40 @@ public class WebFuncs {
 				break;
 				
 			case 100:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
 				break;
 				
 			case 101:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_in_numbers", "Sort By");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_IN_NUMBERS, "Sort By");
 				createFaxInUser(extraData[0], extraData[1], extraData[2], extraData[3]);
 				String newfaxInNumber 		= testFuncs.getId();
 				String newfaxInDisplayName  = "new" + extraData[1];
 				String newfaxInEmail	    = "new" + extraData[2];
 				String newfaxInFaxId 		= "new" + extraData[3];
 				editFaxInUser(extraData[0], newfaxInNumber, newfaxInDisplayName, newfaxInEmail, newfaxInFaxId);
-				enterMenu(driver, "Fax_in_numbers_open", "Sort By");
+				enterMenu(driver, enumsClass.menuNames.FAX_IN_NUMBERS_OPEN, "Sort By");
 			    driver.switchTo().frame(1);
 				deleteFaxInUser(newfaxInNumber, newfaxInDisplayName);
 				break;
 				
 			case 102:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_numbers", "Sort By");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_NUMBERS, "Sort By");
 				createFaxOutUser(extraData[0], extraData[1], extraData[2], extraData[3]);
 				String newfaxOutNumber 		= testFuncs.getId();
 				String newfaxOutEmail 		= "new" + extraData[1];
 				String newfaxOutDisplayName	= "new" + extraData[2];
 				String newfaxOutFaxId 		= "new" + extraData[3];
 				editFaxOutUser(extraData[0], newfaxOutNumber, newfaxOutEmail, newfaxOutDisplayName, newfaxOutFaxId);
-				enterMenu(driver, "Fax_out_numbers_open", "Sort By");
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_NUMBERS_OPEN, "Sort By");
 			    driver.switchTo().frame(1);
 			    deleteFaxOutUser(newfaxOutNumber, newfaxOutDisplayName);
 				break;
 				
 			case 103:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Gateways", "Port");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.GATEWAYS, "Port");
 				createGW(extraData[0], extraData[1], extraData[2], extraData[3]);
 				String newGwName 		= testFuncs.getId();
 				String newGwIP 		 	= testFuncs.getId();
@@ -368,8 +362,8 @@ public class WebFuncs {
 				break;
 				
 			case 104:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Outgoing_Rules", "Number Starts With");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.OUTGOING_RULES, "Number Starts With");
 				createOutgoingRule(extraData[0], extraData[1], extraData[2], extraData[3]);
 				String newId = testFuncs.getId();
 				String newOutgoingRuleName	 = "OutgoingRuleName" + newId;
@@ -381,8 +375,8 @@ public class WebFuncs {
 				break;
 				
 			case 105:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Gateways", "Port");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.GATEWAYS, "Port");
 				createGW(extraData[0]		 , extraData[1], 	   extraData[2], extraData[3]);
 				String newName = "Gw" 					  + testFuncs.getId();
 				String newDesc = "Description of Gateway" + testFuncs.getId();
@@ -393,16 +387,16 @@ public class WebFuncs {
 				break;
 				
 			case 111:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "General_Settings", "From Email Address");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.GENERAL_SETTINGS, "From Email Address");
 				checkAddSymbols(extraData[0].equals("1"));
 				submitPage(driver);
 			    driver.switchTo().defaultContent();
 				break;
 				
 			case 112:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 			    driver.switchTo().frame(1);
 				mySendKeys(By.xpath("//*[@id='send_multi']")		, extraData[0], 4000);	
 				submitPage(driver);
@@ -412,40 +406,40 @@ public class WebFuncs {
 			case 116:
 			case 117:
 			case 118:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Application_logs", "Application Logs");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.APPLICATION_LOGS, "Application Logs");
 			    driver.switchTo().frame(1);
 	    		
 	    		// Enter the menu
     			String filePrefix   = "";
     			String logForSearch = "";
-	    		switch (extraData[0]) {
+	    		switch (enumsClass.appLogsMenuNames.valueOf(extraData[0])) {
 	    		
-		    		case "Fax In Service":
+		    		case FAX_IN_SERVICE:
 		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[2]/td[3]/a"), 7000);
 		    			searchStr("f2e.log");
 		    			filePrefix = "service.";
 		    			logForSearch = " Info ";
 		    			break;
-		    		case "Fax Out Service":
+		    		case FAX_OUT_SERVICE:
 		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[3]/td[3]/a"), 7000);
 		    			searchStr("m2fhm.log");
 		    			filePrefix = "emailToFax.service.";
 		    			break;
-		    		case "Auto Attendant Service":
+		    		case AUTO_ATTENDANT_SERVICE:
 		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[4]/td[3]/a"), 7000);   			  
 		    			if (driver.findElement(By.tagName("body")).getText().contains("No log files.")) {
 		    				  	  
-		    				testFuncs.myDebugPrinting("No log lines were detected !!",  testVars.MINOR);
+		    				testFuncs.myDebugPrinting("No log lines were detected !!",  enumsClass.logModes.MINOR);
 		    				return;
 		    			}     			
 		    			break;			
-		    		case "System Watchdog":
+		    		case SYSTEM_WATCHDOG:
 		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[5]/td[3]/a"), 7000);
 		    			searchStr("f2mw.log");
 		    			filePrefix = "faxToEmail.Watchdog.";
 		    			break;
-		    		case "Fax Server":
+		    		case FAX_SERVER:
 		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[6]/td[3]/a"), 7000);
 		    			searchStr("FaxServer_");
 		    			filePrefix = "Fax Server.";		
@@ -453,13 +447,13 @@ public class WebFuncs {
 		    		    Date date     = new Date();
 		    			logForSearch = dateFormat.format(date) + ",";	
 		    			break;
-		    		case "Web Admin":
+		    		case WEB_ADMIN:
 		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[8]/td[3]/a"), 7000);
 		    			searchStr("log.txt");
 		    			filePrefix = "web.admin.";
 		    			logForSearch = Inet4Address.getLocalHost().getHostAddress();
 		    			break;
-		    		case "Activity":
+		    		case ACTIVITY:
 		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[9]/td[3]/a"), 7000);
 		    			searchStr("log.txt");
 		    			filePrefix = "activity.";
@@ -467,7 +461,7 @@ public class WebFuncs {
 		    		    Date date3     = new Date();
 		    			logForSearch = dateFormat3.format(date3);
 		    			break;
-		    		case "Backup":
+		    		case BACKUP:
 		    			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[10]/td[3]/a"), 7000);
 		    			searchStr("log.txt");
 		    			filePrefix = "faxToEmail.Backup.";
@@ -475,28 +469,26 @@ public class WebFuncs {
 		    		    Date date4     = new Date();
 		    			logForSearch = dateFormat4.format(date4);
 		    			break;
-		    		default:				
-		    			testFuncs.myFail("Wrong service name <" + extraData[0] + ">");
 	    		}
 	    		
 	    		// Check Display options, log-level and download current log
-	    		testFuncs.myDebugPrinting("Check Display options, log-level and download current log", testVars.MINOR);	
+	    		testFuncs.myDebugPrinting("Check Display options, log-level and download current log", enumsClass.logModes.MINOR);	
 	    		checkDisplayOptions(driver, logForSearch);
 	    		checkLogLevel(driver, extraData[0]);
 	    		downloadCurrLog(filePrefix);
 	    		checkArchive(driver, extraData[0], filePrefix);
 	    		
 	    		// Return to service menu
-	    		testFuncs.myDebugPrinting("Return to service menu", testVars.MINOR);    		
+	    		testFuncs.myDebugPrinting("Return to service menu", enumsClass.logModes.MINOR);    		
 			    driver.switchTo().defaultContent();
 				myClick(By.xpath("//*[@id='back_img']"), 5000);
 				break;
 				
 			case 119:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Admin_User_Manuals", "User Manuals");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.ADMIN_USER_MANUALS, "User Manuals");
 			    driver.switchTo().frame(1);
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);	
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);	
 	    		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td", "User Manuals");
 	    		
 	    		// Check for pdf icons
@@ -507,7 +499,7 @@ public class WebFuncs {
 	    		}
 	    		
 	    		// Download each of the manuals
-	    		testFuncs.myDebugPrinting("Download each of the manuals", testVars.MINOR);	  	      
+	    		testFuncs.myDebugPrinting("Download each of the manuals", enumsClass.logModes.MINOR);	  	      
 	    		String winHandleBefore = driver.getWindowHandle();
 	    		for (int i = 2; i < 7; ++i) {
 	    			
@@ -519,7 +511,7 @@ public class WebFuncs {
 	    				        	   		  
 	    					  driver.switchTo().window(window); 
 	    					  String decoded = URLDecoder.decode(driver.getCurrentUrl(), "UTF-8");
-	    					  testFuncs.myDebugPrinting("decoded - " + decoded, testVars.MINOR);	  	      
+	    					  testFuncs.myDebugPrinting("decoded - " + decoded, enumsClass.logModes.MINOR);	  	      
 	    					  testFuncs.myAssertTrue("Guide was not opened properly !! <" + decoded + ">", decoded.contains(extraData[i -2]));
 	    					  driver.close();  
 	    				  }
@@ -530,9 +522,9 @@ public class WebFuncs {
 				break;
 				
 			case 125:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "General_Settings", "From Email Address");
-	    		testFuncs.myDebugPrinting("Data format - " + extraData[0], testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.GENERAL_SETTINGS, "From Email Address");
+	    		testFuncs.myDebugPrinting("Data format - " + extraData[0], enumsClass.logModes.MINOR);
 	    	    driver.switchTo().frame(1);				
 				testFuncs.myWait(3000);
 				new Select(driver.findElement(By.xpath("//*[@id='datetime_format']"))).selectByValue(extraData[0]);
@@ -542,26 +534,23 @@ public class WebFuncs {
 				break;
 				
 			case 126:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Fax_out_Settings", "Add Cover Page");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
 				setFaxOutFaxId(extraData[0]);
 				submitPage(driver);
-				enterMenu(driver, "Fax_in_Settings_open", "Default Email");
+				enterMenu(driver, enumsClass.menuNames.FAX_IN_SETTINGS_OPEN, "Default Email");
 				setFaxInFaxId(extraData[0]);
 				submitPage(driver);
 				break;
 				
 			case 127:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Received_faxes" , "From (CLI)");	  
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.RECEIVED_FAXES, "From (CLI)");	  
 	    	    driver.switchTo().frame(1);
 				String bodyText     = driver.findElement(By.tagName("body")).getText();
-				testFuncs.myAssertTrue("None of the Timezones <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||
-																													     		   bodyText.contains(extraData[1]) ||
-																													     		   bodyText.contains(extraData[2]) ||
-																													     		   bodyText.contains(extraData[3]));
+				testFuncs.myAssertTrue("None of the Timezones <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||																								     		   bodyText.contains(extraData[3]));
 	    	    driver.switchTo().defaultContent();
-				enterMenu(driver, "Sent_faxes_open", "From Email");	
+				enterMenu(driver, enumsClass.menuNames.SENT_FAXES_OPEN, "From Email");	
 	    	    driver.switchTo().frame(1);
 				bodyText     = driver.findElement(By.tagName("body")).getText();
 				testFuncs.myAssertTrue("None of the Timezones <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||
@@ -571,12 +560,12 @@ public class WebFuncs {
 				break;
 				
 			case 129:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Application_logs", "Application Logs");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.APPLICATION_LOGS, "Application Logs");
 			    driver.switchTo().frame(1);   
 			    
 			    // Download file
-	    		testFuncs.myDebugPrinting("The searched prefix is <" + extraData[0] + ">", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("The searched prefix is <" + extraData[0] + ">", enumsClass.logModes.MINOR);
 			    myClick(By.xpath("//*[@id='trunkTBL']/table[2]/tbody/tr/td/a"), 20000);
 				testFuncs.myAssertTrue("File was not downloaded successfully !!", testFuncs.findFilesByGivenPrefix(testVars.getDownloadsPath(), extraData[0]));
 				
@@ -585,12 +574,12 @@ public class WebFuncs {
 			    break;
 			    
 			case 130:
-	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", testVars.MINOR);
-				enterMenu(driver, "Application_logs", "Application Logs");
+	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
+				enterMenu(driver, enumsClass.menuNames.APPLICATION_LOGS, "Application Logs");
 			    driver.switchTo().frame(1);  
 			    
 			    // Enter menu and search files
-	    		testFuncs.myDebugPrinting("Enter menu and search files:", testVars.NORMAL);
+	    		testFuncs.myDebugPrinting("Enter menu and search files:", enumsClass.logModes.NORMAL);
     			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[7]/td[3]/a"), 7000);
     			for (int i = 0; i < (extraData.length - 1); ++i) {
     						
@@ -598,20 +587,19 @@ public class WebFuncs {
     			}		
     			checkFaxEngineDisplayOptions(extraData);   			
     		    driver.switchTo().defaultContent(); 
-    			enterMenu(driver, "Application_logs_open", "Application Logs");
+    			enterMenu(driver, enumsClass.menuNames.APPLICATION_LOGS_OPEN, "Application Logs");
     		    driver.switchTo().frame(1);	
     			checkFaxEngineDownloadLog(extraData);
     			break;
 			    
 			default:   
-//				driver.quit();
+				driver.quit();
 				testFuncs.myFail("Step Number <" + stepNumber + "> is not recognized !!");		
 		}
 		
 		// Close the driver
-//		driver.quit();		
+		driver.quit();		
 	}
-	
 	
 	/**
 	* Check Fax engine services download files option
@@ -621,24 +609,23 @@ public class WebFuncs {
 	private void checkFaxEngineDownloadLog(String[] extraData) {
 		
 		// For each service download the log
-		testFuncs.myDebugPrinting("For each service download the log", testVars.NORMAL);
+		testFuncs.myDebugPrinting("For each service download the log", enumsClass.logModes.NORMAL);
 		String fileName = extraData[extraData.length-1];
-		testFuncs.myDebugPrinting("fileName - " + fileName, testVars.MINOR);
+		testFuncs.myDebugPrinting("fileName - " + fileName, enumsClass.logModes.MINOR);
 		for (int i = 2; i < (extraData.length + 1); ++i) {
 			
 			// Download file
-    		testFuncs.myDebugPrinting("Download file <" + (i) + ">", testVars.NORMAL);
+    		testFuncs.myDebugPrinting("Download file <" + (i) + ">", enumsClass.logModes.NORMAL);
 			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr/td/table/tbody/tr[" + i + "]/td[3]/a"), 90000);
 			testFuncs.myAssertTrue("File was not downloaded successfully !!", testFuncs.findFilesByGivenPrefix(testVars.getDownloadsPath(), fileName));
 			
 			// Delete file
-    		testFuncs.myDebugPrinting("Delete file", testVars.MINOR);
+    		testFuncs.myDebugPrinting("Delete file", enumsClass.logModes.MINOR);
 			testFuncs.deleteFilesByPrefix(testVars.getDownloadsPath(), fileName);    				
 		    driver.switchTo().defaultContent(); 
-			enterMenu(driver, "Application_logs_open", "Application Logs");
+			enterMenu(driver, enumsClass.menuNames.APPLICATION_LOGS_OPEN, "Application Logs");
 		    driver.switchTo().frame(1);  
-			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[7]/td[3]/a"), 15000);
-			
+			myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/table/tbody/tr[7]/td[3]/a"), 15000);			
 		} 		
 	}
 
@@ -650,7 +637,7 @@ public class WebFuncs {
 	private void checkFaxEngineDisplayOptions(String[] extraData) {
 			
 		// For each service check the display options
-		testFuncs.myDebugPrinting("For each service check the display options", testVars.NORMAL);
+		testFuncs.myDebugPrinting("For each service check the display options", enumsClass.logModes.NORMAL);
 		  	String[] disOptions = {"Hide log lines"		   , "Show last 10 log lines",
 		  						   "Show last 20 log lines", "Show last 30 log lines",
 		  						   "Show last 40 log lines", "Show last 50 log lines",
@@ -659,11 +646,11 @@ public class WebFuncs {
 			
 			int disNum = i;
 			if (i > 4) { disNum += 1;}	
-			testFuncs.myDebugPrinting("Set service <" + disNum + ">", testVars.MINOR);
+			testFuncs.myDebugPrinting("Set service <" + disNum + ">", enumsClass.logModes.MINOR);
 			Select dispOptionsSelect = new Select(driver.findElement(By.xpath("//*[@id='loglines" + disNum + "']")));
  			for (int j = 0; j < disOptions.length; ++j) {
 				
-				testFuncs.myDebugPrinting("Set the option <" + disOptions[j] + ">", testVars.DEBUG);
+				testFuncs.myDebugPrinting("Set the option <" + disOptions[j] + ">", enumsClass.logModes.DEBUG);
 				dispOptionsSelect.selectByIndex(j);
 				testFuncs.myWait(10000);
 			}	
@@ -679,12 +666,12 @@ public class WebFuncs {
 	private void checkArchive(WebDriver driver, String service, String archPrefix) {
 		
 		// Check if Archive exists
-		testFuncs.myDebugPrinting("Check if Archive exists", testVars.MINOR);
+		testFuncs.myDebugPrinting("Check if Archive exists", enumsClass.logModes.MINOR);
 		String bodyText     = driver.findElement(By.tagName("body")).getText();	  
 		if (bodyText.contains("Archive Files")) {
 			
 			// Enter Archive menu
-    		testFuncs.myDebugPrinting("Enter Archive menu", testVars.MINOR);
+    		testFuncs.myDebugPrinting("Enter Archive menu", enumsClass.logModes.MINOR);
 			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr[1]/td/table/tbody/tr[2]/td[3]/a"), 20000);
     		searchStr(service + " Archive Files");
     		
@@ -692,23 +679,23 @@ public class WebFuncs {
     		bodyText     = driver.findElement(By.tagName("body")).getText();	  
     		if (!bodyText.contains("Activity Archive Files") && !bodyText.contains("Fax Server Archive Files")) {
     					
-	    		testFuncs.myDebugPrinting("Download one of the files", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Download one of the files", enumsClass.logModes.MINOR);
 				myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/a"), 10000);		
 				testFuncs.myAssertTrue("File was not downloaded successfully !!", testFuncs.findFilesByGivenPrefix(testVars.getDownloadsPath(), archPrefix));
     		}
     		
 			// Delete file
-    		testFuncs.myDebugPrinting("Delete file", testVars.MINOR);
+    		testFuncs.myDebugPrinting("Delete file", enumsClass.logModes.MINOR);
 			testFuncs.deleteFilesByPrefix(testVars.getDownloadsPath(), archPrefix);
 			
 			// Return to service menu
-    		testFuncs.myDebugPrinting("Return to service menu", testVars.MINOR);
+    		testFuncs.myDebugPrinting("Return to service menu", enumsClass.logModes.MINOR);
 			driver.switchTo().defaultContent();
 			myClick(By.xpath("//*[@id='back_img']"), 5000);
 		    driver.switchTo().frame(1);
 		} else {
 			
-    		testFuncs.myDebugPrinting("Archive menu was not detected !!", testVars.MINOR);
+    		testFuncs.myDebugPrinting("Archive menu was not detected !!", enumsClass.logModes.MINOR);
 		}
 	}
 
@@ -721,7 +708,7 @@ public class WebFuncs {
 	    String fileName  = filePrefix;
 	    
 	    // Download file
-		testFuncs.myDebugPrinting("Download <" + fileName + ">", testVars.MINOR);
+		testFuncs.myDebugPrinting("Download <" + fileName + ">", enumsClass.logModes.MINOR);
 		if (driver.findElement(By.tagName("body")).getText().contains("Archive Files")) {
 			
 			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr[1]/td/table/tbody/tr[3]/td[3]/a"), 5000);
@@ -758,7 +745,7 @@ public class WebFuncs {
 			myClick(By.xpath("//*[@id='trunkTBL']/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a"), 5000);
     		verifyStrByXpath(driver, "//*[@id='jqi_state_state0']/div[1]/table/tbody/tr[1]/th", "Change " + service + " Log Level");
     		String level = logLevelSelect.getAllSelectedOptions().get(0).getText();
-			testFuncs.myDebugPrinting("Set the option <" + level + ">", testVars.MINOR);
+			testFuncs.myDebugPrinting("Set the option <" + level + ">", enumsClass.logModes.MINOR);
     		verifyStrByXpath(driver, "//*[@id='promt_div_id']", "Are you sure you want to change the " + service + " log level to " + level + " ?");
 			myClick(By.xpath("//*[@id='jqi_state0_buttonYes']"), 5000);
 			verifyStrByXpath(driver, "//*[@id='jqi_state_state0']/div[1]/table/tbody/tr[1]/th", "Change " + service + " Log Level");	
@@ -785,7 +772,7 @@ public class WebFuncs {
 
 		for (int i = 0; i < disOptions.length; ++i) {
 			
-			testFuncs.myDebugPrinting("Set the option <" + disOptions[i] + ">", testVars.MINOR);
+			testFuncs.myDebugPrinting("Set the option <" + disOptions[i] + ">", enumsClass.logModes.MINOR);
 			dispOptionsSelect.selectByIndex(i);
 			testFuncs.myWait(10000);
 			
@@ -810,7 +797,7 @@ public class WebFuncs {
 	private void deleteOutgoingRule(String newOutgoingruleName, String newOutgoingRulePrefix) {
 		
 		// Get idx for delete
-		testFuncs.myDebugPrinting("Get idx for delete", testVars.MINOR);
+		testFuncs.myDebugPrinting("Get idx for delete", enumsClass.logModes.MINOR);
 		int idx = getGwIdx(newOutgoingruleName);
 		myClick(By.xpath("//*[@id='trunkTBL']/table[2]/tbody/tr[" + idx + "]/td[9]/a"), 5000);		
 		verifyStrByXpath(driver, "//*[@id='jqi_state_state0']/div[1]/table/tbody/tr[1]/th", "Delete Outgoing Rule");
@@ -818,7 +805,7 @@ public class WebFuncs {
 		myClick(By.xpath("//*[@id='jqi_state0_buttonDelete']"), 10000);
 			
 		// Verify delete
-		testFuncs.myDebugPrinting("Verify delete of <" + newOutgoingruleName + ">", testVars.MINOR);
+		testFuncs.myDebugPrinting("Verify delete of <" + newOutgoingruleName + ">", enumsClass.logModes.MINOR);
 		String bodyText     = driver.findElement(By.tagName("body")).getText();
 		testFuncs.myAssertTrue("Delete fails <" + newOutgoingruleName      + "> is still detected !!", !bodyText.contains(newOutgoingruleName));
 		testFuncs.myAssertTrue("Delete fails <" + newOutgoingRulePrefix + "> is still detected !!"	 , !bodyText.contains(newOutgoingRulePrefix));
@@ -835,13 +822,13 @@ public class WebFuncs {
 	private void editOutgoingRule(String oldOutgoingRuleName, String newOutgoingRuleName, String newOutgoingRulePrefix,	String newOutgoingRuleFrom, String newOutgoingRuleTo) {
 	
 		// Get idx for edit
-		testFuncs.myDebugPrinting("Get idx for edit", testVars.MINOR);
+		testFuncs.myDebugPrinting("Get idx for edit", enumsClass.logModes.MINOR);
 		int idx = getGwIdx(oldOutgoingRuleName);
 		myClick(By.xpath("//*[@id='trunkTBL']/table[2]/tbody/tr[" + idx + "]/td[8]/a"), 5000);	
 		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td", "Modify Outgoing Rule - " + oldOutgoingRuleName);
 
 		// Fill data
-		testFuncs.myDebugPrinting("Fill data", testVars.MINOR);
+		testFuncs.myDebugPrinting("Fill data", enumsClass.logModes.MINOR);
 		mySendKeys(By.xpath("//*[@id='name']"), newOutgoingRuleName, 2000);
 		mySendKeys(By.xpath("//*[@id='min']") , newOutgoingRuleFrom, 2000);
 		mySendKeys(By.xpath("//*[@id='max']") , newOutgoingRuleTo	, 2000);
@@ -849,7 +836,7 @@ public class WebFuncs {
 
 		
 		// Submit page and verify
-		testFuncs.myDebugPrinting("Submit page and verify", testVars.MINOR);
+		testFuncs.myDebugPrinting("Submit page and verify", enumsClass.logModes.MINOR);
 		driver.switchTo().defaultContent();
 		myClick(By.xpath("//*[@id='submit_img']"), 7000);
 	    driver.switchTo().frame(1);
@@ -867,24 +854,24 @@ public class WebFuncs {
 	private void createOutgoingRule(String outgoingRuleName, String outgoingRulePrefix, String outgoingRuleFrom, String outgoingRuleTo) {
 		
 		// Enter Add-GW number menu
-		testFuncs.myDebugPrinting("Enter Add-GW number menu", testVars.MINOR);
+		testFuncs.myDebugPrinting("Enter Add-GW number menu", enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 		myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/a"), 5000);
 		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td", "Add New Outgoing Rule");
 		
 		// Fill data
-		testFuncs.myDebugPrinting("Fill data", testVars.MINOR);
-		testFuncs.myDebugPrinting("outgoingRuleName - "   + outgoingRuleName  , testVars.MINOR);
-		testFuncs.myDebugPrinting("outgoingRuleFrom - "   + outgoingRuleFrom  , testVars.MINOR);
-		testFuncs.myDebugPrinting("outgoingRuleTo - "     + outgoingRuleTo    , testVars.MINOR);
-		testFuncs.myDebugPrinting("outgoingRulePrefix - " + outgoingRulePrefix, testVars.MINOR);
+		testFuncs.myDebugPrinting("Fill data", enumsClass.logModes.MINOR);
+		testFuncs.myDebugPrinting("outgoingRuleName - "   + outgoingRuleName  , enumsClass.logModes.MINOR);
+		testFuncs.myDebugPrinting("outgoingRuleFrom - "   + outgoingRuleFrom  , enumsClass.logModes.MINOR);
+		testFuncs.myDebugPrinting("outgoingRuleTo - "     + outgoingRuleTo    , enumsClass.logModes.MINOR);
+		testFuncs.myDebugPrinting("outgoingRulePrefix - " + outgoingRulePrefix, enumsClass.logModes.MINOR);
 		mySendKeys(By.xpath("//*[@id='name']"), outgoingRuleName, 2000);
 		mySendKeys(By.xpath("//*[@id='min']") , outgoingRuleFrom, 2000);
 		mySendKeys(By.xpath("//*[@id='max']") , outgoingRuleTo	, 2000);
 		mySendKeys(By.xpath("//*[@id='trunkTBL']/table/tbody/tr[8]/td/table/tbody/tr/td[2]/input")		 , outgoingRulePrefix  , 2000);
 		
 		// Submit page and verify
-		testFuncs.myDebugPrinting("Submit page and verify", testVars.MINOR);
+		testFuncs.myDebugPrinting("Submit page and verify", enumsClass.logModes.MINOR);
 		driver.switchTo().defaultContent();
 		myClick(By.xpath("//*[@id='submit_img']"), 7000);
 	    driver.switchTo().frame(1);
@@ -900,7 +887,7 @@ public class WebFuncs {
 	private void deleteGW(String newGwName, String newGwDescription) {
 		
 		// Get idx for delete
-		testFuncs.myDebugPrinting("Get idx for delete", testVars.MINOR);
+		testFuncs.myDebugPrinting("Get idx for delete", enumsClass.logModes.MINOR);
 		int idx = getGwIdx(newGwName);
 		myClick(By.xpath("//*[@id='trunkTBL']/table[2]/tbody/tr[" + idx + "]/td[7]/a"), 5000);		
 		verifyStrByXpath(driver, "//*[@id='jqi_state_state0']/div[1]/table/tbody/tr[1]/th", "Delete Gateway");
@@ -908,7 +895,7 @@ public class WebFuncs {
 		myClick(By.xpath("//*[@id='jqi_state0_buttonDelete']"), 10000);
 			
 		// Verify delete
-		testFuncs.myDebugPrinting("Verify delete of <" + newGwName + ">", testVars.MINOR);
+		testFuncs.myDebugPrinting("Verify delete of <" + newGwName + ">", enumsClass.logModes.MINOR);
 		String bodyText     = driver.findElement(By.tagName("body")).getText();
 		testFuncs.myAssertTrue("Delete fails <" + newGwName      + "> is still detected !!"  , !bodyText.contains(newGwName));
 		testFuncs.myAssertTrue("Delete fails <" + newGwDescription + "> is still detected !!", !bodyText.contains(newGwDescription));
@@ -925,20 +912,20 @@ public class WebFuncs {
 	private void editGW(String oldGwName, String newGwName, String newGwIP, String newPort, String newGwDescription) {
 		
 		// Get idx for edit
-		testFuncs.myDebugPrinting("Get idx for edit", testVars.MINOR);
+		testFuncs.myDebugPrinting("Get idx for edit", enumsClass.logModes.MINOR);
 		int idx = getGwIdx(oldGwName);
 		myClick(By.xpath("//*[@id='trunkTBL']/table[2]/tbody/tr[" + idx + "]/td[6]/a"), 5000);
 		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td/span", "Modify Gateway - " + oldGwName);
 		
 		// Fill data
-		testFuncs.myDebugPrinting("Fill data", testVars.MINOR);
+		testFuncs.myDebugPrinting("Fill data", enumsClass.logModes.MINOR);
 		mySendKeys(By.xpath("//*[@id='name']")	 	 , newGwName	   , 2000);
 		mySendKeys(By.xpath("//*[@id='ip']")		 , newGwIP  	   , 2000);
 		mySendKeys(By.xpath("//*[@id='port']")	 	 , newPort		   , 2000);
 		mySendKeys(By.xpath("//*[@id='description']"), newGwDescription, 2000);
 		
 		// Submit page and verify
-		testFuncs.myDebugPrinting("Submit page and verify", testVars.MINOR);
+		testFuncs.myDebugPrinting("Submit page and verify", enumsClass.logModes.MINOR);
 		driver.switchTo().defaultContent();
 		myClick(By.xpath("//*[@id='submit_img']"), 7000);
 	    driver.switchTo().frame(1);
@@ -954,11 +941,11 @@ public class WebFuncs {
 	private int getGwIdx(String recName) {
 		
 		// Get idx
-		testFuncs.myDebugPrinting("Get idx", testVars.MINOR); 
+		testFuncs.myDebugPrinting("Get idx", enumsClass.logModes.MINOR); 
 	    driver.switchTo().frame(1);
 		for (int recIdx = 2; ; ++recIdx) {
 				
-			testFuncs.myDebugPrinting("recIdx - " 	 + recIdx   , testVars.DEBUG);
+			testFuncs.myDebugPrinting("recIdx - " 	 + recIdx   , enumsClass.logModes.DEBUG);
 		
 			// Check if xpath is displayed, if not return error
 			try {
@@ -966,7 +953,7 @@ public class WebFuncs {
 			   driver.findElement(By.xpath("//*[@id='trunkTBL']/table[2]/tbody/tr[" + recIdx + "]/td[2]"));
 			} catch (NoSuchElementException e) {
 				
-				testFuncs.myDebugPrinting("//*[@id='trunkTBL']/table[2]/tbody/tr[" + recIdx + "]/td[2]", testVars.DEBUG);
+				testFuncs.myDebugPrinting("//*[@id='trunkTBL']/table[2]/tbody/tr[" + recIdx + "]/td[2]", enumsClass.logModes.DEBUG);
 				testFuncs.myFail("Record was not detected !!");
 			}
 
@@ -976,7 +963,7 @@ public class WebFuncs {
 			// If record was detected, return the current recIdx
 			if (tempRecord.contains(recName)) {
 				
-				testFuncs.myDebugPrinting(recName + " was detected !! " + recIdx + " is returned", testVars.DEBUG);
+				testFuncs.myDebugPrinting(recName + " was detected !! " + recIdx + " is returned", enumsClass.logModes.DEBUG);
 				return recIdx; 
 			}
 		}	  
@@ -992,20 +979,20 @@ public class WebFuncs {
 	private void createGW(String gwName, String gwIp, String gwPort, String gwDesc) {
 		
 		// Enter Add-GW number menu
-		testFuncs.myDebugPrinting("Enter Add-GW number menu", testVars.MINOR);
+		testFuncs.myDebugPrinting("Enter Add-GW number menu", enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 		myClick(By.xpath("//*[@id='trunkTBL']/table[1]/tbody/tr/td/a"), 5000);
 		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td", "Add New Gateway");
 		
 		// Fill data
-		testFuncs.myDebugPrinting("Fill data", testVars.MINOR);
+		testFuncs.myDebugPrinting("Fill data", enumsClass.logModes.MINOR);
 		mySendKeys(By.xpath("//*[@id='name']")	 	 , gwName, 2000);
 		mySendKeys(By.xpath("//*[@id='ip']")		 , gwIp  , 2000);
 		mySendKeys(By.xpath("//*[@id='port']")	 	 , gwPort, 2000);
 		mySendKeys(By.xpath("//*[@id='description']"), gwDesc, 2000);
 		
 		// Submit page and verify
-		testFuncs.myDebugPrinting("Submit page and verify", testVars.MINOR);
+		testFuncs.myDebugPrinting("Submit page and verify", enumsClass.logModes.MINOR);
 		driver.switchTo().defaultContent();
 		myClick(By.xpath("//*[@id='submit_img']"), 7000);
 	    driver.switchTo().frame(1);
@@ -1024,20 +1011,20 @@ public class WebFuncs {
 	private void editFaxOutUser(String faxOutNumber, String newfaxoutNumber, String newfaxOutDisplayName, String newfaxOutEmail, String newfaxOutFaxId) {
 		
 		// Get idx for edit
-		testFuncs.myDebugPrinting("Get idx for edit", testVars.MINOR);
+		testFuncs.myDebugPrinting("Get idx for edit", enumsClass.logModes.MINOR);
 		int idx = getIdx(faxOutNumber);
 		myClick(By.xpath("//*[@id='results']/tbody/tr[" + idx + "]/td[5]/a/img"), 5000);
 		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td/span", "Modify User");
 
 		// Fill data
-		testFuncs.myDebugPrinting("Fill data", testVars.MINOR);
+		testFuncs.myDebugPrinting("Fill data", enumsClass.logModes.MINOR);
 		mySendKeys(By.xpath("//*[@id='number']")	 , newfaxoutNumber	   , 2000);
 		mySendKeys(By.xpath("//*[@id='email']")		 , newfaxOutDisplayName, 2000);
 		mySendKeys(By.xpath("//*[@id='displayname']"), newfaxOutEmail	   , 2000);
 		mySendKeys(By.xpath("//*[@id='faxname']")	 , newfaxOutFaxId	   , 2000);
 				
 		// Submit page and verify
-		testFuncs.myDebugPrinting("Submit page and verify edit", testVars.MINOR);
+		testFuncs.myDebugPrinting("Submit page and verify edit", enumsClass.logModes.MINOR);
 		driver.switchTo().defaultContent();
 		myClick(By.xpath("//*[@id='submit_img']"), 7000);	
 		verifyRec(newfaxoutNumber);
@@ -1051,7 +1038,7 @@ public class WebFuncs {
 	private void deleteFaxOutUser(String faxOutNumber, String faxOutDisplayName) {
 		
 		// Get idx for delete
-		testFuncs.myDebugPrinting("Get idx for delete", testVars.MINOR);
+		testFuncs.myDebugPrinting("Get idx for delete", enumsClass.logModes.MINOR);
 		int idx = getIdx(faxOutNumber);
 		myClick(By.xpath("//*[@id='results']/tbody/tr[" + idx + "]/td[6]/a/img"), 5000);	
 		verifyStrByXpath(driver, "//*[@id='jqi_state_state0']/div[1]/table/tbody/tr[1]/th", "Delete User");
@@ -1059,7 +1046,7 @@ public class WebFuncs {
 		myClick(By.xpath("//*[@id='jqi_state0_buttonDelete']"), 10000);
 			
 		// Verify delete
-		testFuncs.myDebugPrinting("Verify delete of <" + faxOutNumber + ">", testVars.MINOR);
+		testFuncs.myDebugPrinting("Verify delete of <" + faxOutNumber + ">", enumsClass.logModes.MINOR);
 		String bodyText     = driver.findElement(By.tagName("body")).getText();
 		testFuncs.myAssertTrue("Delete fails <" + faxOutNumber      + "> is still detected !!", !bodyText.contains(faxOutNumber));
 		testFuncs.myAssertTrue("Delete fails <" + faxOutDisplayName + "> is still detected !!", !bodyText.contains(faxOutDisplayName));	
@@ -1075,20 +1062,20 @@ public class WebFuncs {
 	private void createFaxOutUser(String faxOutNumber, String faxOutEmail, String faxOutDisplayName, String faxOutFaxId) {
 
 		// Enter Add-Fax-Out number menu
-		testFuncs.myDebugPrinting("Enter Add-Fax-Out number menu", testVars.MINOR);
+		testFuncs.myDebugPrinting("Enter Add-Fax-Out number menu", enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 		myClick(By.xpath("//*[@id='addBtn']"), 5000);
 		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td/span", "Add New User");
 		
 		// Fill data
-		testFuncs.myDebugPrinting("Fill data", testVars.MINOR);
+		testFuncs.myDebugPrinting("Fill data", enumsClass.logModes.MINOR);
 		mySendKeys(By.xpath("//*[@id='number']")	 , faxOutNumber	    , 2000);
 		mySendKeys(By.xpath("//*[@id='displayname']"), faxOutDisplayName, 2000);
 		mySendKeys(By.xpath("//*[@id='email']")	 	 , faxOutEmail		, 2000);
 		mySendKeys(By.xpath("//*[@id='faxname']")	 , faxOutFaxId	    , 2000);
 		
 		// Submit page and verify
-		testFuncs.myDebugPrinting("Submit page and verify", testVars.MINOR);
+		testFuncs.myDebugPrinting("Submit page and verify", enumsClass.logModes.MINOR);
 		driver.switchTo().defaultContent();
 		myClick(By.xpath("//*[@id='submit_img']"), 7000);	
 		verifyRec(faxOutNumber);
@@ -1105,20 +1092,20 @@ public class WebFuncs {
 	private void editFaxInUser(String faxInNumber, String newfaxInNumber, String newfaxInEmail, String newfaxInDisplayName, String newfaxInFaxId) {
 		
 		// Get idx for edit
-		testFuncs.myDebugPrinting("Get idx for edit", testVars.MINOR);
+		testFuncs.myDebugPrinting("Get idx for edit", enumsClass.logModes.MINOR);
 		int idx = getIdx(faxInNumber);
 		myClick(By.xpath("//*[@id='results']/tbody/tr[" + idx + "]/td[6]/a/img"), 5000);
 		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td/span", "Modify Number : " + faxInNumber);
 
 		// Fill data
-		testFuncs.myDebugPrinting("Fill data", testVars.MINOR);
+		testFuncs.myDebugPrinting("Fill data", enumsClass.logModes.MINOR);
 		mySendKeys(By.xpath("//*[@id='NUMBER']")	 ,newfaxInNumber	 , 2000);
 		mySendKeys(By.xpath("//*[@id='DISPLAYNAME']"),newfaxInDisplayName, 2000);
 		mySendKeys(By.xpath("//*[@id='EMAIL']")	 	 ,newfaxInEmail 	 , 2000);
 		mySendKeys(By.xpath("//*[@id='FAXNAME']")	 ,newfaxInFaxId	     , 2000);
 				
 		// Submit page and verify
-		testFuncs.myDebugPrinting("Submit page and verify edit", testVars.MINOR);
+		testFuncs.myDebugPrinting("Submit page and verify edit", enumsClass.logModes.MINOR);
 		driver.switchTo().defaultContent();
 		myClick(By.xpath("//*[@id='submit_img']"), 7000);	
 		verifyRec(newfaxInNumber);
@@ -1132,17 +1119,17 @@ public class WebFuncs {
 	private int getIdx(String recName) {
 		
 		// Get idx
-		testFuncs.myDebugPrinting("Get idx", testVars.MINOR); 
+		testFuncs.myDebugPrinting("Get idx", enumsClass.logModes.MINOR); 
 	    int recNum = Integer.valueOf(driver.findElement(By.xpath("//*[@id='shownumber']/b[2]")).getText());
-		testFuncs.myDebugPrinting("recNum - " + recNum, testVars.DEBUG);
+		testFuncs.myDebugPrinting("recNum - " + recNum, enumsClass.logModes.DEBUG);
 		int loopNum = (recNum / 20) + 1;
-		testFuncs.myDebugPrinting("loopNum - " + loopNum, testVars.DEBUG);
+		testFuncs.myDebugPrinting("loopNum - " + loopNum, enumsClass.logModes.DEBUG);
 		
 		int recIdx = 1, currLoopNum = 1, allRecIdx = 1;
 		for (allRecIdx = 1; allRecIdx < recNum; ++allRecIdx) {
 				
-			testFuncs.myDebugPrinting("allRecIdx - " + allRecIdx, testVars.DEBUG);
-			testFuncs.myDebugPrinting("recIdx - " 	 + recIdx   , testVars.DEBUG);
+			testFuncs.myDebugPrinting("allRecIdx - " + allRecIdx, enumsClass.logModes.DEBUG);
+			testFuncs.myDebugPrinting("recIdx - " 	 + recIdx   , enumsClass.logModes.DEBUG);
 		
 			// Get record data
 			String tempRecord = driver.findElement(By.xpath("//*[@id='results']/tbody/tr[" + recIdx + "]/td[1]")).getText();
@@ -1150,7 +1137,7 @@ public class WebFuncs {
 			// If record was detected, return the current recIdx
 			if (tempRecord.contains(recName)) {
 				
-				testFuncs.myDebugPrinting(recName + " was detected !! " + recIdx + " is returned", testVars.DEBUG);
+				testFuncs.myDebugPrinting(recName + " was detected !! " + recIdx + " is returned", enumsClass.logModes.DEBUG);
 				return recIdx; 
 			} 
 			
@@ -1160,13 +1147,13 @@ public class WebFuncs {
 				// If the current record is the last record in the menu, reset recIdx for next menu
 				if (recIdx ==  20) {
 					
-					testFuncs.myDebugPrinting("reset recIdx", testVars.DEBUG);
+					testFuncs.myDebugPrinting("reset recIdx", enumsClass.logModes.DEBUG);
 					recIdx = 1;
 					
 					// If the current menu is not the last menu, move to next menu
 					if (currLoopNum < loopNum) {
 						
-						testFuncs.myDebugPrinting("move to next menu (currLoopNum - " + currLoopNum + " loopNum - " + loopNum + ")", testVars.DEBUG);
+						testFuncs.myDebugPrinting("move to next menu (currLoopNum - " + currLoopNum + " loopNum - " + loopNum + ")", enumsClass.logModes.DEBUG);
 						myClick(By.xpath("//*[@id='navigator']/a[3]"), 5000);
 						currLoopNum++;
 					}	
@@ -1175,7 +1162,7 @@ public class WebFuncs {
 				// The current record is not the last, therefore increase recIdx.
 				else {
 					
-					testFuncs.myDebugPrinting("increase recIdx", testVars.DEBUG);
+					testFuncs.myDebugPrinting("increase recIdx", enumsClass.logModes.DEBUG);
 					recIdx++;
 				}
 			}
@@ -1195,20 +1182,20 @@ public class WebFuncs {
 	*/
 	private void checkArchiveCheckbox(boolean isUncheckArchive) {
 		
-		testFuncs.myDebugPrinting(isUncheckArchive?"true":"false", testVars.MINOR);
+		testFuncs.myDebugPrinting(isUncheckArchive?"true":"false", enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 	    if (isUncheckArchive) {
 	    	
 	    	if (driver.findElement(By.xpath("//*[@id='archive']")).isSelected()) {
 			
-	    		testFuncs.myDebugPrinting("Checkbox was checked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was checked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='archive']"), 2000);
 	    	}
 		} else {
 			
 	    	if (!driver.findElement(By.xpath("//*[@id='archive']")).isSelected()) {
 				
-	    		testFuncs.myDebugPrinting("Checkbox was un-checked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was un-checked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='archive']"), 2000);
 	    	}
 		}
@@ -1222,7 +1209,7 @@ public class WebFuncs {
 	private void deleteFaxInUser(String faxInNumber, String faxInDisplayName) {
 		
 		// Get idx for delete
-		testFuncs.myDebugPrinting("Get idx for delete", testVars.MINOR);
+		testFuncs.myDebugPrinting("Get idx for delete", enumsClass.logModes.MINOR);
 		int idx = getIdx(faxInNumber);
 		myClick(By.xpath("//*[@id='results']/tbody/tr[" + idx + "]/td[7]/a/img"), 5000);
 		verifyStrByXpath(driver, "//*[@id='jqi_state_state0']/div[1]/table/tbody/tr[1]/th", "Delete Number");
@@ -1230,7 +1217,7 @@ public class WebFuncs {
 		myClick(By.xpath("//*[@id='jqi_state0_buttonDelete']"), 10000);
 	
 		// Verify delete
-		testFuncs.myDebugPrinting("Verify delete", testVars.MINOR);
+		testFuncs.myDebugPrinting("Verify delete", enumsClass.logModes.MINOR);
 		String bodyText     = driver.findElement(By.tagName("body")).getText();
 		testFuncs.myAssertTrue("Delete fails <" + faxInNumber      + "> is still detected !!", !bodyText.contains(faxInNumber));
 		testFuncs.myAssertTrue("Delete fails <" + faxInDisplayName + "> is still detected !!", !bodyText.contains(faxInDisplayName));	
@@ -1246,20 +1233,20 @@ public class WebFuncs {
 	private void createFaxInUser(String faxInNumber, String faxInDisplayName, String faxInEmail, String faxInFaxId) {
 
 		// Enter Add-Fax-In number menu
-		testFuncs.myDebugPrinting("Enter Add-Fax-In number menu", testVars.MINOR);
+		testFuncs.myDebugPrinting("Enter Add-Fax-In number menu", enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 		myClick(By.xpath("//*[@id='addBtn']"), 5000);
 		verifyStrByXpath(driver, "//*[@id='trunkTBL']/table/tbody/tr[1]/td/span", "Add Number");
 		
 		// Fill data
-		testFuncs.myDebugPrinting("Fill data", testVars.MINOR);
+		testFuncs.myDebugPrinting("Fill data", enumsClass.logModes.MINOR);
 		mySendKeys(By.xpath("//*[@id='NUMBER']")	 , faxInNumber	    , 2000);
 		mySendKeys(By.xpath("//*[@id='DISPLAYNAME']"), faxInEmail		, 2000);
 		mySendKeys(By.xpath("//*[@id='EMAIL']")	 	 , faxInDisplayName , 2000);
 		mySendKeys(By.xpath("//*[@id='FAXNAME']")	 , faxInFaxId	    , 2000);
 		
 		// Submit page and verify
-		testFuncs.myDebugPrinting("Submit page and verify", testVars.MINOR);
+		testFuncs.myDebugPrinting("Submit page and verify", enumsClass.logModes.MINOR);
 		driver.switchTo().defaultContent();
 		myClick(By.xpath("//*[@id='submit_img']"), 7000);	
 		verifyRec(faxInNumber);
@@ -1269,9 +1256,9 @@ public class WebFuncs {
 		
 	    driver.switchTo().frame(1);   
 	    int recNum = Integer.valueOf(driver.findElement(By.xpath("//*[@id='shownumber']/b[2]")).getText());
-		testFuncs.myDebugPrinting("recNum - " + recNum, testVars.DEBUG);
+		testFuncs.myDebugPrinting("recNum - " + recNum, enumsClass.logModes.DEBUG);
 		int loopNum = (recNum / 20) + 1;
-		testFuncs.myDebugPrinting("loopNum - " + loopNum, testVars.DEBUG);
+		testFuncs.myDebugPrinting("loopNum - " + loopNum, enumsClass.logModes.DEBUG);
 		 
 		// Loop on all menus
 		String bodyText; 
@@ -1281,7 +1268,7 @@ public class WebFuncs {
 		    bodyText     = driver.findElement(By.tagName("body")).getText();     
 		    if (bodyText.contains(record)) { 
 		    	
-				testFuncs.myDebugPrinting(record + " was detected !!", testVars.MINOR);
+				testFuncs.myDebugPrinting(record + " was detected !!", enumsClass.logModes.MINOR);
 				break;
 			    
 		    } else {
@@ -1302,20 +1289,20 @@ public class WebFuncs {
 	*/
 	private void checkDisplayRemoteId(boolean isUncheckDisplayRemoteId) {
 		
-		testFuncs.myDebugPrinting(isUncheckDisplayRemoteId?"true":"false", testVars.MINOR);
+		testFuncs.myDebugPrinting(isUncheckDisplayRemoteId?"true":"false", enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 	    if (isUncheckDisplayRemoteId) {
 	    	
 	    	if (driver.findElement(By.xpath("//*[@id='remote']")).isSelected()) {
 			
-	    		testFuncs.myDebugPrinting("Checkbox was checked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was checked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='remote']"), 2000);
 	    	}
 		} else {
 			
 	    	if (!driver.findElement(By.xpath("//*[@id='remote']")).isSelected()) {
 				
-	    		testFuncs.myDebugPrinting("Checkbox was un-checked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was un-checked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='remote']"), 2000);
 	    	}
 		}
@@ -1326,20 +1313,20 @@ public class WebFuncs {
 	*/	
 	private void checkAddSymbols(boolean isAddSymbolsCheckbox) {
 		
-		testFuncs.myDebugPrinting(isAddSymbolsCheckbox?"true":"false", testVars.MINOR);
+		testFuncs.myDebugPrinting(isAddSymbolsCheckbox?"true":"false", enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 	    if (isAddSymbolsCheckbox) {
 	    	
 	    	if (!driver.findElement(By.xpath("//*[@id='add_symbol']")).isSelected()) {
 			
-	    		testFuncs.myDebugPrinting("Checkbox was unchecked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was unchecked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='add_symbol']"), 2000);
 	    	}
 		} else {
 			
 	    	if (driver.findElement(By.xpath("//*[@id='add_symbol']")).isSelected()) {
 				
-	    		testFuncs.myDebugPrinting("Checkbox was checked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was checked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='add_symbol']"), 2000);
 	    	}
 		}
@@ -1350,20 +1337,20 @@ public class WebFuncs {
 	*/	
 	private void checkEmailConfirmation(boolean isUncheckEmailConfCheckbox) {
 		
-		testFuncs.myDebugPrinting(isUncheckEmailConfCheckbox?"true":"false", testVars.MINOR);
+		testFuncs.myDebugPrinting(isUncheckEmailConfCheckbox?"true":"false", enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 	    if (isUncheckEmailConfCheckbox) {
 	    	
 	    	if (driver.findElement(By.xpath("//*[@id='send_prev']")).isSelected()) {
 			
-	    		testFuncs.myDebugPrinting("Checkbox was checked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was checked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='send_prev']"), 2000);
 	    	}
 		} else {
 			
 	    	if (!driver.findElement(By.xpath("//*[@id='send_prev']")).isSelected()) {
 				
-	    		testFuncs.myDebugPrinting("Checkbox was un-checked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was un-checked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='send_prev']"), 2000);
 	    	}
 		}
@@ -1374,7 +1361,7 @@ public class WebFuncs {
 	*/
 	private void setFaxInFaxId(String option) {
 
-		testFuncs.myDebugPrinting("setFaxInFaxId option -  " + option, testVars.MINOR);
+		testFuncs.myDebugPrinting("setFaxInFaxId option -  " + option, enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 	    new Select (driver.findElement(By.xpath("//*[@id='method_id']"))).selectByVisibleText(option);
 	    testFuncs.myWait(10000);
@@ -1385,7 +1372,7 @@ public class WebFuncs {
 	*/
 	private void setFaxOutFaxId(String option) {
 		
-		testFuncs.myDebugPrinting("setFaxOutFaxId option -  " + option, testVars.MINOR);
+		testFuncs.myDebugPrinting("setFaxOutFaxId option -  " + option, enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 	    new Select (driver.findElement(By.xpath("//*[@id='method_id']"))).selectByVisibleText(option);
 	    testFuncs.myWait(3000);
@@ -1396,20 +1383,20 @@ public class WebFuncs {
 	*/
 	private void checkCoverPage(boolean isCBChecked) {
 		
-		testFuncs.myDebugPrinting(isCBChecked?"true":"false", testVars.MINOR);
+		testFuncs.myDebugPrinting(isCBChecked?"true":"false", enumsClass.logModes.MINOR);
 	    driver.switchTo().frame(1);
 	    if (isCBChecked) {
 	    	
 	    	if (driver.findElement(By.xpath("//*[@id='add_cp']")).isSelected()) {
 			
-	    		testFuncs.myDebugPrinting("Checkbox was checked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was checked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='add_cp']"), 2000);
 	    	}
 		} else {
 			
 	    	if (!driver.findElement(By.xpath("//*[@id='add_cp']")).isSelected()) {
 				
-	    		testFuncs.myDebugPrinting("Checkbox was un-checked", testVars.MINOR);
+	    		testFuncs.myDebugPrinting("Checkbox was un-checked", enumsClass.logModes.MINOR);
 	    		myClick(By.xpath("//*[@id='add_cp']"), 2000);
 	    	}
 		}
@@ -1455,13 +1442,13 @@ public class WebFuncs {
 	private void login(WebDriver driver, String username, String password, String mainStr) {
 		  
 		String title = driver.getTitle();
-		testFuncs.myDebugPrinting("title - "             + title            , testVars.MINOR);  	 
-		testFuncs.myDebugPrinting("testVars.getUrl() - " + testVars.getUrl(),testVars.MINOR);
+		testFuncs.myDebugPrinting("title - "             + title            , enumsClass.logModes.MINOR);  	 
+		testFuncs.myDebugPrinting("testVars.getUrl() - " + testVars.getUrl(),enumsClass.logModes.MINOR);
 		driver.get("http://" + testVars.getUrl());		
 		testFuncs.myWait(3000);
 		searchStr(testVars.getMainPageStr());  
-		testFuncs.myDebugPrinting("username - " + username ,testVars.MINOR);
-		testFuncs.myDebugPrinting("password - " + password ,testVars.MINOR);
+		testFuncs.myDebugPrinting("username - " + username ,enumsClass.logModes.MINOR);
+		testFuncs.myDebugPrinting("password - " + password ,enumsClass.logModes.MINOR);
 		mySendKeys(By.xpath("//*[@id='Table5']/tbody/tr[3]/td[2]/input"), username, 1500);
 		mySendKeys(By.xpath("//*[@id='Table5']/tbody/tr[4]/td[2]/input"), password, 1500);    	    
 		myClick(By.xpath("//*[@id='Submit1']"), 3000);
@@ -1505,7 +1492,7 @@ public class WebFuncs {
 	  String bodyText     = driver.findElement(By.tagName("body")).getText();
 	  if (bodyText.contains(strName)) {
 		  
-		  testFuncs.myDebugPrinting("<" + strName + "> was detected !!",  testVars.MINOR);
+		  testFuncs.myDebugPrinting("<" + strName + "> was detected !!",  enumsClass.logModes.MINOR);
 	  } else {
 		  
 		  testFuncs.myFail("<" + strName + "> was not detected !! \nbodyText - " + bodyText);
@@ -1518,9 +1505,9 @@ public class WebFuncs {
 	*  @param menuName 	   - given menu name for the paths function
 	*  @param verifyHeader - string for verify that enter the menu succeeded
 	*/
-	public void enterMenu(WebDriver	driver, String menuName, String verifyHeader) {
+	public void enterMenu(WebDriver	driver, menuNames menuName, String verifyHeader) {
 		  
-		testFuncs.myDebugPrinting("enterMenu  - " +  menuName, testVars.NORMAL);
+		testFuncs.myDebugPrinting("enterMenu  - " +  menuName, enumsClass.logModes.NORMAL);
 		String paths[] = getPaths(menuName);
 		int length = paths.length;
 	    driver.switchTo().defaultContent();
@@ -1530,7 +1517,7 @@ public class WebFuncs {
 				  
 				  break;
 			  }
-			  testFuncs.myDebugPrinting("paths[" + i + "] - " +  paths[i], testVars.MINOR);
+			  testFuncs.myDebugPrinting("paths[" + i + "] - " +  paths[i], enumsClass.logModes.MINOR);
 			  markElemet(driver, driver.findElement(By.xpath(paths[i])));
 			  testFuncs.myWait(500);
 		      driver.findElement(By.xpath(paths[i])).click();
@@ -1548,7 +1535,7 @@ public class WebFuncs {
 		}  
 		driver.switchTo().defaultContent();
 	    testFuncs.myWait(5000);
-		testFuncs.myDebugPrinting("enterMenu  - " +  menuName + " ended successfully !!", testVars.NORMAL);
+		testFuncs.myDebugPrinting("enterMenu  - " +  menuName + " ended successfully !!", enumsClass.logModes.NORMAL);
     }
 	
 	/**
@@ -1606,12 +1593,12 @@ public class WebFuncs {
 	    	  }  else {
 	    		  
 	        	  idx += 1000;
-		    	  testFuncs.myDebugPrinting(string + " is still not detected after " + (idx/1000) + " seconds", testVars.MINOR);
+		    	  testFuncs.myDebugPrinting(string + " is still not detected after " + (idx/1000) + " seconds", enumsClass.logModes.MINOR);
 		    	  testFuncs.myWait(1000);	  
 	    	  }
 	      } else {
 	    	  
-	    	  testFuncs.myDebugPrinting(string + " was detected !!", testVars.MINOR);
+	    	  testFuncs.myDebugPrinting(string + " was detected !!", enumsClass.logModes.MINOR);
 	    	  break;
 	      }
 		}

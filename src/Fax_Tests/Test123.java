@@ -81,7 +81,7 @@ public class Test123 {
 	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
-		  testFuncs.myDebugPrinting("Search for character <" + spanishAlphabet[i] + ">", testVars.MINOR);
+		  testFuncs.myDebugPrinting("Search for character <" + spanishAlphabet[i] + ">", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("The charcater <" + spanishAlphabet[i] + "> was not detected !!", statusMsg.contains(spanishAlphabet[i]));
 	  }
 	  
@@ -90,7 +90,7 @@ public class Test123 {
 	  String resMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
-		  testFuncs.myDebugPrinting("Search for character <" + spanishAlphabet[i] + ">", testVars.MINOR);
+		  testFuncs.myDebugPrinting("Search for character <" + spanishAlphabet[i] + ">", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("The charcater <" + spanishAlphabet[i] + "> was not detected !!", resMsg.contains(spanishAlphabet[i]));
 	  } 
   }

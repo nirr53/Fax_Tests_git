@@ -86,7 +86,7 @@ public class Test121 {
 	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
-		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet[i] + ">", testVars.MINOR);
+		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet[i] + ">", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("The charcater <" + russianAlphabet[i] + "> was not detected !!", statusMsg.contains(russianAlphabet[i]));
 	  }
 	  
@@ -95,7 +95,7 @@ public class Test121 {
 	  String resMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
-		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet[i] + ">", testVars.MINOR);
+		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet[i] + ">", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("The charcater <" + russianAlphabet[i] + "> was not detected !!", resMsg.contains(russianAlphabet[i]));
 	  }  
 	  
@@ -117,7 +117,7 @@ public class Test121 {
 	  statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
-		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet2[i] + ">", testVars.MINOR);
+		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet2[i] + ">", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("The charcater <" + russianAlphabet2[i] + "> was not detected !!", statusMsg.contains(russianAlphabet2[i]));
 	  }
 	  
@@ -126,7 +126,7 @@ public class Test121 {
 	  resMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
-		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet2[i] + ">", testVars.MINOR);
+		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet2[i] + ">", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("The charcater <" + russianAlphabet2[i] + "> was not detected !!", resMsg.contains(russianAlphabet2[i]));
 	  }
   }

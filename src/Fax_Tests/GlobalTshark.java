@@ -27,19 +27,19 @@ public class GlobalTshark {
 	public void StartCapture(String maxPackNum, String filter, String outputPath) throws IOException {
 		
 		// Set variables
-		testFuncs.myDebugPrinting("tsharkPath - " + tsharkPath, testVars.MINOR);	
-		testFuncs.myDebugPrinting("maxPackNum - " + maxPackNum, testVars.MINOR);	
-		testFuncs.myDebugPrinting("filter - "     + filter    , testVars.MINOR);	
-		testFuncs.myDebugPrinting("outputPath - " + outputPath, testVars.MINOR);	
+		testFuncs.myDebugPrinting("tsharkPath - " + tsharkPath, enumsClass.logModes.MINOR);	
+		testFuncs.myDebugPrinting("maxPackNum - " + maxPackNum, enumsClass.logModes.MINOR);	
+		testFuncs.myDebugPrinting("filter - "     + filter    , enumsClass.logModes.MINOR);	
+		testFuncs.myDebugPrinting("outputPath - " + outputPath, enumsClass.logModes.MINOR);	
 
 		// Activate Tshark capture
-		testFuncs.myDebugPrinting(" Activate Tshark capture", testVars.MINOR);	
+		testFuncs.myDebugPrinting(" Activate Tshark capture", enumsClass.logModes.MINOR);	
 		Process process = new ProcessBuilder(tsharkPath, "-c " + maxPackNum, filter, "-w " + outputPath).start();
 		BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));	    
 		String line; 
 		while ((line = br.readLine()) != null) {
 	  
-			testFuncs.myDebugPrinting(line, testVars.MINOR);	
+			testFuncs.myDebugPrinting(line, enumsClass.logModes.MINOR);	
 		}
 	}
 }

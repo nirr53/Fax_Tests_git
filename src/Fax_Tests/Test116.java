@@ -79,7 +79,7 @@ public class Test116 {
 	  // Loop on all the services
 	  for (String service : extraData) {
 		  
-		  testFuncs.myDebugPrinting("The current tested service - " + service, testVars.MAJOR);
+		  testFuncs.myDebugPrinting("The current tested service - " + service, enumsClass.logModes.MAJOR);
 		  String[] neededData = {service};
 		  webFuncs.setConfiguration(116, "Services Logs", neededData);
 	  }

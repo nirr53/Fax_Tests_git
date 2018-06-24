@@ -68,7 +68,7 @@ public class Test110 {
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
 	  String inputPath = testVars.getRootDir()  + "\\input\\";
-	  testFuncs.myDebugPrinting("inputPath - " + inputPath, testVars.MINOR);
+	  testFuncs.myDebugPrinting("inputPath - " + inputPath, enumsClass.logModes.MINOR);
 	  int fileNum = -1;
 		
 	  // Step 1 - Deposit a fax with similar To and Cc address 

@@ -3,6 +3,7 @@ package Fax_Tests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
+import Fax_Tests.enumsClass.logModes;
 import static org.junit.Assert.*;
 import java.io.BufferedReader;
 import java.io.File;
@@ -46,7 +47,7 @@ public class GlobalFuncs {
 		  String bodyText     = driver.findElement(By.tagName("body")).getText();
 		  if (bodyText.contains(strName)) {
 			  
-			  myDebugPrinting("<" + strName + "> was detected !!",  testVars.MINOR);
+			  myDebugPrinting("<" + strName + "> was detected !!",  enumsClass.logModes.MINOR);
 		  } else {
 			  
 			  myFail("<" + strName + "> was not detected !! \nbodyText - " + bodyText);
@@ -61,15 +62,15 @@ public class GlobalFuncs {
 	  */
 	  public boolean findFilesByGivenPrefix(String dir, String prefix) {
 	    	
-			myDebugPrinting("dir    - " + dir   ,  testVars.MINOR);
-			myDebugPrinting("prefix - " + prefix,  testVars.MINOR);
+			myDebugPrinting("dir    - " + dir   ,  enumsClass.logModes.MINOR);
+			myDebugPrinting("prefix - " + prefix,  enumsClass.logModes.MINOR);
 	    	File[] dirFiles = new File(dir).listFiles();
 	    	int filesNum = dirFiles.length;
 	    	for (int i = 0; i < filesNum; i++) {
 	    		
 	    	    if (dirFiles[i].getName().startsWith(prefix, 0)) {
 	    			
-	    	    	myDebugPrinting("Find a file ! (" + dirFiles[i].getName() + ")",  testVars.MINOR);
+	    	    	myDebugPrinting("Find a file ! (" + dirFiles[i].getName() + ")",  enumsClass.logModes.MINOR);
 	    	        return true;
 	    	    }
 	    	}
@@ -84,24 +85,24 @@ public class GlobalFuncs {
 	  */
 	  public void deleteFilesByPrefix(String dir, String prefix) {
 	    	
-		myDebugPrinting("dir    - " + dir   ,  testVars.MINOR);
+		myDebugPrinting("dir    - " + dir   ,  enumsClass.logModes.MINOR);
     	File[] dirFiles = new File(dir).listFiles();
     	int filesNum = dirFiles.length;
     	for (int i = 0; i < filesNum; i++) {
     		
     		if (!prefix.isEmpty()) {
     			
-    			myDebugPrinting("prefix - " + prefix,  testVars.DEBUG);
+    			myDebugPrinting("prefix - " + prefix,  enumsClass.logModes.DEBUG);
 	    	    if (dirFiles[i].getName().startsWith(prefix, 0)) {
 	    	    	
-	    			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  testVars.DEBUG);
+	    			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  enumsClass.logModes.DEBUG);
 	    	        new File(dir + "\\" + dirFiles[i].getName()).delete();
 	    		    myWait(5000);    
 	    	    }	    	    
     		} else {
     			
-    			myDebugPrinting("prefix  is empty, delete all files on dir - " + dir,  testVars.DEBUG);		
-    			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  testVars.DEBUG);
+    			myDebugPrinting("prefix  is empty, delete all files on dir - " + dir,  enumsClass.logModes.DEBUG);		
+    			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  enumsClass.logModes.DEBUG);
     	        new File(dir + "\\" + dirFiles[i].getName()).delete();
     		    myWait(5000);	
     		}
@@ -156,17 +157,6 @@ public class GlobalFuncs {
 			  myFail (strName + " was not detected !!");
 		  }
 	  }
-	    
-	  /**
-	  *  Print a given string to the console
-	  *  @param str   - given string to print
-	  *  @param level - given print level (MAJOR, NORMAL, MINOR, DEBUG)
-	  */
-	  public void myDebugPrinting(String str, int level) {
-		    
-		  String[] debug          = {"", "   ", "      ", "         "};
-		  logger.info(debug[level] + str);
-	  }
 	  
 	  /**
 	  * Return the number of lines in given file. Used to calculate number of imports.
@@ -185,10 +175,10 @@ public class GlobalFuncs {
 		if (lines < 1) {
 			myFail("The given file is empty -" + filePath);
 		}
-		myDebugPrinting("filePath - "  + filePath, testVars.MINOR);
+		myDebugPrinting("filePath - "  + filePath, enumsClass.logModes.MINOR);
 		if (isHeader) {
 			
-			myDebugPrinting("isHeader - TRUE, lines - " + (lines - 1)   , testVars.MINOR);
+			myDebugPrinting("isHeader - TRUE, lines - " + (lines - 1)   , enumsClass.logModes.MINOR);
 			return (lines - 1);
 		}
 		
@@ -238,12 +228,22 @@ public class GlobalFuncs {
 	    Date date     = new Date();
 	    String id     = dateFormat.format(date);
 	    id = id.replaceAll("_", "");
-		myDebugPrinting("Id is:" + id, testVars.MAJOR);
+		myDebugPrinting("Id is:" + id, enumsClass.logModes.MAJOR);
 		
 	    return id;
-	  }
+	  }	  
 	  
 	  /**
+	  *  Print a given string to the console
+	  *  @param str   - given string to print
+	  *  @param level - given print level (MAJOR, NORMAL, MINOR, DEBUG)
+	  */
+	  public void myDebugPrinting(String str, logModes level) {
+		    
+		  logger.info(level.getLevel() + str);
+	  }
+
+	/**
 	  *  Wrap assertTrue with logger
 	  *  @param errorStr  - error message for display at the logger
 	  *  @param condition - condition for mark if the assert succeeded or not
@@ -262,32 +262,32 @@ public class GlobalFuncs {
 	  */
 	  public void depositFax(String[] faxHeaders, Map<String, String> dataMap) {
 		
-		myDebugPrinting( "Fax deposit started..", testVars.NORMAL);
+		myDebugPrinting( "Fax deposit started..", enumsClass.logModes.NORMAL);
 		
 		// Set default data
 		int maxWaitTime = 1300;
 		if (dataMap.containsKey("maxWaitTime")) {
 			
 			maxWaitTime = Integer.valueOf(dataMap.get("maxWaitTime"));
-			myDebugPrinting("Non default max-wait-time is defined - " +  maxWaitTime, testVars.MINOR);		
+			myDebugPrinting("Non default max-wait-time is defined - " +  maxWaitTime, enumsClass.logModes.MINOR);		
 		}
 		int fileNumber = 5;
 		if (dataMap.containsKey("fileNumber")) {
 			
 			fileNumber = Integer.valueOf(dataMap.get("fileNumber"));
-			myDebugPrinting("Non default fileNumber is defined - " +  fileNumber, testVars.MINOR);		
+			myDebugPrinting("Non default fileNumber is defined - " +  fileNumber, enumsClass.logModes.MINOR);		
 		}
 		int raiseError = 1;
 		if (dataMap.containsKey("raiseError")) {
 			
 			raiseError = Integer.valueOf(dataMap.get("raiseError"));
-			myDebugPrinting("Non default raiseError is defined - " +  raiseError, testVars.MINOR);		
+			myDebugPrinting("Non default raiseError is defined - " +  raiseError, enumsClass.logModes.MINOR);		
 		}
 		int isMultipleTargets = 0;
 		if (dataMap.containsKey("isMultipleTargets")) {
 			
 			isMultipleTargets = Integer.valueOf(dataMap.get("isMultipleTargets"));
-			myDebugPrinting("Non default isMultipleTargets is defined - " +  isMultipleTargets, testVars.MINOR);		
+			myDebugPrinting("Non default isMultipleTargets is defined - " +  isMultipleTargets, enumsClass.logModes.MINOR);		
 		}	
 		
 				
@@ -307,7 +307,7 @@ public class GlobalFuncs {
 		if (dataMap.containsKey("outputPath")) {
 			
 			outputPath = dataMap.get("outputPath");		
-			myDebugPrinting("outputPath - " + outputPath, testVars.MINOR);			
+			myDebugPrinting("outputPath - " + outputPath, enumsClass.logModes.MINOR);			
 			File f = new File(outputPath);
 			myAssertTrue("Output path is not exists !!", f.exists() && !f.isDirectory());
 		} else {
@@ -342,10 +342,10 @@ public class GlobalFuncs {
 													pathBody    + "\n" +
 													pathResult  + "\n" +
 													pathBodyAtt + "\n" +
-													pathResultAtt, testVars.MINOR);		
+													pathResultAtt, enumsClass.logModes.MINOR);		
 		
 		// Close all command-line instances (if exists)
-		myDebugPrinting("Close all command-line instances (if exists)", testVars.MINOR);		
+		myDebugPrinting("Close all command-line instances (if exists)", enumsClass.logModes.MINOR);		
 		try {
 			
 	        Runtime.getRuntime().exec("taskkill /f /im cmd.exe") ;
@@ -355,7 +355,7 @@ public class GlobalFuncs {
 		}
 		
 		// Close all acrobat instances (if exists)
-		myDebugPrinting("Close all acrobat instances (if exists)", testVars.MINOR);		
+		myDebugPrinting("Close all acrobat instances (if exists)", enumsClass.logModes.MINOR);		
 		try {
 		    Process child = Runtime.getRuntime().exec("cmd /c start cmd.exe");
 		    OutputStream out = child.getOutputStream();
@@ -368,14 +368,14 @@ public class GlobalFuncs {
 		}	
 		
 		// Delete all the files from the previous try.
-		myDebugPrinting("Delete all the files from the previous try", testVars.MINOR);		
+		myDebugPrinting("Delete all the files from the previous try", enumsClass.logModes.MINOR);		
 		deleteFilesByPrefix(inputPath , "");
 		deleteFilesByPrefix(errorPath , "");
 		deleteFilesByPrefix(convPath  , "");
 
 		// Deposit a fax using the Fax-injector tool
-		myDebugPrinting("Deposit a fax using the Fax-injector tool", testVars.MINOR);			
-		myDebugPrinting("SMTP_INj/smtpinjct /h " + faxServerIpAddress + " /p " + faxServerIpPort + " /t 30 /if " + outputPath + " /w /af /ar /as /ax", testVars.MINOR);			
+		myDebugPrinting("Deposit a fax using the Fax-injector tool", enumsClass.logModes.MINOR);			
+		myDebugPrinting("SMTP_INj/smtpinjct /h " + faxServerIpAddress + " /p " + faxServerIpPort + " /t 30 /if " + outputPath + " /w /af /ar /as /ax", enumsClass.logModes.MINOR);			
 		try{    
 		    Process p = Runtime.getRuntime().exec(System.getProperty("user.dir") + "//SMTP_INj//smtpinjct /h " + faxServerIpAddress + " /p " + faxServerIpPort + " /t 30 /if " + outputPath + " /w /af /ar /as /ax");
 		    p.waitFor();
@@ -393,7 +393,7 @@ public class GlobalFuncs {
 			// Since we loop 5 times for second, only every 50th loop should be printed.
 			if ((timeIdx % 50) == 0) {
 				
-				myDebugPrinting((timeIdx / 5) + " seconds passed. (maxWaitTime - " + maxWaitTime + ")", testVars.MINOR);
+				myDebugPrinting((timeIdx / 5) + " seconds passed. (maxWaitTime - " + maxWaitTime + ")", enumsClass.logModes.MINOR);
 			}
 
 			// Check for Status message
@@ -402,7 +402,7 @@ public class GlobalFuncs {
 				
 				if (isFileDetected[0] == 0) {
 					
-					myDebugPrinting(pathStatus + " was detected !! (sum2 - " + sum2 + ")", testVars.MINOR);
+					myDebugPrinting(pathStatus + " was detected !! (sum2 - " + sum2 + ")", enumsClass.logModes.MINOR);
 					if (fileNumber == 4) {
 						
 						myFail("Status message was received when the confirmation is off");
@@ -417,7 +417,7 @@ public class GlobalFuncs {
 				
 				if (isFileDetected[1] == 0) {
 					
-					myDebugPrinting(pathBody + " was detected !! (sum2 - " + sum2 + ")", testVars.MINOR);
+					myDebugPrinting(pathBody + " was detected !! (sum2 - " + sum2 + ")", enumsClass.logModes.MINOR);
 					isFileDetected[1] = 1;
 				}
 			}
@@ -428,7 +428,7 @@ public class GlobalFuncs {
 				
 				if (isFileDetected[2] == 0) {
 					
-					myDebugPrinting(pathResult + " was detected !! (sum2 - " + sum2 + ")", testVars.MINOR);
+					myDebugPrinting(pathResult + " was detected !! (sum2 - " + sum2 + ")", enumsClass.logModes.MINOR);
 					isFileDetected[2] = 1;
 				}
 			}
@@ -439,7 +439,7 @@ public class GlobalFuncs {
 				
 				if (isFileDetected[3] == 0) {
 					
-					myDebugPrinting(pathBodyAtt + " was detected !! (sum2 - " + sum2 + ")", testVars.MINOR);
+					myDebugPrinting(pathBodyAtt + " was detected !! (sum2 - " + sum2 + ")", enumsClass.logModes.MINOR);
 					isFileDetected[3] = 1;
 				}
 			}
@@ -450,7 +450,7 @@ public class GlobalFuncs {
 				
 				if (isFileDetected[4] == 0) {
 					
-					myDebugPrinting(pathResultAtt + " was detected !! (sum2 - " + sum2 + ")", testVars.MINOR);
+					myDebugPrinting(pathResultAtt + " was detected !! (sum2 - " + sum2 + ")", enumsClass.logModes.MINOR);
 					isFileDetected[4] = 1;
 				}
 			}
@@ -464,7 +464,7 @@ public class GlobalFuncs {
 					myFail("Failed message was detected");
 				} else			 {
 					
-					myDebugPrinting( "Failed message was detected but raiseError set to  0 ....", testVars.NORMAL);
+					myDebugPrinting( "Failed message was detected but raiseError set to  0 ....", enumsClass.logModes.NORMAL);
 					break;
 				}		
 			}
@@ -478,7 +478,7 @@ public class GlobalFuncs {
 			sum2 += isBodyTxtFound + isBodyPdfFound;
 			if (sum2 == fileNumber) {
 				
-				myDebugPrinting("All files were detected! (sum2 - " + sum2 + " inputFilesNumber - " + fileNumber, testVars.NORMAL);
+				myDebugPrinting("All files were detected! (sum2 - " + sum2 + " inputFilesNumber - " + fileNumber, enumsClass.logModes.NORMAL);
 				break;
 				
 			} else if (timeIdx > realMaxTime) {
@@ -487,7 +487,7 @@ public class GlobalFuncs {
 				for (int k = 0; k < 5; ++k) {
 					if (isFileDetected[k] == 0) {
 						
-						myDebugPrinting(names[k] + "  was not detected..", testVars.NORMAL);
+						myDebugPrinting(names[k] + "  was not detected..", enumsClass.logModes.NORMAL);
 					}
 				}
 				if (raiseError == 1) {
@@ -524,7 +524,7 @@ public class GlobalFuncs {
 		}
 		
 		
-		myDebugPrinting( "Fax deposit ended....", testVars.NORMAL);
+		myDebugPrinting( "Fax deposit ended....", enumsClass.logModes.NORMAL);
 	
 	  }
 	  
@@ -538,14 +538,14 @@ public class GlobalFuncs {
 	  public void activateFaxOCR(String ocrPath, String rootDir, String convFileName) throws IOException {
 		  
 		  // Activate the Fax-OCR
-		  myDebugPrinting("Activate the Fax-OCR", testVars.MINOR);
-		  myDebugPrinting("ocrPath - " + ocrPath, testVars.MINOR);  
+		  myDebugPrinting("Activate the Fax-OCR", enumsClass.logModes.MINOR);
+		  myDebugPrinting("ocrPath - " + ocrPath, enumsClass.logModes.MINOR);  
 		  Process process = new ProcessBuilder(ocrPath, rootDir, convFileName).start();
 		  BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));	    
 		  String line; 
 		  while ((line = br.readLine()) != null) {
    	
-			  myDebugPrinting(line, testVars.MINOR);    
+			  myDebugPrinting(line, enumsClass.logModes.MINOR);    
 		  }
 	  }
 	  
@@ -556,9 +556,9 @@ public class GlobalFuncs {
 	  */
 	  public int countFilesNumber(String path) {
 		  
-		  myDebugPrinting("path - " + path, testVars.MINOR);
+		  myDebugPrinting("path - " + path, enumsClass.logModes.MINOR);
 		  int fileNum = new File(path).listFiles().length;
-		  myDebugPrinting("fileNum - " + fileNum, testVars.MINOR);
+		  myDebugPrinting("fileNum - " + fileNum, enumsClass.logModes.MINOR);
 		  return fileNum;
 	  }
 	  

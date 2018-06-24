@@ -79,7 +79,7 @@ public class Test65 {
 	  webFuncs.setConfiguration(65, "Archive Fax mechanism - archive is disabled", extraData);
 	  
 	  // Get date format
-	  testFuncs.myDebugPrinting("Get date format", testVars.MINOR);  
+	  testFuncs.myDebugPrinting("Get date format", enumsClass.logModes.MINOR);  
 	  SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
 	  Calendar calendar  = Calendar.getInstance(); 
 	  Calendar calendar1 = Calendar.getInstance();
@@ -88,10 +88,10 @@ public class Test65 {
 	  calendar1.add(Calendar.MINUTE, 1);
 	  calendar2.add(Calendar.MINUTE, 2);
 	  calendar3.add(Calendar.MINUTE, 3);
-	  testFuncs.myDebugPrinting("calendar - "  + sdf.format(calendar.getTime()), testVars.MINOR);
-	  testFuncs.myDebugPrinting("calendar1 - " + sdf.format(calendar1.getTime()), testVars.MINOR);
-	  testFuncs.myDebugPrinting("calendar2 - " + sdf.format(calendar2.getTime()), testVars.MINOR);
-	  testFuncs.myDebugPrinting("calendar3 - " + sdf.format(calendar3.getTime()), testVars.MINOR);
+	  testFuncs.myDebugPrinting("calendar - "  +  sdf.format(calendar.getTime()), enumsClass.logModes.MINOR);
+	  testFuncs.myDebugPrinting("calendar1 - " + sdf.format(calendar1.getTime()), enumsClass.logModes.MINOR);
+	  testFuncs.myDebugPrinting("calendar2 - " + sdf.format(calendar2.getTime()), enumsClass.logModes.MINOR);
+	  testFuncs.myDebugPrinting("calendar3 - " + sdf.format(calendar3.getTime()), enumsClass.logModes.MINOR);
 	  
 	  // Step 1 - Deposit fax and check archive
 	  testFuncs.myDebugPrinting("Step 1 - Deposit fax and check archive");

@@ -78,7 +78,7 @@ public class Test125 {
 	  webFuncs.setConfiguration(125, "Data format - dd/MM/yyyy", extraData);
 	  
 	  // Get date format
-	  testFuncs.myDebugPrinting("Get date format", testVars.MINOR);  
+	  testFuncs.myDebugPrinting("Get date format", enumsClass.logModes.MINOR);  
 	  SimpleDateFormat sdf = new SimpleDateFormat(extraData[0]);
 	  Calendar calendar  = Calendar.getInstance(); 
 	  Calendar calendar1 = Calendar.getInstance();
@@ -95,7 +95,7 @@ public class Test125 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  
 	  // Check Data format at Body and result messages
-	  testFuncs.myDebugPrinting("Check Data format at Body and result messages", testVars.MINOR);
+	  testFuncs.myDebugPrinting("Check Data format at Body and result messages", enumsClass.logModes.MINOR);
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");  
 	  testFuncs.myAssertTrue("Date <" + currDate + "> was not detected !!", bodyMsg.contains(sdf.format(calendar.getTime()))   ||
 			  																bodyMsg.contains(sdf.format(calendar1.getTime()))  ||
@@ -113,7 +113,7 @@ public class Test125 {
 	  webFuncs.setConfiguration(125, "Data format - HH:mm MM/dd/yyyy", extraData2);
 	  
 	  // Get date format
-	  testFuncs.myDebugPrinting("Get date format", testVars.MINOR);  
+	  testFuncs.myDebugPrinting("Get date format", enumsClass.logModes.MINOR);  
 	  SimpleDateFormat sdf2 = new SimpleDateFormat(extraData2[0]);
 	  Calendar calendar0  = Calendar.getInstance(); 
 	  Calendar calendar11 = Calendar.getInstance();
@@ -130,7 +130,7 @@ public class Test125 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  
 	  // Check Data format at Body and result messages
-	  testFuncs.myDebugPrinting("Check Data format at Body and result messages", testVars.MINOR);
+	  testFuncs.myDebugPrinting("Check Data format at Body and result messages", enumsClass.logModes.MINOR);
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");  
 	  testFuncs.myAssertTrue("Date <" + currDate2 + "> was not detected !!", bodyMsg.contains(sdf2.format(calendar0.getTime()))  ||
 			  																bodyMsg.contains(sdf2.format(calendar11.getTime()))  ||

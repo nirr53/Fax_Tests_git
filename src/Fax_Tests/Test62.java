@@ -90,14 +90,14 @@ public class Test62 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  
 	  // Deposit a good fax while the problematic fax in retries mechanism
-	  testFuncs.myDebugPrinting("Deposit a good fax while the problematic fax in retries mechanism", testVars.NORMAL);
+	  testFuncs.myDebugPrinting("Deposit a good fax while the problematic fax in retries mechanism", enumsClass.logModes.NORMAL);
 	  dataMap.put("outputPath", testVars.getOutputDirPath() + "Test1.eml");
 	  dataMap.put("maxWaitTime", "300");
 	  dataMap.put("raiseError" , "1");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  
 	  // Waits for the failure message from the first fax
-	  testFuncs.myDebugPrinting("Waits for the failure message from the first fax", testVars.NORMAL);
+	  testFuncs.myDebugPrinting("Waits for the failure message from the first fax", enumsClass.logModes.NORMAL);
 	  
 	  // Check for Error message
 	  String emailsMainDir = testVars.getRootDir();	
@@ -118,7 +118,7 @@ public class Test62 {
 			  } else {
 				  
 				  counter++;
-				  testFuncs.myDebugPrinting("Keep waiting for error file .. (" + counter + " minutes passed)", testVars.MINOR);
+				  testFuncs.myDebugPrinting("Keep waiting for error file .. (" + counter + " minutes passed)", enumsClass.logModes.MINOR);
 				  testFuncs.myWait(60000);
 			  }
 		  }

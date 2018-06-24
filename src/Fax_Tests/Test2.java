@@ -76,7 +76,7 @@ public class Test2 {
 	  // Step 2 - check Fax-Status headers
 	  testFuncs.myDebugPrinting("Step 2 - check Fax-Status headers");
 	  String path = testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt";		  
-	  testFuncs.myDebugPrinting("path - " + path, testVars.MINOR);  
+	  testFuncs.myDebugPrinting("path - " + path, enumsClass.logModes.MINOR);  
 	  String statusMsg = testFuncs.readFile(path);
 	  testFuncs.myAssertTrue("Subject header was not detedted !!", statusMsg.contains("Test 2 - Test Fax status"));
 	  testFuncs.myAssertTrue("To header was not detected !!"     , statusMsg.contains("0545599607"));

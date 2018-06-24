@@ -84,7 +84,7 @@ public class Test112 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
 
 	  // Verify that success.txt is displayed
-	  testFuncs.myDebugPrinting("Verify that success.txt is displayed", testVars.MINOR);  
+	  testFuncs.myDebugPrinting("Verify that success.txt is displayed", enumsClass.logModes.MINOR);  
 	  File successFilename = new File(testVars.getRootDir()  + "\\input\\success.txt");
 	  testFuncs.myAssertTrue("File <" + successFilename.getName() + "> is missing !", successFilename.exists() && !successFilename.isDirectory());
 	   

@@ -89,7 +89,7 @@ public class Test91 {
 	  File f = new File(bodyPath);
 	  if(f.exists() && !f.isDirectory()) { 
 		  
-		  testFuncs.myDebugPrinting(bodyPath + " was detected !!", testVars.MINOR);		  
+		  testFuncs.myDebugPrinting(bodyPath + " was detected !!", enumsClass.logModes.MINOR);		  
 		  testFuncs.myAssertTrue("Delete file failed !!",  f.delete());
 	  } else {
 		  
@@ -99,7 +99,7 @@ public class Test91 {
 	  File f2 = new File(resultPath);
 	  if(f2.exists() && !f2.isDirectory()) { 
 		  
-		  testFuncs.myDebugPrinting(resultPath + " was detected !!", testVars.MINOR);
+		  testFuncs.myDebugPrinting(resultPath + " was detected !!", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("Delete file failed !!",  f2.delete());
 	  } else {
 		  

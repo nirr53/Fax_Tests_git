@@ -75,7 +75,7 @@ public class Test127 {
 	  String stsMsg, bodyMsg, resMsg;
 	  
 	  // Get date format
-	  testFuncs.myDebugPrinting("Get date format", testVars.MINOR);  
+	  testFuncs.myDebugPrinting("Get date format", enumsClass.logModes.MINOR);  
 	  SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
 	  Calendar calendar  = Calendar.getInstance(); 
 	  Calendar calendar1 = Calendar.getInstance();
@@ -84,10 +84,10 @@ public class Test127 {
 	  calendar1.add(Calendar.MINUTE, 1);
 	  calendar2.add(Calendar.MINUTE, 2);
 	  calendar3.add(Calendar.MINUTE, 3);
-	  testFuncs.myDebugPrinting("calendar - "  + sdf.format(calendar.getTime()), testVars.MINOR);
-	  testFuncs.myDebugPrinting("calendar1 - " + sdf.format(calendar1.getTime()), testVars.MINOR);
-	  testFuncs.myDebugPrinting("calendar2 - " + sdf.format(calendar2.getTime()), testVars.MINOR);
-	  testFuncs.myDebugPrinting("calendar3 - " + sdf.format(calendar3.getTime()), testVars.MINOR);
+	  testFuncs.myDebugPrinting("calendar - "  +  sdf.format(calendar.getTime()), enumsClass.logModes.MINOR);
+	  testFuncs.myDebugPrinting("calendar1 - " + sdf.format(calendar1.getTime()), enumsClass.logModes.MINOR);
+	  testFuncs.myDebugPrinting("calendar2 - " + sdf.format(calendar2.getTime()), enumsClass.logModes.MINOR);
+	  testFuncs.myDebugPrinting("calendar3 - " + sdf.format(calendar3.getTime()), enumsClass.logModes.MINOR);
 	  		
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");
@@ -95,7 +95,7 @@ public class Test127 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
 	  
 	  // Read the fax parts and search for the Time header
-	  testFuncs.myDebugPrinting("Read the fax parts and search for the Time header", testVars.MINOR);
+	  testFuncs.myDebugPrinting("Read the fax parts and search for the Time header", enumsClass.logModes.MINOR);
 	  stsMsg  = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");  
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");  
 	  resMsg  = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");   
@@ -118,10 +118,10 @@ public class Test127 {
 			  				sdf.format(calendar1.getTime()),
 			  				sdf.format(calendar2.getTime()),
 			  				sdf.format(calendar3.getTime())};
-	  testFuncs.myDebugPrinting("extraData[0] - " + extraData[0], testVars.MINOR);
-	  testFuncs.myDebugPrinting("extraData[1] - " + extraData[1], testVars.MINOR);
-	  testFuncs.myDebugPrinting("extraData[2] - " + extraData[2], testVars.MINOR);
-	  testFuncs.myDebugPrinting("extraData[3] - " + extraData[3], testVars.MINOR);
+	  testFuncs.myDebugPrinting("extraData[0] - " + extraData[0], enumsClass.logModes.MINOR);
+	  testFuncs.myDebugPrinting("extraData[1] - " + extraData[1], enumsClass.logModes.MINOR);
+	  testFuncs.myDebugPrinting("extraData[2] - " + extraData[2], enumsClass.logModes.MINOR);
+	  testFuncs.myDebugPrinting("extraData[3] - " + extraData[3], enumsClass.logModes.MINOR);
 	  webFuncs.setConfiguration(127, "Timezone", extraData);
   }
 

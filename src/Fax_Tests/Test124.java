@@ -82,7 +82,7 @@ public class Test124 {
 	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
-		  testFuncs.myDebugPrinting("Search for character <" + latvianAlphabet[i] + ">", testVars.MINOR);
+		  testFuncs.myDebugPrinting("Search for character <" + latvianAlphabet[i] + ">", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("The charcater <" + latvianAlphabet[i] + "> was not detected !!", statusMsg.contains(latvianAlphabet[i]));
 	  }
 	  
@@ -91,7 +91,7 @@ public class Test124 {
 	  String resMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
-		  testFuncs.myDebugPrinting("Search for character <" + latvianAlphabet[i] + ">", testVars.MINOR);
+		  testFuncs.myDebugPrinting("Search for character <" + latvianAlphabet[i] + ">", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("The charcater <" + latvianAlphabet[i] + "> was not detected !!", resMsg.contains(latvianAlphabet[i]));
 	  } 
   }
