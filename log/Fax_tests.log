@@ -7288,3 +7288,482 @@ C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Sen
 2019-01-21 12:56:29 [main] INFO  -   C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt was detected !! (sum2 - 0)
 2019-01-21 12:56:39 [main] INFO  -   30 seconds passed. (maxWaitTime - 800)
 2019-01-21 12:56:49 [main] INFO  -   40 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:56:59 [main] INFO  -   50 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:57:09 [main] INFO  -   60 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:57:19 [main] INFO  -   70 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:57:29 [main] INFO  -   80 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:57:39 [main] INFO  -   90 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:57:49 [main] INFO  -   100 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:57:59 [main] INFO  -   110 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:58:09 [main] INFO  -   120 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:58:19 [main] INFO  -   130 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:58:29 [main] INFO  -   140 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:58:39 [main] INFO  -   150 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:58:49 [main] INFO  -   160 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:58:59 [main] INFO  -   170 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:59:09 [main] INFO  -   180 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:59:19 [main] INFO  -   190 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:59:29 [main] INFO  -   200 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:59:39 [main] INFO  -   210 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:59:49 [main] INFO  -   220 seconds passed. (maxWaitTime - 800)
+2019-01-21 12:59:59 [main] INFO  -   230 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:00:09 [main] INFO  -   240 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:00:19 [main] INFO  -   250 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:00:29 [main] INFO  -   260 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:00:40 [main] INFO  -   270 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:00:50 [main] INFO  -   280 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:01:00 [main] INFO  -   290 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:01:10 [main] INFO  -   300 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:01:20 [main] INFO  -   310 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:01:30 [main] INFO  -   320 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:01:40 [main] INFO  -   330 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:01:50 [main] INFO  -   340 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:02:00 [main] INFO  -   350 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:02:10 [main] INFO  -   360 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:02:20 [main] INFO  -   370 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:02:30 [main] INFO  -   380 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:02:40 [main] INFO  -   390 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:02:50 [main] INFO  -   400 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:03:00 [main] INFO  -   410 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:03:10 [main] INFO  -   420 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:03:20 [main] INFO  -   430 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:03:30 [main] INFO  -   440 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:03:40 [main] INFO  -   450 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:03:50 [main] INFO  -   460 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:04:00 [main] INFO  -   470 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:04:10 [main] INFO  -   480 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:04:20 [main] INFO  -   490 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:04:30 [main] INFO  -   500 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:04:40 [main] INFO  -   510 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:04:50 [main] INFO  -   520 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:05:00 [main] INFO  -   530 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:05:10 [main] INFO  -   540 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:05:20 [main] INFO  -   550 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:05:30 [main] INFO  -   560 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:05:40 [main] INFO  -   570 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:05:50 [main] INFO  -   580 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:06:00 [main] INFO  -   590 seconds passed. (maxWaitTime - 800)
+2019-01-21 13:06:08 [main] ERROR - Failed message was detected
+2019-01-21 13:10:58 [main] INFO  - +---------------------------------------------------------------------------------------+
+2019-01-21 13:10:58 [main] INFO  - |                                                                                       |
+2019-01-21 13:10:58 [main] INFO  - |   Fax_Tests.Test63    
+2019-01-21 13:10:58 [main] INFO  - |                                                                                       |
+2019-01-21 13:10:58 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2019-01-21 13:10:58 [main] INFO  -  Step 1 - Deposit an email to fax, when the target is not exists at the Fax-In table
+2019-01-21 13:11:39 [main] INFO  - +---------------------------------------------------------------------------------------+
+2019-01-21 13:11:39 [main] INFO  - |                                                                                       |
+2019-01-21 13:11:39 [main] INFO  - |   Fax_Tests.Test63    
+2019-01-21 13:11:39 [main] INFO  - |                                                                                       |
+2019-01-21 13:11:39 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2019-01-21 13:11:39 [main] INFO  -  Step 2 - Deposit a fax when domain exists on the fax-out table, but the address not
+2019-01-21 13:11:39 [main] INFO  -  Fax deposit started..
+2019-01-21 13:11:39 [main] INFO  -   Non default max-wait-time is defined - 600
+2019-01-21 13:11:39 [main] INFO  -   Non default fileNumber is defined - 2
+2019-01-21 13:11:39 [main] INFO  -   outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test63_2.eml
+2019-01-21 13:11:39 [main] INFO  -   The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2019-01-21 13:11:39 [main] INFO  -   Close all command-line instances (if exists)
+2019-01-21 13:11:39 [main] INFO  -   Close all acrobat instances (if exists)
+2019-01-21 13:11:39 [main] INFO  -   Delete all the files from the previous try
+2019-01-21 13:11:39 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:11:39 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:11:39 [main] INFO  -    Delete file - Send_Fax_Status.txt
+2019-01-21 13:11:54 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:11:54 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:11:54 [main] INFO  -    Delete file - att_Failed_to_send_fax.pdf
+2019-01-21 13:11:59 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:11:59 [main] INFO  -    Delete file - Failed_to_send_fax.txt
+2019-01-21 13:12:14 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2019-01-21 13:12:24 [main] INFO  -   Deposit a fax using the Fax-injector tool
+2019-01-21 13:12:24 [main] INFO  -   SMTP_INj/smtpinjct /h 10.21.8.217 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test63_2.eml /w /af /ar /as /ax
+2019-01-21 13:12:24 [main] INFO  -   0 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:12:34 [main] INFO  -   10 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:12:44 [main] INFO  -   20 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:12:54 [main] INFO  -   30 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:13:04 [main] INFO  -   40 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:13:14 [main] INFO  -   50 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:13:24 [main] INFO  -   60 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:13:34 [main] INFO  -   70 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:13:44 [main] INFO  -   80 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:13:54 [main] INFO  -   90 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:14:04 [main] INFO  -   100 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:14:14 [main] INFO  -   110 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:14:24 [main] INFO  -   120 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:14:34 [main] INFO  -   130 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:14:44 [main] INFO  -   140 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:14:54 [main] INFO  -   150 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:15:04 [main] INFO  -   160 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:15:14 [main] INFO  -   170 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:15:24 [main] INFO  -   180 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:15:33 [main] INFO  -   C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt was detected !! (sum2 - 0)
+2019-01-21 13:15:34 [main] INFO  -   190 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:15:44 [main] INFO  -   C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf was detected !! (sum2 - 1)
+2019-01-21 13:15:44 [main] INFO  -  All files were detected! (sum2 - 2 inputFilesNumber - 2
+2019-01-21 13:15:44 [main] INFO  -  Fax deposit ended....
+2019-01-21 13:15:44 [main] INFO  -  Step 3 - Deposit an email to fax when there is no matching rule at fax-out routing (the 'from' address is valid)
+2019-01-21 13:15:44 [main] INFO  -  Fax deposit started..
+2019-01-21 13:15:44 [main] INFO  -   Non default max-wait-time is defined - 600
+2019-01-21 13:15:44 [main] INFO  -   Non default fileNumber is defined - 5
+2019-01-21 13:15:44 [main] INFO  -   Non default raiseError is defined - 0
+2019-01-21 13:15:44 [main] INFO  -   outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test63_3.eml
+2019-01-21 13:15:44 [main] INFO  -   The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2019-01-21 13:15:44 [main] INFO  -   Close all command-line instances (if exists)
+2019-01-21 13:15:44 [main] INFO  -   Close all acrobat instances (if exists)
+2019-01-21 13:15:44 [main] INFO  -   Delete all the files from the previous try
+2019-01-21 13:15:44 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:15:44 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:15:44 [main] INFO  -    Delete file - att_Fax_Message_Body.pdf
+2019-01-21 13:15:49 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:15:49 [main] INFO  -    Delete file - Fax_Message_Body.txt
+2019-01-21 13:16:04 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:16:14 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2019-01-21 13:16:24 [main] INFO  -   Deposit a fax using the Fax-injector tool
+2019-01-21 13:16:24 [main] INFO  -   SMTP_INj/smtpinjct /h 10.21.8.217 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test63_3.eml /w /af /ar /as /ax
+2019-01-21 13:16:24 [main] INFO  -   0 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:16:34 [main] INFO  -   10 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:16:44 [main] INFO  -   20 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:16:52 [main] INFO  -   C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt was detected !! (sum2 - 0)
+2019-01-21 13:16:54 [main] INFO  -   30 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:17:04 [main] INFO  -   40 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:17:14 [main] INFO  -   50 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:17:24 [main] INFO  -   60 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:17:34 [main] INFO  -   70 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:17:44 [main] INFO  -   80 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:17:54 [main] INFO  -   90 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:18:04 [main] INFO  -   100 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:18:14 [main] INFO  -   110 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:18:24 [main] INFO  -   120 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:18:34 [main] INFO  -   130 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:18:44 [main] INFO  -   140 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:18:54 [main] INFO  -   150 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:19:04 [main] INFO  -   160 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:19:14 [main] INFO  -   170 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:19:24 [main] INFO  -   180 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:19:34 [main] INFO  -   190 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:19:44 [main] INFO  -   200 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:19:54 [main] INFO  -   210 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:20:04 [main] INFO  -   220 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:20:14 [main] INFO  -   230 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:20:24 [main] INFO  -   240 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:20:34 [main] INFO  -   250 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:20:44 [main] INFO  -   260 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:20:54 [main] INFO  -   270 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:21:04 [main] INFO  -   280 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:21:14 [main] INFO  -   290 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:21:24 [main] INFO  -   300 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:21:34 [main] INFO  -   310 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:21:44 [main] INFO  -   320 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:21:54 [main] INFO  -   330 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:22:04 [main] INFO  -   340 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:22:14 [main] INFO  -   350 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:22:24 [main] INFO  -   360 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:22:34 [main] INFO  -   370 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:22:44 [main] INFO  -   380 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:22:54 [main] INFO  -   390 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:23:04 [main] INFO  -   400 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:23:14 [main] INFO  -   410 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:23:24 [main] INFO  -   420 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:23:34 [main] INFO  -   430 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:23:45 [main] INFO  -   440 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:23:55 [main] INFO  -   450 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:24:05 [main] INFO  -   460 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:24:15 [main] INFO  -   470 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:24:25 [main] INFO  -   480 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:24:35 [main] INFO  -   490 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:24:45 [main] INFO  -   500 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:24:55 [main] INFO  -   510 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:25:05 [main] INFO  -   520 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:25:15 [main] INFO  -   530 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:25:25 [main] INFO  -   540 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:25:35 [main] INFO  -   550 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:25:45 [main] INFO  -   560 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:25:55 [main] INFO  -   570 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:26:05 [main] INFO  -   580 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:26:15 [main] INFO  -   590 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:26:25 [main] INFO  -   600 seconds passed. (maxWaitTime - 600)
+2019-01-21 13:26:25 [main] INFO  -  body-txt  was not detected..
+2019-01-21 13:26:25 [main] INFO  -  result-txt  was not detected..
+2019-01-21 13:26:25 [main] INFO  -  body-pdf  was not detected..
+2019-01-21 13:26:25 [main] INFO  -  result-pdf  was not detected..
+2019-01-21 13:26:25 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2019-01-21 13:26:25 [main] INFO  -  Fax deposit ended....
+2019-01-21 13:30:56 [main] INFO  - +---------------------------------------------------------------------------------------+
+2019-01-21 13:30:56 [main] INFO  - |                                                                                       |
+2019-01-21 13:30:56 [main] INFO  - |   Fax_Tests.Test63    
+2019-01-21 13:30:56 [main] INFO  - |                                                                                       |
+2019-01-21 13:30:56 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2019-01-21 13:30:56 [main] INFO  -  Step 3 - Deposit an email to fax when there is no matching rule at fax-out routing (the 'from' address is valid)
+2019-01-21 13:30:56 [main] INFO  -  Fax deposit started..
+2019-01-21 13:30:56 [main] INFO  -   Non default max-wait-time is defined - 700
+2019-01-21 13:30:56 [main] INFO  -   Non default fileNumber is defined - 3
+2019-01-21 13:30:56 [main] INFO  -   Non default raiseError is defined - 0
+2019-01-21 13:30:56 [main] INFO  -   outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test63_3.eml
+2019-01-21 13:30:56 [main] INFO  -   The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2019-01-21 13:30:56 [main] INFO  -   Close all command-line instances (if exists)
+2019-01-21 13:30:56 [main] INFO  -   Close all acrobat instances (if exists)
+2019-01-21 13:30:56 [main] INFO  -   Delete all the files from the previous try
+2019-01-21 13:30:56 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:30:56 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:30:56 [main] INFO  -    Delete file - Send_Fax_Status.txt
+2019-01-21 13:31:11 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:31:11 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:31:11 [main] INFO  -    Delete file - att_Failed_to_send_fax.pdf
+2019-01-21 13:31:16 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:31:16 [main] INFO  -    Delete file - Failed_to_send_fax.txt
+2019-01-21 13:31:31 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2019-01-21 13:31:41 [main] INFO  -   Deposit a fax using the Fax-injector tool
+2019-01-21 13:31:41 [main] INFO  -   SMTP_INj/smtpinjct /h 10.21.8.217 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test63_3.eml /w /af /ar /as /ax
+2019-01-21 13:31:41 [main] INFO  -   0 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:31:51 [main] INFO  -   10 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:32:01 [main] INFO  -   20 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:32:11 [main] INFO  -   30 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:32:21 [main] INFO  -   40 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:32:31 [main] INFO  -   50 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:32:41 [main] INFO  -   60 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:32:51 [main] INFO  -   70 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:32:51 [main] INFO  -   C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt was detected !! (sum2 - 0)
+2019-01-21 13:33:01 [main] INFO  -   80 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:33:11 [main] INFO  -   90 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:33:21 [main] INFO  -   100 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:33:31 [main] INFO  -   110 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:33:41 [main] INFO  -   120 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:33:51 [main] INFO  -   130 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:34:01 [main] INFO  -   140 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:34:11 [main] INFO  -   150 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:34:21 [main] INFO  -   160 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:34:31 [main] INFO  -   170 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:34:41 [main] INFO  -   180 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:34:51 [main] INFO  -   190 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:35:01 [main] INFO  -   200 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:35:11 [main] INFO  -   210 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:35:21 [main] INFO  -   220 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:35:31 [main] INFO  -   230 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:35:41 [main] INFO  -   240 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:35:51 [main] INFO  -   250 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:36:01 [main] INFO  -   260 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:36:11 [main] INFO  -   270 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:36:21 [main] INFO  -   280 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:36:31 [main] INFO  -   290 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:36:41 [main] INFO  -   300 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:36:51 [main] INFO  -   310 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:37:01 [main] INFO  -   320 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:37:11 [main] INFO  -   330 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:37:21 [main] INFO  -   340 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:37:31 [main] INFO  -   350 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:37:41 [main] INFO  -   360 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:37:51 [main] INFO  -   370 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:38:01 [main] INFO  -   380 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:38:11 [main] INFO  -   390 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:38:21 [main] INFO  -   400 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:38:31 [main] INFO  -   410 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:38:41 [main] INFO  -   420 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:38:51 [main] INFO  -   430 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:39:01 [main] INFO  -   440 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:39:11 [main] INFO  -   450 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:39:21 [main] INFO  -   460 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:39:31 [main] INFO  -   470 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:39:41 [main] INFO  -   480 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:39:51 [main] INFO  -   490 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:40:01 [main] INFO  -   500 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:40:11 [main] INFO  -   510 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:40:21 [main] INFO  -   520 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:40:31 [main] INFO  -   530 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:40:41 [main] INFO  -   540 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:40:51 [main] INFO  -   550 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:41:01 [main] INFO  -   560 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:41:11 [main] INFO  -   570 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:41:21 [main] INFO  -   580 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:41:31 [main] INFO  -   590 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:41:41 [main] INFO  -   600 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:41:51 [main] INFO  -   610 seconds passed. (maxWaitTime - 700)
+2019-01-21 13:41:51 [main] INFO  -  Failed message was detected but raiseError set to  0 ....
+2019-01-21 13:41:51 [main] INFO  -  Fax deposit ended....
+2019-01-21 13:41:54 [main] INFO  -  Step 4 - Verify that message still can be sent and received when failed message is waiting for retry
+2019-01-21 13:41:54 [main] INFO  -  Fax deposit started..
+2019-01-21 13:41:54 [main] INFO  -   Non default max-wait-time is defined - 10
+2019-01-21 13:41:54 [main] INFO  -   Non default fileNumber is defined - 3
+2019-01-21 13:41:54 [main] INFO  -   Non default raiseError is defined - 0
+2019-01-21 13:41:54 [main] INFO  -   outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test63_3.eml
+2019-01-21 13:41:54 [main] INFO  -   The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2019-01-21 13:41:54 [main] INFO  -   Close all command-line instances (if exists)
+2019-01-21 13:41:54 [main] INFO  -   Close all acrobat instances (if exists)
+2019-01-21 13:41:54 [main] INFO  -   Delete all the files from the previous try
+2019-01-21 13:41:54 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:41:54 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:41:54 [main] INFO  -    Delete file - Send_Fax_Status.txt
+2019-01-21 13:42:09 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:42:09 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:42:09 [main] INFO  -    Delete file - att_Failed_to_send_fax.pdf
+2019-01-21 13:42:14 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:42:14 [main] INFO  -    Delete file - Failed_to_send_fax.txt
+2019-01-21 13:42:29 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2019-01-21 13:42:39 [main] INFO  -   Deposit a fax using the Fax-injector tool
+2019-01-21 13:42:39 [main] INFO  -   SMTP_INj/smtpinjct /h 10.21.8.217 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test63_3.eml /w /af /ar /as /ax
+2019-01-21 13:42:40 [main] INFO  -   0 seconds passed. (maxWaitTime - 10)
+2019-01-21 13:42:50 [main] INFO  -   10 seconds passed. (maxWaitTime - 10)
+2019-01-21 13:42:50 [main] INFO  -  status  was not detected..
+2019-01-21 13:42:50 [main] INFO  -  body-txt  was not detected..
+2019-01-21 13:42:50 [main] INFO  -  result-txt  was not detected..
+2019-01-21 13:42:50 [main] INFO  -  body-pdf  was not detected..
+2019-01-21 13:42:50 [main] INFO  -  result-pdf  was not detected..
+2019-01-21 13:42:50 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2019-01-21 13:42:50 [main] INFO  -  Fax deposit ended....
+2019-01-21 13:42:50 [main] INFO  -  Deposit a good fax while the problematic fax in retries mechanism
+2019-01-21 13:42:50 [main] INFO  -  Fax deposit started..
+2019-01-21 13:42:50 [main] INFO  -   Non default max-wait-time is defined - 300
+2019-01-21 13:42:50 [main] INFO  -   Non default fileNumber is defined - 3
+2019-01-21 13:42:50 [main] INFO  -   Non default raiseError is defined - 1
+2019-01-21 13:42:50 [main] INFO  -   outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test1.eml
+2019-01-21 13:42:50 [main] INFO  -   The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2019-01-21 13:42:50 [main] INFO  -   Close all command-line instances (if exists)
+2019-01-21 13:42:50 [main] INFO  -   Close all acrobat instances (if exists)
+2019-01-21 13:42:50 [main] INFO  -   Delete all the files from the previous try
+2019-01-21 13:42:50 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:43:00 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:43:10 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2019-01-21 13:43:20 [main] INFO  -   Deposit a fax using the Fax-injector tool
+2019-01-21 13:43:20 [main] INFO  -   SMTP_INj/smtpinjct /h 10.21.8.217 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test1.eml /w /af /ar /as /ax
+2019-01-21 13:43:20 [main] INFO  -   0 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:43:28 [main] INFO  -   C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt was detected !! (sum2 - 0)
+2019-01-21 13:43:30 [main] INFO  -   10 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:43:40 [main] INFO  -   20 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:43:50 [main] INFO  -   30 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:44:00 [main] INFO  -   40 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:44:10 [main] INFO  -   50 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:44:20 [main] INFO  -   60 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:44:30 [main] INFO  -   70 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:44:40 [main] INFO  -   80 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:44:50 [main] INFO  -   90 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:45:00 [main] INFO  -   100 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:45:10 [main] INFO  -   110 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:45:20 [main] INFO  -   120 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:45:30 [main] INFO  -   130 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:45:40 [main] INFO  -   140 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:45:47 [main] INFO  -   C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt was detected !! (sum2 - 1)
+2019-01-21 13:45:50 [main] INFO  -   150 seconds passed. (maxWaitTime - 300)
+2019-01-21 13:45:59 [main] INFO  -   C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf was detected !! (sum2 - 2)
+2019-01-21 13:45:59 [main] INFO  -  All files were detected! (sum2 - 3 inputFilesNumber - 3
+2019-01-21 13:45:59 [main] INFO  -  Fax deposit ended....
+2019-01-21 13:45:59 [main] INFO  -  Waits for the failure message from the first fax
+2019-01-21 13:45:59 [main] INFO  -   Keep waiting for error file .. (1 minutes passed)
+2019-01-21 13:46:59 [main] INFO  -   Keep waiting for error file .. (2 minutes passed)
+2019-01-21 13:47:59 [main] INFO  -   Keep waiting for error file .. (3 minutes passed)
+2019-01-21 13:48:59 [main] INFO  -   Keep waiting for error file .. (4 minutes passed)
+2019-01-21 13:49:59 [main] INFO  -   Keep waiting for error file .. (5 minutes passed)
+2019-01-21 13:50:59 [main] INFO  -   Keep waiting for error file .. (6 minutes passed)
+2019-01-21 13:51:59 [main] INFO  -   Keep waiting for error file .. (7 minutes passed)
+2019-01-21 13:57:26 [main] INFO  - +---------------------------------------------------------------------------------------+
+2019-01-21 13:57:26 [main] INFO  - |                                                                                       |
+2019-01-21 13:57:26 [main] INFO  - |   Fax_Tests.Test28    
+2019-01-21 13:57:26 [main] INFO  - |                                                                                       |
+2019-01-21 13:57:26 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2019-01-21 13:57:26 [main] INFO  -  Test configuration test
+2019-01-21 13:57:26 [main] INFO  -  Fax deposit started..
+2019-01-21 13:57:26 [main] INFO  -   Non default max-wait-time is defined - 1
+2019-01-21 13:57:26 [main] INFO  -   Non default raiseError is defined - 0
+2019-01-21 13:57:26 [main] INFO  -   outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2019-01-21 13:57:26 [main] INFO  -   The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2019-01-21 13:57:26 [main] INFO  -   Close all command-line instances (if exists)
+2019-01-21 13:57:26 [main] INFO  -   Close all acrobat instances (if exists)
+2019-01-21 13:57:26 [main] INFO  -   Delete all the files from the previous try
+2019-01-21 13:57:26 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:57:26 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:57:26 [main] INFO  -    Delete file - att_Fax_Message_Body.pdf
+2019-01-21 13:57:31 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:57:31 [main] INFO  -    Delete file - att_Send_Fax_Result.pdf
+2019-01-21 13:57:36 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:57:36 [main] INFO  -    Delete file - Fax_Message_Body.txt
+2019-01-21 13:57:41 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:57:41 [main] INFO  -    Delete file - Send_Fax_Result.txt
+2019-01-21 13:57:46 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 13:57:46 [main] INFO  -    Delete file - Send_Fax_Status.txt
+2019-01-21 13:58:01 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:58:01 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:58:01 [main] INFO  -    Delete file - att_Failed_to_send_fax.pdf
+2019-01-21 13:58:06 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 13:58:06 [main] INFO  -    Delete file - Failed_to_send_fax.txt
+2019-01-21 13:58:21 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2019-01-21 13:58:31 [main] INFO  -   Deposit a fax using the Fax-injector tool
+2019-01-21 13:58:31 [main] INFO  -   SMTP_INj/smtpinjct /h 10.21.8.217 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2019-01-21 13:58:32 [main] INFO  -   0 seconds passed. (maxWaitTime - 1)
+2019-01-21 13:58:33 [main] INFO  -  status  was not detected..
+2019-01-21 13:58:33 [main] INFO  -  body-txt  was not detected..
+2019-01-21 13:58:33 [main] INFO  -  result-txt  was not detected..
+2019-01-21 13:58:33 [main] INFO  -  body-pdf  was not detected..
+2019-01-21 13:58:33 [main] INFO  -  result-pdf  was not detected..
+2019-01-21 13:58:33 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2019-01-21 13:58:33 [main] INFO  -  Fax deposit ended....
+2019-01-21 13:58:33 [main] INFO  -  Set capture filter
+2019-01-21 13:58:33 [main] INFO  -  Step 2 - Check headers of the failure message
+2019-01-21 14:10:13 [main] INFO  - +---------------------------------------------------------------------------------------+
+2019-01-21 14:10:13 [main] INFO  - |                                                                                       |
+2019-01-21 14:10:13 [main] INFO  - |   Fax_Tests.Test28    
+2019-01-21 14:10:13 [main] INFO  - |                                                                                       |
+2019-01-21 14:10:13 [main] INFO  - +---------------------------------------------------------------------------------------+
+
+
+2019-01-21 14:10:13 [main] INFO  -  Test configuration test
+2019-01-21 14:10:13 [main] INFO  -  Fax deposit started..
+2019-01-21 14:10:13 [main] INFO  -   Non default max-wait-time is defined - 1
+2019-01-21 14:10:13 [main] INFO  -   Non default raiseError is defined - 0
+2019-01-21 14:10:13 [main] INFO  -   outputPath - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt
+2019-01-21 14:10:13 [main] INFO  -   The searched files are:C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Status.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Fax_Message_Body.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\Send_Fax_Result.txt
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Fax_Message_Body.pdf
+C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\att_Send_Fax_Result.pdf
+2019-01-21 14:10:13 [main] INFO  -   Close all command-line instances (if exists)
+2019-01-21 14:10:13 [main] INFO  -   Close all acrobat instances (if exists)
+2019-01-21 14:10:13 [main] INFO  -   Delete all the files from the previous try
+2019-01-21 14:10:13 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 14:10:13 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\input\
+2019-01-21 14:10:13 [main] INFO  -    Delete file - Send_Fax_Status.txt
+2019-01-21 14:10:28 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 14:10:28 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 14:10:28 [main] INFO  -    Delete file - att_Failed_to_send_fax.pdf
+2019-01-21 14:10:33 [main] INFO  -    prefix  is empty, delete all files on dir - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\error\
+2019-01-21 14:10:33 [main] INFO  -    Delete file - Failed_to_send_fax.txt
+2019-01-21 14:10:48 [main] INFO  -   dir    - C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\converted\
+2019-01-21 14:10:58 [main] INFO  -   Deposit a fax using the Fax-injector tool
+2019-01-21 14:10:58 [main] INFO  -   SMTP_INj/smtpinjct /h 10.21.8.217 /p 8090 /t 30 /if C:\Users\nirk\Desktop\myEclipseProjects\Fax_Tests\Emails_directory\output_fax.server\Test28.txt /w /af /ar /as /ax
+2019-01-21 14:10:58 [main] INFO  -   0 seconds passed. (maxWaitTime - 1)
+2019-01-21 14:10:59 [main] INFO  -  status  was not detected..
+2019-01-21 14:10:59 [main] INFO  -  body-txt  was not detected..
+2019-01-21 14:10:59 [main] INFO  -  result-txt  was not detected..
+2019-01-21 14:10:59 [main] INFO  -  body-pdf  was not detected..
+2019-01-21 14:10:59 [main] INFO  -  result-pdf  was not detected..
+2019-01-21 14:10:59 [main] INFO  -  Waiting-time was ended, and not all the files were detected..
+2019-01-21 14:10:59 [main] INFO  -  Fax deposit ended....
+2019-01-21 14:10:59 [main] INFO  -  Step 2 - Check headers of the failure message
+2019-01-21 14:23:19 [main] INFO  -  Wait ends

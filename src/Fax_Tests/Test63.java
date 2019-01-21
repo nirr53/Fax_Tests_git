@@ -74,25 +74,24 @@ public class Test63 {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String 				faxFailed = testVars.getFaxFailureHeader();
 	  
 	  // Step 1 - Deposit an email to fax, when the target is not exists at the Fax-In table
 	  testFuncs.myDebugPrinting("Step 1 - Deposit an email to fax, when the target is not exists at the Fax-In table");
 	  dataMap.put("outputPath", testVars.getOutputDirPath() + "Test63_1.eml");
+	  dataMap.put("raiseError" , "0");
 	  dataMap.put("fileNumber",  "3");
 	  dataMap.put("maxWaitTime", "800");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\error\\" + faxFailed + ".txt");  
 	  testFuncs.myAssertTrue("Display-name header was not detected !!", bodyMsg.contains("Reject"));  
   }
   
-  @Ignore
   @Test
   public void test2() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
-	  String errMsg;
-	  String faxFailed = testVars.getFaxFailureHeader();
 	  
 	  // Step 2 - Deposit a fax when domain exists on the fax-out table, but the address not
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax when domain exists on the fax-out table, but the address not");
@@ -122,15 +121,32 @@ public class Test63 {
 	  testFuncs.myAssertTrue("Result txt file was detected !!"		 , !f3.exists() && !f31.exists()); 
 	  File f5  = new File(pathResultAtt), f51 = new File(pathResultAtt2);
 	  testFuncs.myAssertTrue("Result attachment file was detected !!", !f5.exists() && !f51.exists()); 
+  }
+  
+  @Test
+  public void test3() throws Exception {
+  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String 			faxFailed = testVars.getFaxFailureHeader();
 
 	  // Step 3 - Deposit an email to fax when there is no matching rule at fax-out routing (the 'from' address is valid)
 	  testFuncs.myDebugPrinting("Step 3 - Deposit an email to fax when there is no matching rule at fax-out routing (the 'from' address is valid)");
 	  dataMap.put("outputPath", testVars.getOutputDirPath() + "Test63_3.eml");
 	  dataMap.put("raiseError",  "0");
-	  dataMap.put("fileNumber",  "5");
+	  dataMap.put("fileNumber",  "3");
+	  dataMap.put("maxWaitTime", "700");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  errMsg = testFuncs.readFile(testVars.getRootDir()  + "\\error\\" + faxFailed + ".txt");  
+	  String errMsg = testFuncs.readFile(testVars.getRootDir()  + "\\error\\" + faxFailed + ".txt");  
 	  testFuncs.myAssertTrue("To header was not detected !!", errMsg.contains("Reject"));
+  }
+  
+  @Test
+  public void test4() throws Exception {
+  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String 			faxFailed = testVars.getFaxFailureHeader();
 
 	  // Step 4 - Verify that message still can be sent and received when failed message is waiting for retry
 	  testFuncs.myDebugPrinting("Step 4 - Verify that message still can be sent and received when failed message is waiting for retry");

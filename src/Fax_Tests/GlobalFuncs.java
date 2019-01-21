@@ -97,17 +97,17 @@ public class GlobalFuncs {
 	    	    	
 	    			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  enumsClass.logModes.DEBUG);
 	    	        new File(dir + "\\" + dirFiles[i].getName()).delete();
-	    		    myWait(5000);    
+	    		    myWait(2000);    
 	    	    }	    	    
     		} else {
     			
     			myDebugPrinting("prefix  is empty, delete all files on dir - " + dir,  enumsClass.logModes.DEBUG);		
     			myDebugPrinting("Delete file - " + dirFiles[i].getName(),  enumsClass.logModes.DEBUG);
     	        new File(dir + "\\" + dirFiles[i].getName()).delete();
-    		    myWait(5000);	
+    		    myWait(2000);	
     		}
     	}	
-	    myWait(10000);
+	    myWait(1000);
 	  }
 	  
 	  /**
@@ -288,8 +288,7 @@ public class GlobalFuncs {
 			
 			isMultipleTargets = Integer.valueOf(dataMap.get("isMultipleTargets"));
 			myDebugPrinting("Non default isMultipleTargets is defined - " +  isMultipleTargets, enumsClass.logModes.MINOR);		
-		}	
-		
+		}
 				
 		// Get global data
 		String emailsMainDir 	  = testVars.getRootDir();	

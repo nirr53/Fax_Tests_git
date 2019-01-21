@@ -76,7 +76,7 @@ public class Test28 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  
 	  // Set capture filter
-	  testFuncs.myDebugPrinting("Set capture filter");
+//	  testFuncs.myDebugPrinting("Set capture filter");
 //	  String capMaxNum	= "21";
 //	  String filter		= "-f port " + testVars.getTsharkNaPort();
 //	  String outputName = "Test28.txt";
