@@ -57,20 +57,26 @@ public class Test59 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test59___Email_Confirmation() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"off"};
-	  webFuncs.setConfiguration(59, "FaxOut - Email Confirmation", extraData);	   
+	  webFuncs.setConfiguration(59, "FaxOut - Email Confirmation", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");
@@ -78,12 +84,19 @@ public class Test59 {
 	  dataMap.put("fileNumber", "4");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
   }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
+	  String[] extraData = {"on"};
+	  webFuncs.setConfiguration(59, "FaxOut - Email Confirmation", extraData);
+  }
 
   @After
   public void tearDown() throws Exception {
 	  
-	  String[] extraData = {"on"};
-	  webFuncs.setConfiguration(59, "FaxOut - Email Confirmation", extraData);	   
 	  String verificationErrorString = verificationErrors.toString();
 	  if (!"".equals(verificationErrorString)) {
 		  

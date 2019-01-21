@@ -62,21 +62,27 @@ public class Test57 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test57___FaxId_from_From_Number_settings() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
-	  String bodyMsg;
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"From Number Settings"};
-	  webFuncs.setConfiguration(57, "FaxIn - Fax ID  - From Number Settings", extraData);	   
+	  webFuncs.setConfiguration(57, "FaxIn - Fax ID  - From Number Settings", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
 	  
 	  // Step 1 - Deposit a fax for a user that Not has Fax-ID
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax for a user that Not has Fax-ID");
@@ -86,7 +92,15 @@ public class Test57 {
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("To: Nir Klieman Display") ||
 			  											  bodyMsg.contains("To: Nit Klieman Display"));	  
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
+  
 	  // Step 2 - Deposit a fax for a user that has Fax-ID
 	  testFuncs.myDebugPrinting("Step 2 - Check the headers of body-part");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test57_2.eml");

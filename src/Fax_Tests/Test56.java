@@ -58,26 +58,39 @@ public class Test56 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test56___FaxId_from_System_Fax_ID() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
 	  String FaxId = "Audiocodes Fax ID33";
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"System Fax ID", FaxId};
-	  webFuncs.setConfiguration(56, "FaxIn - Fax ID  - System Fax ID", extraData);	  
+	  webFuncs.setConfiguration(56, "FaxIn - Fax ID  - System Fax ID", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 1 - Send a fax
 	  testFuncs.myDebugPrinting("Step 1 - Send a fax");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test56.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  String FaxId = "Audiocodes Fax ID33";
 	  
 	  // Step 2 - Check the headers of body-part
 	  testFuncs.myDebugPrinting("Step 2 - Check the headers of body-part");

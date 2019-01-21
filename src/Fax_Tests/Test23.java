@@ -60,11 +60,11 @@ public class Test23 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test23___Fax_doc_attachment() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -76,35 +76,59 @@ public class Test23 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Start"));
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("5"));
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("End"));
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("Start"));
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("5"));
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("End"));
+  }
   
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  dataMap.put("maxWaitTime",  "1500");
+
 	  // Step 2 - Deposit fax with multiple doc attachments
 	  testFuncs.myDebugPrinting("Step 2 - Deposit fax with multiple doc attachments");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test23_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Fax Contains: 5 page(s)"));
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("Fax Contains: 5 page(s)"));
+  }
+  
+  @Test
+  public void test3() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  dataMap.put("maxWaitTime",  "1500");
+
 	  // Step 3 - Deposit fax with one docx attachment
 	  testFuncs.myDebugPrinting("Step 3 -  Deposit fax with one docx attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test23_3.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Start"));
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("5"));
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("End"));
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("Start"));
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("5"));
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("End"));
+  }
   
+  @Test
+  public void test4() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  dataMap.put("maxWaitTime",  "1500");
+
 	  // Step 4 - Deposit fax with multiple docx attachments
 	  testFuncs.myDebugPrinting("Step 4 - Deposit fax with multiple docx attachments");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test23_4.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Fax Contains: 5 page(s)"));
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("Fax Contains: 5 page(s)"));
   }
 
   @After

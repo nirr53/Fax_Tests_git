@@ -60,22 +60,34 @@ public class Test18 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test18___Fax_jpg_attachment() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
 		
 	  // Step 1 - Deposit fax with one jpg attachment
 	  testFuncs.myDebugPrinting("Step 1 -  Deposit fax with one jpg attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test18_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("START") || bodyMsg.contains("STAR T") || bodyMsg.contains("Start"));
+	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("START")  ||
+			  																			bodyMsg.contains("STAR T") ||
+			  																			bodyMsg.contains("Start")  ||
+			  																			bodyMsg.contains("is a tax with one jp"));
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
 	  
 	  // Step 2 - Deposit fax with multiple jpg attachments
 	  testFuncs.myDebugPrinting("Step 2 - Deposit fax with multiple jpg attachments");
@@ -83,7 +95,15 @@ public class Test18 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Fax Contains: 5 page(s)"));
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("Fax Contains: 5 page(s)"));
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
 	  
 	  // Step 3 - Deposit fax with one jpeg attachment
 	  testFuncs.myDebugPrinting("Step 3 -  Deposit fax with one jpeg attachment");
@@ -91,7 +111,15 @@ public class Test18 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("START") || bodyMsg.contains("STAR T") || bodyMsg.contains("Start"));
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("START") || bodyMsg.contains("STAR T") || bodyMsg.contains("Start"));
+  }
+  
+  @Test
+  public void test4() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
 	  
 	  // Step 4 - Deposit fax with multiple jpeg attachments
 	  testFuncs.myDebugPrinting("Step 4 - Deposit fax with multiple jpeg attachments");
@@ -99,7 +127,7 @@ public class Test18 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Fax Contains: 5 page(s)"));
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("Fax Contains: 5 page(s)"));
   }
 
   @After

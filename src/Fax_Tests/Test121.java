@@ -59,12 +59,12 @@ public class Test121 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test21___Russian_characters() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -97,15 +97,21 @@ public class Test121 {
 		  
 		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet[i] + ">", enumsClass.logModes.MINOR);
 		  testFuncs.myAssertTrue("The charcater <" + russianAlphabet[i] + "> was not detected !!", resMsg.contains(russianAlphabet[i]));
-	  }  
+	  } 
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  String[] russianAlphabet2 = {"\'b8", "\'fa", "\'ff", "\'f8", "\'e5", "\'f0",
 			  					   "\'f2", "\'fb", "\'f3", "\'e8", "\'ee", "\'ef",
 			  					   "\'fe", "\'f9", "\'fd", "\'e0", "\'f1", "\'e4",
 			  					   "\'f4", "\'e3", "\'f7", "\'e9", "\'ea", "\'eb",
 			  					   "\'fc", "\'e6", "\'e7", "\'f5", "\'f6", "\'e2",
 			  					   "\'e1", "\'ed", "\'ec"};
-	  alphabetLength = russianAlphabet2.length;
+	  int alphabetLength = russianAlphabet2.length;
 	  
 	  // Step 2 - Deposit a fax with big Russian characters
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax with big Russian characters");
@@ -114,7 +120,7 @@ public class Test121 {
  	  
 	  // Check characters at status message
 	  testFuncs.myDebugPrinting("Check characters at status message");
-	  statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");  
+	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
 		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet2[i] + ">", enumsClass.logModes.MINOR);
@@ -123,7 +129,7 @@ public class Test121 {
 	  
 	  // Check characters at result message
 	  testFuncs.myDebugPrinting("Check characters at result message");
-	  resMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
+	  String resMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
 	  for (int i = 0; i < alphabetLength; ++i) {
 		  
 		  testFuncs.myDebugPrinting("Search for character <" + russianAlphabet2[i] + ">", enumsClass.logModes.MINOR);

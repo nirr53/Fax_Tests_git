@@ -59,11 +59,11 @@ public class Test16 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test16___Fax_bmp_attachment() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -74,15 +74,22 @@ public class Test16 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("B-O-D-Y-1"));
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("B-O-D-Y-1"));
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 2 - Deposit fax with multiple bmp attachments
 	  testFuncs.myDebugPrinting("Step 2 - Deposit fax with multiple bmp attachments");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test16_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
-	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Fax Contains: 5 page(s)"));
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
+	  testFuncs.myAssertTrue("Title was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains("Fax Contains: 5 page(s)"));
   }
 
   @After

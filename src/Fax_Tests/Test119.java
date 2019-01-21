@@ -57,22 +57,62 @@ public class Test119 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test119___User_manualls_menu() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Login the web admin");
-	  String[] extraData = {"/UserManuals/AudioCodes IVR Interdigit example guide.pdf",
-			  				"/UserManuals/AudioCodes IVR and ACD for Lync example guide ver1.pdf",
-			  				"/UserManuals/LTRT-28862 Fax Server and Auto Attendant Administrator's Guide v2.0.pdf",
-			  				"/UserManuals/LTRT-28871 Fax Server and Auto Attendant IVR Installation Guide Ver. 1.2.pdf",
-			  				"/UserManuals/License Installation Procedure Fax AA.pdf"};
+	  String[] extraData = {"/UserManuals/AudioCodes IVR Interdigit example guide.pdf"};
+	  webFuncs.setConfiguration(119, "User manuals", extraData);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Login the web admin");
+	  String[] extraData = {"/UserManuals/AudioCodes IVR and ACD for Lync example guide ver1.pdf"};
+	  webFuncs.setConfiguration(119, "User manuals", extraData);
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Login the web admin");
+	  String[] extraData = {"/UserManuals/LTRT-28862 Fax Server and Auto Attendant Administrator's Guide v2.0.pdf"};
+	  webFuncs.setConfiguration(119, "User manuals", extraData);
+  }
+  
+  @Test
+  public void test4() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Login the web admin");
+	  String[] extraData = {"/UserManuals/LTRT-28871 Fax Server and Auto Attendant IVR Installation Guide Ver. 1.2.pdf"};
+	  webFuncs.setConfiguration(119, "User manuals", extraData);
+  }
+  
+  @Test
+  public void test5() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Login the web admin");
+	  String[] extraData = {"/UserManuals/License Installation Procedure Fax AA.pdf"};
 	  webFuncs.setConfiguration(119, "User manuals", extraData);
   }
 

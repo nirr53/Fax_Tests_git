@@ -59,12 +59,12 @@ public class Test70 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test70___Email_to_fax_with_very_long_big_attachment() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -76,12 +76,20 @@ public class Test70 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
 	  testFuncs.myAssertTrue("Page number is not correct !!\nstatusMsg -" + statusMsg, statusMsg.contains("6 page(s)"));
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  dataMap.put("maxWaitTime", "2500");
+  
 	  // Step 2 - Deposit an Email to fax with very-long attachment (26 pages)
 	  testFuncs.myDebugPrinting("Step 2 - Deposit an Email to fax with very-long attachment (26 pages)");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test70_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
+	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
 	  testFuncs.myAssertTrue("Page number is not correct !!\nstatusMsg -" + statusMsg, statusMsg.contains("26 page(s)"));
   }
 

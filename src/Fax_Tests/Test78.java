@@ -62,28 +62,42 @@ public class Test78 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test78___Fax_when_coverpage_is_not_checked() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
-	  String bodyMsg;
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"1"};
 	  webFuncs.setConfiguration(78, "Email to fax tests when cover-page checkbox is NOT checked", extraData);
-		
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
+  
 	  // Step 1 - Deposit a fax with coverpage attachment when coverpage is not checked
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with coverpage attachment when coverpage is not checked");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test78_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");   
 	  testFuncs.detectHeader(bodyMsg, "Fax contains:", "2 page(s)");
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
 	  
 	  // Step 2 - Deposit a fax coverpage without coverpage attachment when coverpage is not checked
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax coverpage without coverpage attachment when coverpage is not checked");
@@ -92,13 +106,22 @@ public class Test78 {
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");   
 	  testFuncs.detectHeader(bodyMsg, "Fax contains:", "1 page(s)");
   }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
+	  String[] extraData = {"0"};	
+	  webFuncs.setConfiguration(78, "Activate the cover-page again", extraData);  
+  }
 
   @After
   public void tearDown() throws Exception {
 	    
 	testFuncs.myDebugPrinting("Activate the cover-page again");
-	String[] extraData = {"0"};
-	webFuncs.setConfiguration(78, "Activate the cover-page again", extraData);  
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
     	

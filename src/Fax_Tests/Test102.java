@@ -56,12 +56,12 @@ public class Test102 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test102___Fax_Out_actions() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  

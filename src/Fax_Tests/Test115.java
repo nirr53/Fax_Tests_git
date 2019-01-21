@@ -56,20 +56,26 @@ public class Test115 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test115___Max_recipients_bigger_than_targets_number() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"3"};
 	  webFuncs.setConfiguration(115, "Set Max recipients number", extraData);	
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 		
 	  // Step 1 - Deposit a fax with less targets than max recipients number
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with less targets than max recipients number");

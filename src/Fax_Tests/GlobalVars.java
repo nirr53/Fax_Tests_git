@@ -38,7 +38,7 @@ public class GlobalVars extends enumsClass{
 	*  faxOCRPath		- Default path for the OCR converter
 	*/
 	// General data
-	private  String faxIp            = "10.21.10.45";
+	private  String faxIp            = "10.21.8.217";
 	private  String faxPort          = "8090";
 	private  String faxServerName	 = "fax.server";
     private  String url  		     = faxIp + ":" + faxPort + "/";   
@@ -202,7 +202,7 @@ public class GlobalVars extends enumsClass{
 	// Log modes
 	public enum logModes {
 		 	 
-		MAJOR(""), NORMAL(" "), MINOR("  "), DEBUG("   ");  		 
+		MAJOR(""), NORMAL("   "), MINOR("      "), DEBUG("         ");  		 
 		private String level = "";
 		
 		private logModes(String level) {		 

@@ -59,21 +59,27 @@ public class Test90 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test90___General_settings_From_Email_Address() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
-	  String bodyMsg;
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"nir.klieman@audiocodes.com"};
 	  webFuncs.setConfiguration(90, "General Settings - Email Address", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
 		
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");

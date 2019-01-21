@@ -16,7 +16,7 @@ import Fax_Tests.GlobalFuncs;
 * This test tests a send of a fax with different subjects.
 * -----------------
 * Tests:
-*      1. Send a fax with special chracters subject
+*      1. Send a fax with special characters subject
 *      2. Send a fax with empty subject
 *      3. Send a fax with numbers subject
 *      4. Send a fax with very long subject
@@ -60,29 +60,50 @@ public class Test46 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test46___Fax_with_different_subjects() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
 		
-	  // Step 1 - Send a fax with special charecters subject
-	  testFuncs.myDebugPrinting("Step 1 - Send a fax with special charecters subject");
+	  // Step 1 - Send a fax with special characters subject
+	  testFuncs.myDebugPrinting("Step 1 - Send a fax with special characters subject");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test46_1.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
 	  // Step 2 - Send a fax with  with empty subject
 	  testFuncs.myDebugPrinting("Step 2 - Send a fax with  with empty subject");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test46_2.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 3 - Send a fax with with numbers subject
 	  testFuncs.myDebugPrinting("Step 3 - Send a fax with with numbers subject");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test46_3.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test4() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 4 - Send a fax with very long subject
 	  testFuncs.myDebugPrinting("Step 4 - Send a fax with very long subject");

@@ -7,15 +7,13 @@ import java.io.InputStreamReader;
 public class GlobalTshark {
 	
 	private GlobalFuncs testFuncs;
-	private GlobalVars  testVars;
 	private String 		tsharkPath;
 	
 	// Default constructor
-	public  GlobalTshark() {
+	public  GlobalTshark(GlobalFuncs testFuncs, String tSharkPath) {
 		
-		testVars   = new GlobalVars();
-	    testFuncs  = new GlobalFuncs(); 
-	    tsharkPath = testVars.getTsharkPath();
+	    this.testFuncs  = testFuncs; 
+	    tsharkPath 	    = tSharkPath;
 	}
 	
 	/**
@@ -35,11 +33,19 @@ public class GlobalTshark {
 		// Activate Tshark capture
 		testFuncs.myDebugPrinting(" Activate Tshark capture", enumsClass.logModes.MINOR);	
 		Process process = new ProcessBuilder(tsharkPath, "-c " + maxPackNum, filter, "-w " + outputPath).start();
+		testFuncs.myDebugPrinting("here1", enumsClass.logModes.MINOR);	
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));	    
 		String line; 
+		testFuncs.myDebugPrinting("Loop", enumsClass.logModes.MINOR);	
+		  testFuncs.myWait(10000);
+
 		while ((line = br.readLine()) != null) {
 	  
+			testFuncs.myDebugPrinting("Loop", enumsClass.logModes.MINOR);	
 			testFuncs.myDebugPrinting(line, enumsClass.logModes.MINOR);	
 		}
+		testFuncs.myDebugPrinting("exit", enumsClass.logModes.MINOR);	
+
 	}
 }

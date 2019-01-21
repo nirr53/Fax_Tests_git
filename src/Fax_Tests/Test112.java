@@ -61,20 +61,26 @@ public class Test112 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test112___Multi_Destinations_Format() throws Exception {
+  public void test0() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
+	  String[] extraData = {"FaxSubject Fax to multiple destinations results111"};
+	  webFuncs.setConfiguration(112, "Change multiple Destinations subject Format", extraData);  
+  }
+  
+  @Test
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
-
-//	  // Activate script with the needed configuration
-//	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
-//	  String[] extraData = {"FaxSubject Fax to multiple destinations results111"};
-//	  webFuncs.setConfiguration(112, "Change multiple Destinations subject Format", extraData);  
 	  
 	  // Step 1 - Deposit a fax for multiple valid targets
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax for multiple valid targets");
@@ -87,23 +93,40 @@ public class Test112 {
 	  testFuncs.myDebugPrinting("Verify that success.txt is displayed", enumsClass.logModes.MINOR);  
 	  File successFilename = new File(testVars.getRootDir()  + "\\input\\success.txt");
 	  testFuncs.myAssertTrue("File <" + successFilename.getName() + "> is missing !", successFilename.exists() && !successFilename.isDirectory());
-	   
-//	  // Step 2 - Deposit a fax for multiple invalid targets
-//	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax for multiple invalid targets");
-//	  dataMap.put("fileNumber"		 ,  "3");
-//	  dataMap.put("isMultipleTargets",  "0");
-//	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
-//	  
-//	  // Verify that success.txt is displayed
-//	  testFuncs.myDebugPrinting("Verify that success.txt is displayed", testVars.MINOR);  
-//	  testFuncs.myAssertTrue("File <" + successFilename.getName() + "> is missing !", successFilename.exists() && !successFilename.isDirectory());	  
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
+	  // Step 2 - Deposit a fax for multiple invalid targets
+	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax for multiple invalid targets");
+	  dataMap.put("fileNumber"		 ,  "3");
+	  dataMap.put("isMultipleTargets",  "0");
+	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
+	  
+	  // Verify that success.txt is displayed
+	  testFuncs.myDebugPrinting("Verify that success.txt is displayed", enumsClass.logModes.MINOR); 
+	  File successFilename = new File(testVars.getRootDir()  + "\\input\\success.txt");
+	  testFuncs.myAssertTrue("File <" + successFilename.getName() + "> is missing !", successFilename.exists() && !successFilename.isDirectory());	  
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
+	  String[] extraData = {"1"};
+	  webFuncs.setConfiguration(111, "Add symbols checkbox", extraData);	 
   }
 
   @After
   public void tearDown() throws Exception {
-	  
-//	String[] extraData = {"1"};
-//	webFuncs.setConfiguration(111, "Add symbols checkbox", extraData);	  
+	   
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
     	

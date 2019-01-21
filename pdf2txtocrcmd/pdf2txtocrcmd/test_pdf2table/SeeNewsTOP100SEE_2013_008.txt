@@ -1,0 +1,59 @@
+﻿TOP 100
+companies
+                                                                                                                                                                                                in millions of euro
+                                                                                                                                                Total revenue    Y/Y change in   Net profit/loss Net profit/loss
+ 2012     2011                              Company name                                         Country                    Industry
+                                                                                                                                                      2012         revenue              2012            2011
+    1        1  OMV Petrom SA                                                            Romania                   Petroleum/Natural Gas             4 733            18.32%           869.5           853.2
+    2        3  Lukoil Neftochim Burgas AD                                               Bulgaria                  Petroleum/Natural Gas             4 207            22.09%           -48.1           -69.5
+    3        2  INA d.d.                                                                 Croatia                   Petroleum/Natural Gas             3 607             0.03%           175.3           261.2
+    4        4  OMV Petrom Marketing SRL                                                 Romania                   Petroleum/Natural Gas             3 427            10.33%            57.3            29.0
+    5        7  Petrol d.d.                                                              Slovenia                  Petroleum/Natural Gas             3 263            14.11%            34.5            11.6
+    6        8  Rompetrol Rafinare SA                                                    Romania                   Petroleum/Natural Gas             3 124            17.28%           -67.2          -170.3
+    7        5  Automobile-Dacia SA                                                      Romania                   Automobiles                       2 923            -3.63%            62.6            63.7
+    8        6  Aurubis Bulgaria AD                                                      Bulgaria                  Metals                            2 717            -5.67%           102.8           115.7
+    9        9  Naftna Industrija Srbije AD                                              Serbia                    Petroleum/Natural Gas             2 160            18.42%           436.2           389.2
+   10       18  Holding Slovenske Elektrarne d.o.o.                                      Slovenia                  Electricity                       1 956            43.29%            54.7            46.7
+   11       11  Rompetrol Downstream SRL                                                 Romania                   Petroleum/Natural Gas             1 851             6.91%           -33.9           -25.1
+   12       10  Lukoil-Bulgaria EOOD                                                     Bulgaria                  Petroleum/Natural Gas             1 836             2.97%           -36.3            -2.2
+   13       13  Hrvatska Elektroprivreda d.d.                                            Croatia                   Electricity                       1 821             5.24%            41.0            62.4
+   14       12  Konzum d.d.                                                              Croatia                   Wholesale/Retail                  1 789             1.07%            27.1            45.8
+   15       16  Petrotel – Lukoil SA                                                     Romania                   Petroleum/Natural Gas             1 696             9.05%           -62.0           -90.7
+   16       14  Natsionalna Elektricheska Kompania EAD                                   Bulgaria                  Electricity                       1 598            -4.28%           -48.1            35.1
+   17       29  GEN-I d.o.o.                                                             Slovenia                  Electricity                       1 510            52.67%            14.2             8.1
+   18       17  British American Tobacco (Romania) Trading SRL                           Romania                   Food/Drinks/Tobacco               1 504             9.15%            89.1            73.4
+   19       19  Kaufland Romania SCS                                                     Romania                   Wholesale/Retail                  1 470            15.20%            62.0            38.8
+   20       15  Poslovni Sistem Mercator d.d.                                            Slovenia                  Wholesale/Retail                  1 447            -9.55%           -77.6            31.3
+   21       20  Lukoil Romania SRL                                                       Romania                   Petroleum/Natural Gas             1 364            10.49%           -50.4           -26.7
+   22       38  Renault Industrie Roumanie SRL                                           Romania                   Automobiles                       1 235            37.22%            -4.5           0.243
+   23       27  E.ON Energie Romania SA                                                  Romania                   Petroleum/Natural Gas             1 215            24.80%            -7.4           -44.4
+   24       21  JP Elektroprivreda Srbije (JP EPS)                                       Serbia                    Electricity                       1 202             3.49%           -21.1           -46.6
+   25       22  Arcelormittal Galati SA                                                  Romania                   Metals                            1 199             4.38%           -52.2          -143.6
+   26       31  Krka d.d.                                                                Slovenia                  Pharmaceuticals                   1 060             8.56%           154.6           150.4
+   27       28  GDF SUEZ Energy Romania SA                                               Romania                   Petroleum/Natural Gas             1 030             6.19%            85.7            48.5
+   28    New    Electrica Furnizare SA                                                   Romania                   Electricity                       1 022           153.93%            20.4            19.6
+   29       25  Romgaz SA                                                                Romania                   Petroleum/Natural Gas             1 016           -3.62%            280.9           238.8
+   30       32  Carrefour Romania SA                                                     Romania                   Wholesale/Retail                  997.7             7.67%            23.6            31.0
+   31       36  Prirodni Plin d.o.o.                                                     Croatia                   Petroleum/Natural Gas             997.7             8.85%          -137.0           0.043
+   32       42  Bulgargaz EAD                                                            Bulgaria                  Petroleum/Natural Gas             962.7            14.55%           -58.1           -37.4
+   33       26  Hrvatski Telekom d.d.                                                    Croatia                   Telecommunications                958.1            -6.62%           222.7           240.8
+   34       46  MOL Romania Petroleum Products SRL                                       Romania                   Petroleum/Natural Gas             949.9            31.46%            17.2            -3.1
+   35       37  Orange Romania SA                                                        Romania                   Telecommunications                940.0             3.07%           116.9           186.5
+   36       24  Revoz d.d.                                                               Slovenia                  Automobiles                       918.4           -19.09%            12.8            13.9
+   37       35  OMV Bulgaria OOD                                                         Bulgaria                  Petroleum/Natural Gas             889.4            -5.51%            -3.7             2.3
+   38       40  Selgros Cash & Carry SRL                                                 Romania                   Wholesale/Retail                  870.5             1.36%            15.5            20.1
+   39       34  Telekom Srbija AD                                                        Serbia                    Telecommunications                863.9            -0.37%            99.2           213.5
+   40       43  Vodafone Romania SA                                                      Romania                   Telecommunications                821.7             2.59%           113.4            98.5
+   41    New    Complexul Energetic Oltenia SA                                           Romania                   Electricity                       814.2                              26.7
+   42       54  OMV Slovenija d.o.o.                                                     Slovenia                  Petroleum/Natural Gas             795.6            14.82%            16.0            16.3
+   43       65  Overgas Inc. АD*                                                         Bulgaria                  Petroleum/Natural Gas             751.4           21.56%             18.0             8.2
+   44       49  OMV Petrom Gas SRL                                                       Romania                   Petroleum/Natural Gas             735.4             4.37%            54.1            31.9
+   45       33  CFR SA                                                                   Romania                   Transportation                    732.1           -20.37%            32.7          -164.0
+   46       61  Mediplus Exim SRL                                                        Romania                   Wholesale/Retail                  730.5            15.89%            14.2            13.0
+   47       39  JP Srbijagas                                                             Serbia                    Petroleum/Natural Gas             706.3           -13.23%          -309.7            12.0
+   48       53  Gorenje d.d.                                                             Slovenia                  Electronics                       705.9             1.61%           -14.1             7.3
+   49       63  Lek d.d.                                                                 Slovenia                  Pharmaceuticals                   697.9             9.11%            75.9            73.9
+   50       55  Naftex Petrol EOOD                                                       Bulgaria                  Petroleum/Natural Gas             697.1             0.72%           -42.8           -19.1
+                                                                                                6
+
+

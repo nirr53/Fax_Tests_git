@@ -61,15 +61,14 @@ public class Test83 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test82___Fax_ID_with_longest_valid_text() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
 	  String faxId  = "12345678901234567890";
 	  String defCli = "1234";
 	  
@@ -77,7 +76,16 @@ public class Test83 {
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"System Fax ID", faxId, defCli};
 	  webFuncs.setConfiguration(83, "Fax Id with numbers at max valid text", extraData);
-		
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String faxId  = "12345678901234567890";
+	  String defCli = "1234";
+   
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test83.eml");

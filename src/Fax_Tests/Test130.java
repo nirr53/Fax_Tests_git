@@ -60,28 +60,109 @@ public class Test130 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test130___Fax_engine_logs() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  
-	  // Activate script with the needed configuration
-	  testFuncs.myDebugPrinting("Login the web admin");
-	  String[] extraData = {"osip_log.txt",
-			  				"OTF_ADMIN_LOG_1.txt",
-			  				"OTF_GROUP_MGR_LOG_1.txt",
-			  				"OTF_KERNEL_LOG_1.txt",
-			  				"OTF_RSM_SIP_BOARDMANAGER_LOG_1.txt",
-			  				"OTF_RSM_SIP_FAXRECEIVER_LOG_1.txt",
-			  				"OTF_RSM_SIP_FAXSENDER_LOG_1.txt",
-			  				"OTF_SCR_LOG_1.txt",
-			  				"Fax Engine."};
+	  // Test service
+	  testFuncs.myDebugPrinting("Test service");
+	  String[] extraData = {"osip_log.txt"};
 	  webFuncs.setConfiguration(130, "Check Fax enfine Logs", extraData);
   }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Test service
+	  testFuncs.myDebugPrinting("Test service");
+	  String[] extraData = {"OTF_ADMIN_LOG_1.txt"};
+	  webFuncs.setConfiguration(130, "Check Fax enfine Logs", extraData);
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Test service
+	  testFuncs.myDebugPrinting("Test service");
+	  String[] extraData = {"OTF_GROUP_MGR_LOG_1.txt"};
+	  webFuncs.setConfiguration(130, "Check Fax enfine Logs", extraData);
+  }
+  
+  @Test
+  public void test4() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Test service
+	  testFuncs.myDebugPrinting("Test service");
+	  String[] extraData = {"OTF_RSM_SIP_BOARDMANAGER_LOG_1.txt"};
+	  webFuncs.setConfiguration(130, "Check Fax enfine Logs", extraData);
+  }
+  
+  @Test
+  public void test5() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Test service
+	  testFuncs.myDebugPrinting("Test service");
+	  String[] extraData = {"OTF_KERNEL_LOG_1.txt"};
+	  webFuncs.setConfiguration(130, "Check Fax enfine Logs", extraData);
+  }
+  
+  @Test
+  public void test6() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Test service
+	  testFuncs.myDebugPrinting("Test service");
+	  String[] extraData = {"OTF_RSM_SIP_FAXRECEIVER_LOG_1.txt"};
+	  webFuncs.setConfiguration(130, "Check Fax enfine Logs", extraData);
+  }
+  
+  @Test
+  public void test7() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Test service
+	  testFuncs.myDebugPrinting("Test service");
+	  String[] extraData = {"OTF_RSM_SIP_FAXSENDER_LOG_1.txt"};
+	  webFuncs.setConfiguration(130, "Check Fax enfine Logs", extraData);
+  }
+  
+  @Test
+  public void test8() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Test service
+	  testFuncs.myDebugPrinting("Test service");
+	  String[] extraData = {"OTF_SCR_LOG_1.txt"};
+	  webFuncs.setConfiguration(130, "Check Fax enfine Logs", extraData);
+  }
+  
+  @Test
+  public void test9() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Test service
+	  testFuncs.myDebugPrinting("Test service");
+	  String[] extraData = {"Fax Engine."};
+	  webFuncs.setConfiguration(130, "Check Fax enfine Logs", extraData);
+  }
+  
 
   @After
   public void tearDown() throws Exception {

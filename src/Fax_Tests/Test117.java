@@ -63,26 +63,38 @@ public class Test117 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test117___Services_logs() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Login the web admin");
-	  String[] extraData = {"System Watchdog", "Fax Server"};  
+	  String service = "System Watchdog";  
 
-	  // Loop on all the services
-	  for (String service : extraData) {
-		  
-		  testFuncs.myDebugPrinting("The current tested service - " + service, enumsClass.logModes.MAJOR);
-		  String[] neededData = {service};
-		  webFuncs.setConfiguration(117, "Services Logs", neededData);
-	  }
+	  // Test
+	  testFuncs.myDebugPrinting("The current tested service - " + service, enumsClass.logModes.MAJOR);
+	  String[] neededData = {service};
+	  webFuncs.setConfiguration(117, "Services Logs", neededData);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Login the web admin");
+	  String service = "Fax Server"; 
+	  
+	  // Test
+	  testFuncs.myDebugPrinting("The current tested service - " + service, enumsClass.logModes.MAJOR);	  
+	  String[] neededData = {service};		  
+	  webFuncs.setConfiguration(117, "Services Logs", neededData);
   }
 
   @After

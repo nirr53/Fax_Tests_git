@@ -32,9 +32,9 @@ public class GlobalFuncs {
 	  /**
 	  *  Default constructor
 	  */
-	  public GlobalFuncs() {
+	  public GlobalFuncs(GlobalVars testVars) {
 		  
-		  testVars 		= new GlobalVars();
+		  this.testVars = testVars;
 	  }
 	  
 	  /**

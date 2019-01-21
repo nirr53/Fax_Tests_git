@@ -60,21 +60,27 @@ public class Test126 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test26___Attachment_name() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
-	  String bodyMsg;
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"From Number Settings", "From Number Settings"};
 	  webFuncs.setConfiguration(126, "Attachment name", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
 	  		
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");
@@ -86,7 +92,15 @@ public class Test126 {
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !! <" + bodyMsg + ">", bodyMsg.contains("Start"));
-
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
+  
 	  // Step 2 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test126_2.eml");
@@ -97,7 +111,15 @@ public class Test126 {
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !! <" + bodyMsg + ">", bodyMsg.contains("Body"));
+  }
+  
+  @Test
+  public void test3() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
+   
 	  // Step 3 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 3 - Deposit a fax");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test126_3.eml");

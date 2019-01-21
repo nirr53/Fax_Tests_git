@@ -59,22 +59,28 @@ public class Test9 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test9___Fax_cover_page_attributes() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
-	  String bodyMsg;
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"From Number Settings"};
 	  webFuncs.setConfiguration(9, "FaxOut - Fax ID - from user settings", extraData);
-		
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
+  
 	  // Step 1 - Deposit a fax with normal subject and attributes
 	  testFuncs.myDebugPrinting("Step 1 -Deposit a fax with normal subject and attributes");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test9_1.txt");
@@ -84,6 +90,14 @@ public class Test9 {
 	  testFuncs.myAssertTrue("Title was not detected !!\nbodyMsg - " + bodyMsg, bodyMsg.contains("Subject: Test\\_9\\_l\\_subject") || bodyMsg.contains("Subject'Test\\_9 I subject") || bodyMsg.contains("Subject:Test\\_9\\_1 subject"));
 	  testFuncs.myAssertTrue("Title was not detected !!\nbodyMsg - " + bodyMsg, bodyMsg.contains("From: \"Test 9t string\"")   || bodyMsg.contains("Test 91 string"));
 	  testFuncs.myAssertTrue("Title was not detected !!\nbodyMsg - " + bodyMsg, bodyMsg.contains("Fax to"));
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
 	  
 	  // Step 2 - Deposit a fax with empty subject and attributes
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax with empty subject and attributes");
@@ -93,7 +107,15 @@ public class Test9 {
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Subject:\\par"));
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("From:\\par"));
-
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
+  
 	  // Step 3 - Deposit a fax with very-long subject and attributes
 	  testFuncs.myDebugPrinting("Step 3 - Deposit a fax with very-long subject and attributes");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test9_3.txt");

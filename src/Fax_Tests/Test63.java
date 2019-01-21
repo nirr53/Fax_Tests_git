@@ -65,55 +65,63 @@ public class Test63 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test63___Fax_to_non_outgoing_rule_matches() throws Exception {
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  
+	  // Step 1 - Deposit an email to fax, when the target is not exists at the Fax-In table
+	  testFuncs.myDebugPrinting("Step 1 - Deposit an email to fax, when the target is not exists at the Fax-In table");
+	  dataMap.put("outputPath", testVars.getOutputDirPath() + "Test63_1.eml");
+	  dataMap.put("fileNumber",  "3");
+	  dataMap.put("maxWaitTime", "800");
+	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
+	  testFuncs.myAssertTrue("Display-name header was not detected !!", bodyMsg.contains("Reject"));  
+  }
+  
+  @Ignore
+  @Test
+  public void test2() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
 	  String errMsg;
 	  String faxFailed = testVars.getFaxFailureHeader();
 	  
-//	  // Step 1 - Deposit an email to fax, when the target is not exists at the Fax-In table
-//	  testFuncs.myDebugPrinting("Step 1 - Deposit an email to fax, when the target is not exists at the Fax-In table");
-//	  dataMap.put("outputPath", testVars.getOutputDirPath() + "Test63_1.eml");
-//	  dataMap.put("fileNumber",  "3");
-//	  dataMap.put("maxWaitTime", "600");
-//	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-//	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
-//	  testFuncs.myAssertTrue("Display-name header was not detected !!", bodyMsg.contains("Reject"));  
+	  // Step 2 - Deposit a fax when domain exists on the fax-out table, but the address not
+	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax when domain exists on the fax-out table, but the address not");
+	  dataMap.put("outputPath", testVars.getOutputDirPath() + "Test63_2.eml");
+	  dataMap.put("fileNumber",  "2");
+	  dataMap.put("maxWaitTime", "600");
+	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
+	  
+	  // Set variables
+	  String []faxHeaders   = testVars.getFaxHeaders();
+	  String inputPath      =  testVars.getRootDir()  + "\\input\\";
+	  String defSuffix      = ".txt";
+	  String attSuffix      = ".pdf";
+	  String attPrefix      = "att_";
+	  String withoutIcon    = "withoutIcon_";
+	  String pathStatus     = inputPath + faxHeaders[0] + defSuffix;
+	  String pathStatus2    = inputPath + withoutIcon   + faxHeaders[0] + defSuffix;	
+	  String pathResult     = inputPath + faxHeaders[2] + defSuffix;
+	  String pathResult2    = inputPath + withoutIcon   + faxHeaders[2] + defSuffix;
+	  String pathResultAtt  = inputPath + attPrefix     + faxHeaders[2] + attSuffix;
+	  String pathResultAtt2 = inputPath + attPrefix     + withoutIcon   + faxHeaders[2] + attSuffix;
 
-//	  // Step 2 - Deposit a fax when domain exists on the fax-out table, but the address not
-//	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax when domain exists on the fax-out table, but the address not");
-//	  dataMap.put("outputPath", testVars.getOutputDirPath() + "Test63_2.eml");
-//	  dataMap.put("fileNumber",  "2");
-//	  dataMap.put("maxWaitTime", "600");
-//	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
-//	  
-//	  // Set variables
-//	  String []faxHeaders   = testVars.getFaxHeaders();
-//	  String inputPath      =  testVars.getRootDir()  + "\\input\\";
-//	  String defSuffix      = ".txt";
-//	  String attSuffix      = ".pdf";
-//	  String attPrefix      = "att_";
-//	  String withoutIcon    = "withoutIcon_";
-//	  String pathStatus     = inputPath + faxHeaders[0] + defSuffix;
-//	  String pathStatus2    = inputPath + withoutIcon   + faxHeaders[0] + defSuffix;	
-//	  String pathResult     = inputPath + faxHeaders[2] + defSuffix;
-//	  String pathResult2    = inputPath + withoutIcon   + faxHeaders[2] + defSuffix;
-//	  String pathResultAtt  = inputPath + attPrefix     + faxHeaders[2] + attSuffix;
-//	  String pathResultAtt2 = inputPath + attPrefix     + withoutIcon   + faxHeaders[2] + attSuffix;
-//
-//	  // Check that files are not found
-//	  File f1 = new File(pathStatus), f11 = new File(pathStatus2); 
-//	  testFuncs.myAssertTrue("Status file was detected !!"			 , !f1.exists() && !f11.exists());  
-//	  File f3  = new File(pathResult), f31 = new File(pathResult2);
-//	  testFuncs.myAssertTrue("Result txt file was detected !!"		 , !f3.exists() && !f31.exists()); 
-//	  File f5  = new File(pathResultAtt), f51 = new File(pathResultAtt2);
-//	  testFuncs.myAssertTrue("Result attachment file was detected !!", !f5.exists() && !f51.exists()); 
+	  // Check that files are not found
+	  File f1 = new File(pathStatus), f11 = new File(pathStatus2); 
+	  testFuncs.myAssertTrue("Status file was detected !!"			 , !f1.exists() && !f11.exists());  
+	  File f3  = new File(pathResult), f31 = new File(pathResult2);
+	  testFuncs.myAssertTrue("Result txt file was detected !!"		 , !f3.exists() && !f31.exists()); 
+	  File f5  = new File(pathResultAtt), f51 = new File(pathResultAtt2);
+	  testFuncs.myAssertTrue("Result attachment file was detected !!", !f5.exists() && !f51.exists()); 
 
 	  // Step 3 - Deposit an email to fax when there is no matching rule at fax-out routing (the 'from' address is valid)
 	  testFuncs.myDebugPrinting("Step 3 - Deposit an email to fax when there is no matching rule at fax-out routing (the 'from' address is valid)");

@@ -17,8 +17,7 @@ import Fax_Tests.GlobalFuncs;
 * -----------------
 * Tests:
 *    1. Deposit fax with jpg coverpage
-*    2. Deposit fax with html coverpage
-*    3. Deposit fax with bmp coverpage
+*    2. Deposit fax with bmp coverpage
 * 
 * Results:
 * 	In all cases:
@@ -61,33 +60,34 @@ public class Test76 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test76___Coverpage_different_formats() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
 	  String bodyText;
 	  
-	  // Step 1 - Deposit a fax with jpg coverpage
-	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with jpg coverpage");
+	  // Step 1 - Deposit a fax with jpg coverage
+	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with jpg coverage");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test76_1.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  bodyText = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
 	  testFuncs.detectHeader(bodyText, "Fax contains:", "3 page(s)");
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
-//	  // Step 2 - Deposit a fax with jpg coverpage
-//	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax with jpg coverpage");
-//	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test76_2.txt");
-//	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-//	  bodyText = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
-//	  testFuncs.detectHeader(bodyText, "Fax contains:", "3 page(s)");
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyText;
 	  
-	  // Step 3 - Deposit a fax with bmp coverpage
-	  testFuncs.myDebugPrinting("Step 3 - Deposit a fax with bmp coverpage");
+	  // Step 2 - Deposit a fax with bmp coverage
+	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax with bmp coverage");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test76_3.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  bodyText = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");

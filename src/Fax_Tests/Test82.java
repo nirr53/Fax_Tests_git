@@ -61,15 +61,14 @@ public class Test82 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test82___Fax_ID_with_numbers() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
 	  String faxId  = "1234567890";
 	  String defCli = "1234";
 	  
@@ -77,6 +76,15 @@ public class Test82 {
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"System Fax ID", faxId, defCli};
 	  webFuncs.setConfiguration(82, "Fax ID with numbers", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String faxId  = "1234567890";
+	  String defCli = "1234";
 		
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");

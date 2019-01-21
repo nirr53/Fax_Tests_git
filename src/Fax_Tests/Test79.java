@@ -59,11 +59,11 @@ public class Test79 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test79___Fax_with_different_fax_in_numbers() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -71,13 +71,27 @@ public class Test79 {
 	  // Step 1 - Send a fax to Fax-In user with 1800 prefix
 	  testFuncs.myDebugPrinting("Step 1 - Send a fax to Fax-In user with 1800 prefix");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test79_1.eml");
-	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
+	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 2 -  Send a fax to Fax-In user with international prefix
 	  testFuncs.myDebugPrinting("Step 2 -  Send a fax to Fax-In user with international prefix");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test79_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  
 	  // Step 3 -  Send a fax to Fax-In user with 000 prefix.
 	  testFuncs.myDebugPrinting("Step 3 -  Send a fax to Fax-In user with 000 prefix.");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test79_3.eml");

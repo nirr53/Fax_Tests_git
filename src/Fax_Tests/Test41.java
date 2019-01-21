@@ -16,7 +16,7 @@ import Fax_Tests.GlobalFuncs;
 * This test tests a send of a fax with several fonts types.
 * -----------------
 * Tests:
-*    1. Send a faxwith several fonts types
+*    1. Send a fax with several fonts types
 * 
 * Results:
 *    1. All the three parts of fax - status, body and result should be accepted on given timeout.
@@ -56,11 +56,11 @@ public class Test41 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test41___Fax_with_several_fonts() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();

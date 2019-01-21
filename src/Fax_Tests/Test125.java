@@ -61,12 +61,12 @@ public class Test125 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test25___Data_format() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -84,9 +84,9 @@ public class Test125 {
 	  Calendar calendar1 = Calendar.getInstance();
 	  Calendar calendar2 = Calendar.getInstance();
 	  Calendar calendar3 = Calendar.getInstance();	  
-	  calendar1.add(Calendar.MINUTE, 1);
-	  calendar2.add(Calendar.MINUTE, 2);
-	  calendar3.add(Calendar.MINUTE, 3);
+	  calendar1.add(Calendar.MINUTE, 3);
+	  calendar2.add(Calendar.MINUTE, 4);
+	  calendar3.add(Calendar.MINUTE, 5);
 	  String currDate  = sdf.format(calendar.getTime());
 	  		
 	  // Step 1 - Deposit a fax
@@ -97,16 +97,24 @@ public class Test125 {
 	  // Check Data format at Body and result messages
 	  testFuncs.myDebugPrinting("Check Data format at Body and result messages", enumsClass.logModes.MINOR);
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");  
-	  testFuncs.myAssertTrue("Date <" + currDate + "> was not detected !!", bodyMsg.contains(sdf.format(calendar.getTime()))   ||
-			  																bodyMsg.contains(sdf.format(calendar1.getTime()))  ||
-			  																bodyMsg.contains(sdf.format(calendar2.getTime()))  ||
-			  																bodyMsg.contains(sdf.format(calendar3.getTime())));  
+	  testFuncs.myAssertTrue("Date <" + currDate + "> was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains(sdf.format(calendar.getTime()))   ||
+			  																							  bodyMsg.contains(sdf.format(calendar1.getTime()))  ||
+			  																							  bodyMsg.contains(sdf.format(calendar2.getTime()))  ||
+			  																							  bodyMsg.contains(sdf.format(calendar3.getTime())));  
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
-	  testFuncs.myAssertTrue("Date <" + currDate + "> was not detected !!", bodyMsg.contains(sdf.format(calendar.getTime()))   ||
-																			bodyMsg.contains(sdf.format(calendar1.getTime()))  ||
-																			bodyMsg.contains(sdf.format(calendar2.getTime()))  ||
-																			bodyMsg.contains(sdf.format(calendar3.getTime())));  
+	  testFuncs.myAssertTrue("Date <" + currDate + "> was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains(sdf.format(calendar.getTime()))   ||
+																										  bodyMsg.contains(sdf.format(calendar1.getTime()))  ||
+																										  bodyMsg.contains(sdf.format(calendar2.getTime()))  ||
+																										  bodyMsg.contains(sdf.format(calendar3.getTime())));  
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String bodyMsg;
+  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData2 = {"HH:mm MM/dd/yyyy"};
@@ -119,9 +127,9 @@ public class Test125 {
 	  Calendar calendar11 = Calendar.getInstance();
 	  Calendar calendar21 = Calendar.getInstance();
 	  Calendar calendar31 = Calendar.getInstance();	  
-	  calendar11.add(Calendar.MINUTE, 1);
-	  calendar21.add(Calendar.MINUTE, 2);
-	  calendar31.add(Calendar.MINUTE, 3);
+	  calendar11.add(Calendar.MINUTE, 3);
+	  calendar21.add(Calendar.MINUTE, 4);
+	  calendar31.add(Calendar.MINUTE, 5);
 	  String currDate2  = sdf2.format(calendar0.getTime());
 	  		
 	  // Step 2 - Deposit a fax
@@ -132,23 +140,30 @@ public class Test125 {
 	  // Check Data format at Body and result messages
 	  testFuncs.myDebugPrinting("Check Data format at Body and result messages", enumsClass.logModes.MINOR);
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");  
-	  testFuncs.myAssertTrue("Date <" + currDate2 + "> was not detected !!", bodyMsg.contains(sdf2.format(calendar0.getTime()))  ||
-			  																bodyMsg.contains(sdf2.format(calendar11.getTime()))  ||
-			  																bodyMsg.contains(sdf2.format(calendar21.getTime()))  ||
-			  																bodyMsg.contains(sdf2.format(calendar31.getTime())));  
+	  testFuncs.myAssertTrue("Date <" + currDate2 + "> was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains(sdf2.format(calendar0.getTime()))  ||
+			  																							   bodyMsg.contains(sdf2.format(calendar11.getTime()))  ||
+			  																							   bodyMsg.contains(sdf2.format(calendar21.getTime()))  ||
+			  																							   bodyMsg.contains(sdf2.format(calendar31.getTime())));  
 	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  
-	  testFuncs.myAssertTrue("Date <" + currDate2 + "> was not detected !!", bodyMsg.contains(sdf2.format(calendar0.getTime()))  ||
-																			bodyMsg.contains(sdf2.format(calendar11.getTime()))  ||
-																			bodyMsg.contains(sdf2.format(calendar21.getTime()))  ||
-																			bodyMsg.contains(sdf2.format(calendar31.getTime())));
+	  testFuncs.myAssertTrue("Date <" + currDate2 + "> was not detected !! <bodyMsg - \n" + bodyMsg + ">", bodyMsg.contains(sdf2.format(calendar0.getTime()))  ||
+																										   bodyMsg.contains(sdf2.format(calendar11.getTime()))  ||
+																										   bodyMsg.contains(sdf2.format(calendar21.getTime()))  ||
+																										   bodyMsg.contains(sdf2.format(calendar31.getTime())));
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Restore old configuration  
+	  String[] extraData = {"HH:mm dd/MM/yyyy"};
+	  webFuncs.setConfiguration(125, "Data format - dd/MM/yyyy", extraData);
   }
 
   @After
   public void tearDown() throws Exception {
 	  	  
-	// Restore old configuration  
-	String[] extraData = {"HH:mm dd/MM/yyyy"};
-	webFuncs.setConfiguration(125, "Data format - dd/MM/yyyy", extraData);
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
     	

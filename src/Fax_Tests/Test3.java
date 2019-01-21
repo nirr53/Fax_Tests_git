@@ -58,11 +58,11 @@ public class Test3 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test3___Fax_subject_header_fax_status() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -73,12 +73,19 @@ public class Test3 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");
 	  testFuncs.myAssertTrue("Subject header was not detedted !!\nstatusMsg -" + statusMsg, statusMsg.contains("123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789"));
+  }
   
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  
 	  // Step 2 - Deposit a fax without Subject header
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax without Subject header");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test3_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");
+	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");
 	  testFuncs.myAssertTrue("Subject header was not detedted !!\nstatusMsg -" + statusMsg, statusMsg.contains("[1]"));
   }
 

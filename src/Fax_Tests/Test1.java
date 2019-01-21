@@ -55,14 +55,14 @@ public class Test1 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
   public void Test1___Test_Configuration_Test() throws Exception {
 	  
-	  Log.startTestCase(this.getClass().getName());
-		
+	  Log.startTestCase(this.getClass().getName());	
+	  	  
 	  // Test configuration test
 	  testFuncs.myDebugPrinting("Test configuration test");
 	  Map<String, String> dataMap = new HashMap<String, String>();

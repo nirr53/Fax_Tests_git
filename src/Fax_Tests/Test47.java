@@ -16,9 +16,9 @@ import Fax_Tests.GlobalFuncs;
 * This test tests a send of an email to fax in several modes
 * -----------------
 * Tests:
-*    1. Send a fax with codded as Plain-text
-*    2. Send a fax with codded as HTML-text
-*    3. Send a fax with codded as HTML & Plain-text
+*    1. Send a fax with coded as Plain-text
+*    2. Send a fax with coded as HTML-text
+*    3. Send a fax with coded as HTML & Plain-text
 * 
 * Results:
 * 	In all cases:
@@ -63,39 +63,54 @@ public class Test47 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test47___Fax_at_several_txt_modes() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
 		
-	  // Step 1 - Send a fax with codded as Plain-text
-	  testFuncs.myDebugPrinting("Step 1 - Send a fax with codded as Plain-text");
+	  // Step 1 - Send a fax with coded as Plain-text
+	  testFuncs.myDebugPrinting("Step 1 - Send a fax with coded as Plain-text");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test47_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
 	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Start"));
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("End"));
-
-	  // Step 2 - Send a fax with codded as HTML-text
-	  testFuncs.myDebugPrinting("Step 2 - Send a fax with codded as HTML-text");
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
+  
+	  // Step 2 - Send a fax with coded as HTML-text
+	  testFuncs.myDebugPrinting("Step 2 - Send a fax with coded as HTML-text");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test47_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Start"));
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("End"));
+  }
+  
+  @Test
+  public void test3() throws Exception {
 	  
-	  // Step 3 - Send a fax with codded as HTML & Plain-text
-	  testFuncs.myDebugPrinting("Step 3 - Send a fax with codded as HTML & Plain-text");
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  
+	  // Step 3 - Send a fax with coded as HTML & Plain-text
+	  testFuncs.myDebugPrinting("Step 3 - Send a fax with coded as HTML & Plain-text");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test47_3.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  testFuncs.activateFaxOCR(testVars.getOCRPath(), testVars.getRootDir(), "att_Fax_Message_Body");
-	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\converted\\att_Fax_message_body.rtf");
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("Start") || bodyMsg.contains("Body1"));
 	  testFuncs.myAssertTrue("Title was not detected !!", bodyMsg.contains("End")   || bodyMsg.contains("Body2"));
   }

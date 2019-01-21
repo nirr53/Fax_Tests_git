@@ -60,12 +60,12 @@ public class Test75 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test74___Fax_with_odg_attachment() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -76,7 +76,7 @@ public class Test75 {
 	  dataMap.put("fileNumber"		 ,  "7");
 	  dataMap.put("isMultipleTargets",  "1"); 
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  
+  
 	  // Step 2 - Check result message
 	  testFuncs.myDebugPrinting("Step 2 - Check result message");
 	  String bodyText = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[2] + ".txt");  

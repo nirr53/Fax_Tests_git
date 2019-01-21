@@ -1,12 +1,5 @@
 package Fax_Tests;
 
-import java.net.Inet4Address;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.openqa.selenium.By;
-
 public class enumsClass {
 		
 	// Select types

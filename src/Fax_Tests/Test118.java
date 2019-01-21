@@ -63,26 +63,53 @@ public class Test118 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test118___Services_logs() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Login the web admin");
-	  String[] extraData = {"Web Admin", "Activity", "Backup"};  
-
-	  // Loop on all the services
-	  for (String service : extraData) {
-		  
-		  testFuncs.myDebugPrinting("The current tested service - " + service, enumsClass.logModes.MAJOR);
-		  String[] neededData = {service};
-		  webFuncs.setConfiguration(118, "Services Logs", neededData);
-	  }
+	  String service = "Web Admin";
+	  
+	  // test
+	  testFuncs.myDebugPrinting("The current tested service - " + service, enumsClass.logModes.MAJOR);
+	  String[] neededData = {service};
+	  webFuncs.setConfiguration(118, "Services Logs", neededData);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Login the web admin");
+	  String service = "Activity";
+	  
+	  // test
+	  testFuncs.myDebugPrinting("The current tested service - " + service, enumsClass.logModes.MAJOR);
+	  String[] neededData = {service};
+	  webFuncs.setConfiguration(118, "Services Logs", neededData);
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Login the web admin");
+	  String service = "Backup";
+	  
+	  // test
+	  testFuncs.myDebugPrinting("The current tested service - " + service, enumsClass.logModes.MAJOR);
+	  String[] neededData = {service};
+	  webFuncs.setConfiguration(118, "Services Logs", neededData);
   }
 
   @After

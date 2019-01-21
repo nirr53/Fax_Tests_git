@@ -62,12 +62,12 @@ public class Test62 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test62___Fax_to_non_existing_user() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -81,7 +81,15 @@ public class Test62 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  errMsg = testFuncs.readFile(testVars.getRootDir()  + "\\error\\" + faxFailed + ".txt");  
 	  testFuncs.myAssertTrue("To header was not detected !!", errMsg.contains("Reject"));
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String faxFailed = testVars.getFaxFailureHeader();
+  
 	  // Step 2 - Deposit a fax to non existing user and verify that message still can be sent and received when failed message is waiting for retry
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax to non existing user and verify that message still can be sent and received when failed message is waiting for retry");
 	  dataMap.put("outputPath", testVars.getOutputDirPath() + "Test62.eml");

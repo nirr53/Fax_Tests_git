@@ -60,21 +60,27 @@ public class Test99 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test99___Multiple_sendings_valid_and_invalid_users() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
-	  String resMessage;
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"3"};
 	  webFuncs.setConfiguration(99, "Multiple sendings - invalid users", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String resMessage;
 		
 	  // Step 1 - Deposit a fax with multiple valid and invalid users
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with multiple valid and invalid users");

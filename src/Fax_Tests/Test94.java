@@ -36,6 +36,8 @@ public class Test94 {
   GlobalVars 			testVars;
   GlobalFuncs			testFuncs;
   WebFuncs				webFuncs;
+  String 				attname = "attName_{}.,";
+
 
   // Default constructor for print the name of the used browser 
   public Test94(String browser) {
@@ -60,22 +62,27 @@ public class Test94 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test94___Attachment_name_with_special_characters() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
-	  String attname = "attName_{}.,";
 	  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
-//	  String[] extraData = {attname, "From Number Settings"};
-//	  webFuncs.setConfiguration(94, "General Settings - Attachment name", extraData);
-		
+	  String[] extraData = {attname, "From Number Settings"};
+	  webFuncs.setConfiguration(94, "General Settings - Attachment name", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test94.eml");
@@ -105,6 +112,17 @@ public class Test94 {
 		  
 		  testFuncs.myFail(resultPath + " was not detected !!");
 	  }  
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");	
+	  String[] extraData = {"%PH_from%_%PH_to%", "From Number Settings"};		
+	  webFuncs.setConfiguration(94, "General Settings - Attachment name", extraData);
   }
 
   @After

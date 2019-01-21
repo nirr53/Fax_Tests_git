@@ -61,11 +61,11 @@ public class Test39 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test39___Fax_with_signature() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -74,21 +74,49 @@ public class Test39 {
 	  testFuncs.myDebugPrinting("Step 1 - Deposit fax with normal-signature in his body");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test39_1.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
 	  // Step 2 - Deposit fax  with telephone-signature in his body
 	  testFuncs.myDebugPrinting("Step 2 - Deposit fax  with telephone-signature in his body");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test39_2.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test3() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
 	  // Step 3 - Deposit fax  with url-signature in his body
 	  testFuncs.myDebugPrinting("Step 3 - Deposit fax  with url-signature in his body");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test39_3.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test4() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
 	  // Step 4 - Deposit fax  with image-signature in his body
 	  testFuncs.myDebugPrinting("Step 4 - Deposit fax  with image-signature in his body");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test39_4.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test5() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 5 - Deposit fax  with  complex signature (image, url and phone) in his body
 	  testFuncs.myDebugPrinting("Step 5 - Deposit fax  with  complex signature (image, url and phone) in his body");

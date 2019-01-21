@@ -50,10 +50,10 @@ public class WebFuncs {
 	private final String ADMIN_USER_MANUALLS 	   = "//*[@id='c9.1']";
 	
 	// Default constructor
-	public WebFuncs() {
+	public WebFuncs(GlobalFuncs testFuncs, GlobalVars testVars) {
 		
-		testFuncs = new GlobalFuncs();
-		testVars  = new GlobalVars();
+		this.testFuncs = testFuncs;
+		this.testVars  = testVars;
 	}
 	
 	// Main Switch-Case function
@@ -283,22 +283,17 @@ public class WebFuncs {
 			case 93:
 			case 94:
 	    		testFuncs.myDebugPrinting("Test <" + stepNumber + "> block:", enumsClass.logModes.MINOR);
-//				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
-//				setFaxOutFaxId(extraData[1]);
-//				submitPage(driver);
-//				enterMenu(driver, enumsClass.menuNames.APPLICATION_LOGS	   		   , "Application Logs");
-//				enterMenu(driver, "Menagement_general_section_open", "From Email Address");
-
-//				enterMenu(driver, "General_Settings_open", "From Email Address");
-				enterMenu(driver, enumsClass.menuNames.GENERAL_SETTINGS, "From Email Address");
+				enterMenu(driver, enumsClass.menuNames.FAX_OUT_SETTINGS, "Add Cover Page");
+				setFaxOutFaxId(extraData[1]);
+				submitPage(driver);
+				enterMenu(driver, enumsClass.menuNames.GENERAL_SETTINGS_OPEN, "From Email Address");
 	    		testFuncs.myDebugPrinting("Attachment name - " + extraData[0], enumsClass.logModes.MINOR);
 	    	    driver.switchTo().frame(1);
-	    	    testFuncs.myWait(2000);
-	    	    
-	    		  driver.findElement(By.xpath("//*[@id='att_name']")).sendKeys("123");
-	    		  testFuncs.myWait(2000); 
-	    	    
-//				mySendKeys(By.xpath("//*[@id='att_name']"), /*extraData[0]*/ "gg", 9000);
+	    	    testFuncs.myWait(2000);    	    
+	    	    driver.findElement(By.id("att_name")).clear();;    		
+	    	    testFuncs.myWait(3000); 	    	    
+	    	    driver.findElement(By.id("att_name")).sendKeys(extraData[0]);    		
+	    	    testFuncs.myWait(3000); 	  
 				submitPage(driver);
 			    driver.switchTo().defaultContent();
 				break;
@@ -554,9 +549,7 @@ public class WebFuncs {
 	    	    driver.switchTo().frame(1);
 				bodyText     = driver.findElement(By.tagName("body")).getText();
 				testFuncs.myAssertTrue("None of the Timezones <" + extraData[0] + "> was not detected !!\nbodyText - " + bodyText, bodyText.contains(extraData[0]) ||
-			     		   																										   bodyText.contains(extraData[1]) ||
-			     		   																										   bodyText.contains(extraData[2]) ||
-			     		   																										   bodyText.contains(extraData[3]));			     		   
+		  		   																										   bodyText.contains(extraData[3]));			     		   
 				break;
 				
 			case 129:

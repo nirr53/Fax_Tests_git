@@ -59,11 +59,11 @@ public class Test6 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test6___Fax_pages_tests() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -74,20 +74,34 @@ public class Test6 {
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
 	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
 	  testFuncs.myAssertTrue("Page number is not correct !!\nstatusMsg -" + statusMsg, statusMsg.contains("3 page(s)"));
+  }
   
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  
 	  // Step 2 - Deposit a fax with 5 pages
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax with 5 pages");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test6_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
+	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
 	  testFuncs.myAssertTrue("Page number is not correct !!\nstatusMsg -" + statusMsg, statusMsg.contains("5 page(s)"));
-
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  
 	  // Step 3 - Deposit a fax with 26 pages
 	  testFuncs.myDebugPrinting("Step 3 - Deposit a fax with 26 pages");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test6_3.eml");
 	  dataMap.put("maxWaitTime", "2000");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
+	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");
 	  testFuncs.myAssertTrue("Page number is not correct !!\nstatusMsg -" + statusMsg, statusMsg.contains("26 page(s)"));
   }
 

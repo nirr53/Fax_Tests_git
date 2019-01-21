@@ -1,0 +1,221 @@
+﻿                                                        CONTINENTAL AUTOMOTIVE MAQUILA MEXICO S.A. DE C.V.                                                                                INVOICE:                  PTL-00380-15
+                                                                                                                                                                                          ENTRY NO: AJL-0237936-4
+                                                                                     LUIS BLERIOT 6720                                                                                    DATE:                     APR/9/2015
+                                                                                     PARQUE IND. PANAMERICANO                                                                             PORT OF ENTRY: SANTA TERESA
+                                                                                     JUAREZ, CH, MEXICO ZIP: 32695                                                                        TRAILER: EP091
+                                                                                     MXCONAUT6720CDJ                                                                                      PLANTA:          Planta Luis Bleri
+                                                                                                                                                                                                           ot
+IMPORTER OF RECORD:
+  CONTINENTAL AUTOMOTIVE SYSTEMS, INC.
+  2700 AIRPORT ROAD                                                                               SHIP TO:                                                  Seal Number: 0654435 TRUCK SEAL 0506099
+                                                                                                     CONTINENTAL AUTOMOTIVE SYSTEMS, INC.
+  SUITE #200                                                                                         2700 AIRPORT ROAD
+  SANTA TERESA, NM, U.S.A. ZIP: 88008                                                                SUITE #200
+  IRS # 38-338840900                                                                                 SANTA TERESA, NM, U.S.A. ZIP: 88008
+  FREIGHT CHARGES                       $50.00
+  ALL VALUES EXPRESSED IN U.S. DOLLARS                                                                                      PLANTA LUIS BLERIOT
+  EXPORTACION DE PRODUCTO TERMINADO EDF.1
+  EMPTY GROSS WEIGHT 6100 KGS                                                                                                                                                                                                     PAGE: 1
+            PART NUMBER                          QUANTITY          COUNTRY                UNIT                                          DUTY          DUTIABLE           NON-DUTIABLE              PACKING                  TOTAL
+                                                                                                                     HTS
+            DESCRIPTION                           SHIPPED          OF ORIGIN            VALUE                                           RATE             VALUE                VALUE                 VALUE                   VALUE
+JRZ-47072141918-00                             800 PZS                  MX               $12.86260 MX8501.10.6080                       FREE                  $10,290.08                                                            $10,290.08
+GENERAL PURPOSE ACTUATOR                       1 BUNDLES
+ NAFTA BY DEMINIMIS M                          204 KG GR
+ PACKING CHECKD 01/15                          192.00 KG NT
+950-E20121                                     1536 PZS                 MX                 $3.72300 MX8481.80.9020                      FREE                   $5,718.53                                                             $5,718.53
+LINEAR PURGE VALVE                             2 BUNDLES
+ NAFTA QUALIFY BY TSR                          381 KG GR
+ PACKING CHECKD 09/14                          357.00 KG NT
+950-520007-CH                                  1500 PZS                 MX               $15.29890 MX8481.80.9020                       FREE                  $22,948.35                                                            $22,948.35
+EXHAUST GAS RECIRCULATOR                       5 BUNDLES
+ NAFTA QUALIFY BY TSR                          1270 KG GR
+ PACKING CHECKD 09/14                          1210.00 KG NT
+950-520007-NA                                  600 PZS                  MX               $15.28190 MX8481.80.9020                       FREE                   $9,169.14                                                             $9,169.14
+EXHAUST GAS RECIRCULATOR                       2 BUNDLES
+ NAFTA QUALIFY BY TSR                          507 KG GR
+ PACKING CHECKD 02/15                          483.00 KG NT
+JRZ-7333301KP-02                               675 PZS                  MX                 $6.34620 MX8481.80.9020                      FREE                   $4,283.69                                                             $4,283.69
+NATURAL VACCUM LEAK DETE                       1 BUNDLES
+CTION NAFTA QUALIFY BY T                       108 KG GR
+SR PACKING CHECKD 09/14                        96.00 KG NT
+JRZ-5320759-00                                 96 PZS                   MX               $51.90740 MX8481.80.9050                       FREE                   $4,983.11                                                             $4,983.11
+EXHAUST BYPASS VALVE ASS                       2 BUNDLES
+EMBLY NAFTA QUALIFY BY T                       278 KG GR
+SR PACKING CHECKD 09/14                        254.00 KG NT
+SAM-511361-B                                   864 PZS                  MX               $23.02810 MX8481.80.9020                       FREE                  $19,896.28                                                            $19,896.28
+ELECTRONIC TROTTLE BODY                        2 BUNDLES
+ NAFTA QUALIFY BY TSR                          814 KG GR
+ PACKING CHECKD 09/14                          790.00 KG NT
+950-511284M                                    1800 PZS                 MX               $20.01420 MX8481.80.9020                       FREE                  $36,025.56                                                            $36,025.56
+ELECTRONIC TROTTLE BODY                        5 BUNDLES
+ NAFTA QUALIFY BY TSR                          2048 KG GR
+ PACKING CHECKD 08/14                          1988.00 KG NT
+950-388815-SP                                  66 PZS                   MX                 $6.72370 MX8481.80.9005                      FREE                    $ 443.76                                                              $ 443.76
+VAPOUR MANAGMENT VALVE                         1 BUNDLES
+ NAFTA QUALIFY BY TSR                          28 KG GR
+ PACKING CHECKD 04/15                          16.00 KG NT
+950-EM88800                                    72 PZS                   MX                 $4.18410 MX8481.80.9005                      FREE                    $ 301.26                                                              $ 301.26
+VAPOUR MANAGMENT VALVE                         1 BUNDLES                                             $0.01800 9803.00.50                FREE                                                                   $1.30                     $1.30
+ NAFTA                                         30 KG GR
+                                               18.00 KG NT                                      $4.20210                                                                                                                              $ 302.56
+950-M90415-FC                                  400 PZS                  MX                 $4.77500 MX8481.80.9005                      FREE                   $1,910.00                                                             $1,910.00
+VAPOUR MANAGMENT VALVE                         1 BUNDLES
+ NAFTA QUALIFY BY TSR                          109 KG GR
+ PACKING CHECKD 03/15                          97.00 KG NT
+950-M89800FC                                   72 PZS                   MX               $10.49560 MX8481.80.9005                       FREE                    $ 755.68                                                              $ 755.68
+VAPOUR MANAGMENT VALVE                         1 BUNDLES
+ NAFTA QUALIFY 11/11                           40 KG GR
+ PACKING CHECKED                               28.00 KG NT
+                                                                            Filer: AJL
+                                                                            TRANSPORTES EFREN PORRAS S DE RL DE CV
+                                                                            POEFAJL-0237936-4
+  VALUES SHOWN ON THIS DOCUMENT ARE BASED ON STANDARD COSTS
+  WHICH ARE NECESSARILY SUBJECT TO VARIANCE. FINAL COST WILL
+ BE SUBMITTED AS PROMPTLY AS PRACTICABLE. IT IS REQUESTED                                                                                                               LIZETH RODRIGUEZ E
+ THAT APPRAISEMENT BE WITHELD PENDING SUCH SUBMISION                                                                                                                    DEPTO ADUANAS
+
+
+                                                        CONTINENTAL AUTOMOTIVE MAQUILA MEXICO S.A. DE C.V.                                                                                INVOICE:                  PTL-00380-15
+                                                                                                                                                                                          ENTRY NO: AJL-0237936-4
+                                                                                     LUIS BLERIOT 6720                                                                                    DATE:                     APR/9/2015
+                                                                                     PARQUE IND. PANAMERICANO                                                                             PORT OF ENTRY: SANTA TERESA
+                                                                                     JUAREZ, CH, MEXICO ZIP: 32695                                                                        TRAILER: EP091
+                                                                                     MXCONAUT6720CDJ                                                                                      PLANTA:          Planta Luis Bleri
+                                                                                                                                                                                                           ot
+IMPORTER OF RECORD:
+  CONTINENTAL AUTOMOTIVE SYSTEMS, INC.
+  2700 AIRPORT ROAD                                                                               SHIP TO:                                                  Seal Number: 0654435 TRUCK SEAL 0506099
+                                                                                                     CONTINENTAL AUTOMOTIVE SYSTEMS, INC.
+  SUITE #200                                                                                         2700 AIRPORT ROAD
+  SANTA TERESA, NM, U.S.A. ZIP: 88008                                                                SUITE #200
+  IRS # 38-338840900                                                                                 SANTA TERESA, NM, U.S.A. ZIP: 88008
+  FREIGHT CHARGES                       $50.00
+  ALL VALUES EXPRESSED IN U.S. DOLLARS                                                                                      PLANTA LUIS BLERIOT
+  EXPORTACION DE PRODUCTO TERMINADO EDF.1
+  EMPTY GROSS WEIGHT 6100 KGS                                                                                                                                                                                                     PAGE: 2
+            PART NUMBER                          QUANTITY          COUNTRY                UNIT                                          DUTY          DUTIABLE           NON-DUTIABLE              PACKING                  TOTAL
+                                                                                                                     HTS
+            DESCRIPTION                           SHIPPED          OF ORIGIN            VALUE                                           RATE             VALUE                VALUE                 VALUE                   VALUE
+JRZ-CPLA9C086AA-00                             336 PZS                  MX               $13.06820 MX9027.80.4530                       FREE                   $4,390.92                                                             $4,390.92
+FLEX FUEL SENSOR II GEN                        2 BUNDLES
+ NAFTA QUALIFY BY L.H                          127 KG GR
+ PACKING CHECKD 07/13                          103.00 KG NT
+950-E14578                                     23 PZS                   MX               $48.90590 MX8481.80.9020                       FREE                   $1,124.84                                                             $1,124.84
+ELECTRONIC TROTTLE BODY                        1 BUNDLES
+ NAFTA QUALIFY BY TSR                          47 KG GR
+ PACKING CHECKD 12/14                          35.00 KG NT
+JRZ-FL3T15603BA-00                             1536 PZS                 MX                 $3.78170 MX8517.62.0050                      FREE                   $5,808.69                                                             $5,808.69
+PROXIMITY SENSOR (DOOR H                       2 BUNDLES
+ANDLE NAFTA QUALIFY BY T                       126 KG GR
+SR PACKING CHECKD 03/15                        102.00 KG NT
+      950-388655                               48 PZS                   MX                 $8.10410 MX8481.80.9020                      FREE                    $ 389.00                                                              $ 389.00
+EXHAUST GAS RECIRCULATOR                       1 BUNDLES
+ NAFTA QUALIFY 11/11                           38 KG GR
+ PACKING CHECKED                               26.00 KG NT
+      950-388670                               1 PZS                    MX               $11.93630 MX8481.80.9020                       FREE                      $11.94                                                                $11.94
+EXHAUST GAS RECIRCULATOR                       1 BUNDLES
+ NAFTA QUALIFY BY TSR                          13 KG GR
+ PACKING CHECKD 12/14                          1.00 KG NT
+JRZ-68166540AA-E                               4680 PZS                 MX                 $1.07180 MX9031.80.8070                      FREE                   $5,016.02                                                             $5,016.02
+VIBRATION DETECTOR SENSO                       1 BUNDLES
+R NAFTA QUALIFY BY TSR                         187 KG GR
+ PACKING CHECKD 03/15                          175.00 KG NT
+JRZ-98MF12A699BABR                             2080 PZS                 MX                 $1.92850 MX9031.80.8070                      FREE                   $4,011.28                                                             $4,011.28
+VIBRATION DETECTOR SENSO                       1 BUNDLES
+R NAFTA QUALIFY BY TSR                         256 KG GR
+ PACKING CHECKD 09/14                          244.00 KG NT
+JRZ-AL3A12A699BAES                             2400 PZS                 MX                 $1.27230 MX9031.80.8070                      FREE                   $3,053.52                                                             $3,053.52
+VIBRATION DETECTOR SENSO                       1 BUNDLES
+R NAFTA QUALIFY BY TSR                         112 KG GR
+ PACKING CHECKD 04/15                          100.00 KG NT
+JRZ-12605738F                                  1344 PZS                 MX                 $1.28050 MX9031.80.8070                      FREE                   $1,720.99                                                             $1,720.99
+VIBRATION DETECTOR SENSO                       1 BUNDLES
+R NAFTA QUALIFY BY TSR                         96 KG GR
+ PACKING CHECKD 09/14                          84.00 KG NT
+JRZ-12605738SH                                 1344 PZS                 MX                 $1.28050 MX9031.80.8070                      FREE                   $1,720.99                                                             $1,720.99
+VIBRATION DETECTOR SENSO                       1 BUNDLES
+R NAFTA QUALIFY BY L.H                         96 KG GR
+ PACKING CHECKD 09/14                          84.00 KG NT
+JRZ-12576519                                   2 PZS                    MX                 $4.07200 MX9032.90.6080                      FREE                       $8.14                                                                 $8.14
+CAM SENSOR                                     1 BUNDLES
+ NAFTA QUALIFY BY TSR                          12 KG GR
+ PACKING CHECKD 12/14                          0.05 KG NT
+JRZ-12584079                                   16 PZS                   MX                 $4.33570 MX9032.90.6080                      FREE                      $69.37                                                                $69.37
+CAM SENSOR                                     1 BUNDLES
+ NAFTA QUALIFY BY TSR                          13 KG GR
+ PACKING CHECKD 12/14                          1.00 KG NT
+950-M90365-1                                   768 PZS                  MX                 $3.72300 MX8481.80.9020                      FREE                   $2,859.26                                                             $2,859.26
+LINEAR PURGE VALVE                             1 BUNDLES
+ NAFTA QUALIFY BY TSR                          193 KG GR
+ PACKING CHECKD 09/14                          181.00 KG NT
+950-A89990                                     960 PZS                  MX               $23.02610 MX9032.89.6085                       FREE                  $22,105.06                                                            $22,105.06
+INTAKE MANIFOLD CONTROL                        1 BUNDLES
+ NAFTA QUALIFY BY TSR                          257 KG GR
+ PACKING CHECKD 09/14                          245.00 KG NT
+  VALUES SHOWN ON THIS DOCUMENT ARE BASED ON STANDARD COSTS
+  WHICH ARE NECESSARILY SUBJECT TO VARIANCE. FINAL COST WILL
+ BE SUBMITTED AS PROMPTLY AS PRACTICABLE. IT IS REQUESTED                                                                                                               LIZETH RODRIGUEZ E
+ THAT APPRAISEMENT BE WITHELD PENDING SUCH SUBMISION                                                                                                                    DEPTO ADUANAS
+
+
+                                                        CONTINENTAL AUTOMOTIVE MAQUILA MEXICO S.A. DE C.V.                                                                                INVOICE:                  PTL-00380-15
+                                                                                                                                                                                          ENTRY NO: AJL-0237936-4
+                                                                                     LUIS BLERIOT 6720                                                                                    DATE:                     APR/9/2015
+                                                                                     PARQUE IND. PANAMERICANO                                                                             PORT OF ENTRY: SANTA TERESA
+                                                                                     JUAREZ, CH, MEXICO ZIP: 32695                                                                        TRAILER: EP091
+                                                                                     MXCONAUT6720CDJ                                                                                      PLANTA:          Planta Luis Bleri
+                                                                                                                                                                                                           ot
+IMPORTER OF RECORD:
+  CONTINENTAL AUTOMOTIVE SYSTEMS, INC.
+  2700 AIRPORT ROAD                                                                               SHIP TO:                                                  Seal Number: 0654435 TRUCK SEAL 0506099
+                                                                                                     CONTINENTAL AUTOMOTIVE SYSTEMS, INC.
+  SUITE #200                                                                                         2700 AIRPORT ROAD
+  SANTA TERESA, NM, U.S.A. ZIP: 88008                                                                SUITE #200
+  IRS # 38-338840900                                                                                 SANTA TERESA, NM, U.S.A. ZIP: 88008
+  FREIGHT CHARGES                       $50.00
+  ALL VALUES EXPRESSED IN U.S. DOLLARS                                                                                      PLANTA LUIS BLERIOT
+  EXPORTACION DE PRODUCTO TERMINADO EDF.1
+  EMPTY GROSS WEIGHT 6100 KGS                                                                                                                                                                                                     PAGE: 3
+            PART NUMBER                          QUANTITY          COUNTRY                UNIT                                          DUTY          DUTIABLE           NON-DUTIABLE              PACKING                  TOTAL
+                                                                                                                     HTS
+            DESCRIPTION                           SHIPPED          OF ORIGIN            VALUE                                           RATE             VALUE                VALUE                 VALUE                   VALUE
+JRZ-7333588G-03                                208 PZS                  MX                 $4.32030 MX8481.80.9020                      FREE                    $ 898.62                                                              $ 898.62
+NATURAL VACCUM LEAK DETE                       1 BUNDLES
+CTION NAFTA QUALIFY BY T                       26 KG GR
+SR PACKING CHECKD 11/14                        14.00 KG NT
+JRZ-DS7T15603AD-00                             2304 PZS                 MX                 $2.76850 MX8517.62.0050                      FREE                   $6,378.62                                                             $6,378.62
+PROXIMITY SENSOR (DOOR H                       3 BUNDLES
+ANDLE NAFTA QUALIFY BY T                       252 KG GR
+SR PACKING CHECKD 03/15                        216.00 KG NT
+JRZ-759777-01                                  2304 PZS                 MX                 $3.73500 MX8517.62.0050                      FREE                   $8,605.44                                                             $8,605.44
+PROXIMITY SENSOR (DOOR H                       2 BUNDLES
+ANDLE NAFTA QUALIFY BY T                       118 KG GR
+SR PACKING CHECKD 02/15                        94.00 KG NT
+JRZ-94100326HUF-01                             1536 PZS                 MX                 $3.88170 MX8517.62.0050                      FREE                   $5,962.29                                                             $5,962.29
+PROXIMITY SENSOR (DOOR H                       1 BUNDLES
+ANDLE NAFTA QUALIFY BY T                       85 KG GR
+SR PACKING CHECKD 02/15                        73.00 KG NT
+JRZ-AL3P-7G276-AJ                              864 PZS                  MX               $24.42610 MX9032.90.6080                       FREE                  $21,104.15                                                            $21,104.15
+TRANSMISSION MODULE (6R8                       9 BUNDLES
+O) NAFTA QUALIFY BY TSR                        644 KG GR
+ PACKING CHECKD 03/15                          536.00 KG NT
+JRZ-AL3Z7G276B-00                              291 PZS                  MX               $24.42610 MX9032.90.6080                       FREE                   $7,108.00                                                             $7,108.00
+TRANSMISSION MODULE (6R8                       7 BUNDLES
+O) NAFTA QUALIFY BY TSR                        264 KG GR
+ PACKING CHECKD 10/14                          180.00 KG NT
+JRZ-761364AC-00                                640 PZS                  MX                 $4.11280 MX8517.62.0050                      FREE                   $2,632.19                                                             $2,632.19
+PROXIMITY SENSOR (DOOR H                       1 BUNDLES
+ANDLE NAFTA QUALIFY BY T                       69 KG GR
+SR PACKING CHECKD 04/15                        57.00 KG NT
+950-M86650-SP1                                 72 PZS                   MX               $11.78930 MX8481.80.9005                       FREE                    $ 848.83                                                              $ 848.83
+VAPOUR MANAGMENT VALVE                         1 BUNDLES
+ NAFTA QUALIFY BY TSR                          28 KG GR
+ PACKING CHECKD 03/15                          16.00 KG NT
+ Totals                                             32238 PZS                                                                                               $ 222,553.60                  $0.00                $1.30              $ 222,554.90
+  VALUES SHOWN ON THIS DOCUMENT ARE BASED ON STANDARD COSTS
+  WHICH ARE NECESSARILY SUBJECT TO VARIANCE. FINAL COST WILL
+ BE SUBMITTED AS PROMPTLY AS PRACTICABLE. IT IS REQUESTED                                                                                                               LIZETH RODRIGUEZ E
+ THAT APPRAISEMENT BE WITHELD PENDING SUCH SUBMISION                                                                                                                    DEPTO ADUANAS
+
+

@@ -1,0 +1,60 @@
+Supported OCR Languages:
+
+http://www.verypdf.com/pdf2txt/ocr-language.htm
+
+You can use "-lang" parameter to specify language for OCR engine, e.g.,
+
+
+    pdf2txtocr.exe -ocr -res 300 C:\in.pdf C:\out.txt
+    pdf2txtocr.exe -ocr -lang eng C:\in.pdf C:\out.txt
+    pdf2txtocr.exe -ocr -lang eng -ocrmode 0 C:\in.pdf C:\out.txt
+    pdf2txtocr.exe -ocr -lang eng -ocrmode 0 C:\in.pdf C:\out.txt
+    pdf2txtocr.exe -ocr -lang deu -ocrmode 1 C:\in.pdf C:\out.pdf
+    pdf2txtocr.exe -ocr -lang eng -ocrmode 2 C:\in.pdf C:\out.pdf
+    pdf2txtocr.exe -ocr -lang eng -ocrmode 3 C:\in.pdf C:\out.pdf
+    pdf2txtocr.exe -ocr -lang eng -ocrmode 2 -outboxfile C:\in.pdf C:\out.pdf
+    pdf2txtocr.exe -ocr -lang fra -ocrmode 1 C:\in.pdf C:\out.pdf
+    pdf2txtocr.exe -ocr -lang ita -ocrmode 1 C:\in.pdf C:\out.pdf
+    pdf2txtocr.exe -ocr -lang nld -ocrmode 1 C:\in.pdf C:\out.pdf
+    pdf2txtocr.exe -ocr -lang spa -ocrmode 1 C:\in.pdf C:\out.pdf
+
+
+"-lang" option can be choose from one of following OCR languages, if a language package 
+is not exist in OCR Data Folder, pdf2txtocr.exe will download necessary language package 
+from VeryPDF site automatically.
+
+bul: Bulgarian language
+cat: Catalan language
+ces: Czech language
+chi_sim: Chinese (Simplified) language
+chi_tra: Chinese (Traditional) language
+chr: Cherokee language
+dan: Danish language
+deu: German language
+ell: Greek language
+eng: English language
+fin: Finish language
+fra: French language
+hun: Hungarian language
+ind: Indonesian language
+ita: Italian language
+jpn: Japanese language
+kor: Korean language language
+lav: Latvian language
+lit: Lithuanian language
+nld: Dutch language
+nor: Norwegian language
+pol: Polish language
+por: Portuguese language
+ron: Romanian language
+rus: Russian language
+slk: Slovak language
+slv: Slovenian language
+spa: Spanish language
+srp: Serbian language
+swe: Swedish language
+tgl: Tagalog language
+tur: Turkish language
+ukr: Ukranian language
+vie: Vietnamese language
+

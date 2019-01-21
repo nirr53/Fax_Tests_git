@@ -58,12 +58,12 @@ public class Test28 {
   public void setUp() throws Exception {
 	  	
 	testVars   = new GlobalVars();
-    testFuncs  = new GlobalFuncs(); 
-    testTshark = new GlobalTshark();
+    testFuncs  = new GlobalFuncs(testVars); 
+    testTshark = new GlobalTshark(testFuncs, testVars.getTsharkPath());
   }
 
   @Test
-  public void Test28___NA_retries_number() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();		
@@ -77,20 +77,21 @@ public class Test28 {
 	  
 	  // Set capture filter
 	  testFuncs.myDebugPrinting("Set capture filter");
-	  String capMaxNum	= "21";
-	  String filter		= "-f port " + testVars.getTsharkNaPort();
-	  String outputName = "Test28.txt";
+//	  String capMaxNum	= "21";
+//	  String filter		= "-f port " + testVars.getTsharkNaPort();
+//	  String outputName = "Test28.txt";
 	  
 	  // Step 1 - Capture trace
-	  testFuncs.myDebugPrinting("Step 1 -Capture trace");
-	  testTshark.StartCapture(capMaxNum, filter, outputName);
+//	  testFuncs.myDebugPrinting("Step 1 -Capture trace");
+//	  testTshark.StartCapture(capMaxNum, filter, outputName);
 	  
 	  // Step 2 - Check headers of the failure message
-	  testFuncs.myWait(300000);
 	  testFuncs.myDebugPrinting("Step 2 - Check headers of the failure message");
+	  testFuncs.myWait(740000);
+	  testFuncs.myDebugPrinting("Wait ends");
 	  String errorMsg = testFuncs.readFile(testVars.getRootDir()  + "\\error\\" +  testVars.getFaxFailureHeader() + ".txt");
 	  testFuncs.detectHeader(errorMsg, "To Fax Numbers:", "0565599612");
-	  testFuncs.detectHeader(errorMsg, "Subject:"       , "Failed_to_send_fax");
+	  testFuncs.detectHeader(errorMsg, "Subject:"       , "Test 28 - NA retries number test");
 	  testFuncs.detectHeader(errorMsg, "0565599612"     , "Other FMS error");  
   }
 

@@ -61,15 +61,14 @@ public class Test86 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test86___Fax_ID_with_longest_default_cli() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
 	  String faxId  = "Simple_text2";
 	  String defCli = "1234567890123456789";
 	  
@@ -77,6 +76,15 @@ public class Test86 {
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"System Fax ID", faxId, defCli};
 	  webFuncs.setConfiguration(86, "Fax Id with longest_default cli", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String faxId  = "Simple_text2";
+	  String defCli = "1234567890123456789";
 		
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");

@@ -58,11 +58,11 @@ public class Test40 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test40___Fax_with_low_high_importance() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -71,6 +71,13 @@ public class Test40 {
 	  testFuncs.myDebugPrinting("Step 1 - Deposit fax with low importance");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test40_1.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 2 - Deposit fax with high importance
 	  testFuncs.myDebugPrinting("Step 2 - Deposit fax with high importance");

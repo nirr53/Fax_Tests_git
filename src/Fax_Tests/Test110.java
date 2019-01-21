@@ -59,11 +59,11 @@ public class Test110 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test110___Fax_with_cc_and_bcc_adresses() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -78,6 +78,15 @@ public class Test110 {
 	  testFuncs.myWait(10000);
 	  fileNum = testFuncs.countFilesNumber(inputPath);
 	  testFuncs.myAssertTrue("The fax was sent several times! <" + fileNum + ">" , fileNum == 5);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String inputPath = testVars.getRootDir()  + "\\input\\";
+	  testFuncs.myDebugPrinting("inputPath - " + inputPath, enumsClass.logModes.MINOR);
 	  	  
 	  // Step 2 - Deposit a fax with different To and Cc address 
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax with different To and Cc address ");
@@ -93,6 +102,16 @@ public class Test110 {
 	  testFuncs.detectHeader(resMsg, "0545599608", "Succeeded to send"); 
 	  String statusMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[0] + ".txt");  
 	  testFuncs.detectHeader(statusMsg, "To:", "0545599607, 0545599608");  
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  String inputPath = testVars.getRootDir()  + "\\input\\";
+	  testFuncs.myDebugPrinting("inputPath - " + inputPath, enumsClass.logModes.MINOR);
+	  int fileNum = -1;
 	  
 	  // Step 3 - Deposit a fax with similar To and Bcc address
 	  testFuncs.myDebugPrinting("Step 3 - Deposit a fax with similar To and Bcc address");

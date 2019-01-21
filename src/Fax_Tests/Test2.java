@@ -59,11 +59,11 @@ public class Test2 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test2___Fax_status_headers() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 		
@@ -72,6 +72,13 @@ public class Test2 {
 	  Map<String, String> dataMap = new HashMap<String, String>();
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+	  
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
 	    
 	  // Step 2 - check Fax-Status headers
 	  testFuncs.myDebugPrinting("Step 2 - check Fax-Status headers");

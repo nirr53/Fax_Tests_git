@@ -1,0 +1,114 @@
+﻿Page ...                      1                                                                                                     10/21/2012                    10:37:06
+                                                                                  EMCA Holdings
+                                                                           Requisition Report
+Requester                          Requisition                             Requisition                                         Estimated                        Requisition
+                                   Number                                  Date                                           Requisition                           Status
+                                                                                                                                       Amount
+AABRAMS                                        9020                        06/06/2011                                                             6,713         Closed
+AABRAMS                                        9075                        06/11/2011                                                             1,815         Closed
+AABRAMS                                       11011                        09/07/2010                                                             1,939         Closed
+AABRAMS                                                                                                                                          10,467
+AALEXANDER                                     8614                        04/17/2011                                                            36,308         Closed
+AALEXANDER                                     9340                        06/28/2011                                                             1,928         Closed
+AALEXANDER                                                                                                                                       38,236
+AALLEY                                         8625                        04/18/2011                                                             1,161         Closed
+AALLEY                                                                                                                                            1,161
+AALLISON                                       9319                        06/27/2011                                                             3,884         Closed
+AALLISON                                                                                                                                          3,884
+ABALDWIN                                       9280                        06/25/2011                                                             1,474         Closed
+ABALDWIN                                      12012                        11/05/2010                                                             1,513         Closed
+ABALDWIN                                                                                                                                          2,987
+ABEARCE                                        8832                        05/21/2011                                                             1,923         Closed
+ABEARCE                                                                                                                                           1,923
+ABERGMAN                                      11885                        10/24/2010                                                            19,506         Closed
+ABERGMAN                                                                                                                                         19,506
+ABOREN                                         8556                        03/28/2011                                                             2,965         Closed
+ABOREN                                        12055                        11/09/2010                                                             1,127         Closed
+ABOREN                                        12170                        11/28/2010                                                             1,262         Closed
+ABOREN                                                                                                                                            5,354
+ABYAS                                          8735                        05/08/2011                                                            22,067         Closed
+ABYAS                                          8820                        05/20/2011                                                             1,292         Closed
+ABYAS                                          8942                        06/01/2011                                                             4,865         Closed
+ABYAS                                          8945                        06/01/2011                                                             2,066         Closed
+ABYAS                                          9039                        06/08/2011                                                             4,563         Closed
+ABYAS                                          9298                        06/26/2011                                                             2,071         Closed
+ABYAS                                                                                                                                            36,924
+ACASTORENA                                    12094                        11/14/2010                                                             1,842         Closed
+
+
+Page ...                      2                                                                                                     10/21/2012                    10:37:06
+                                                                                  EMCA Holdings
+                                                                           Requisition Report
+Requester                          Requisition                             Requisition                                         Estimated                        Requisition
+                                   Number                                  Date                                           Requisition                           Status
+                                                                                                                                       Amount
+ACASTORENA                                                                                                                                        1,842
+ACHAMBERS                                      8650                        04/24/2011                                                             1,581         Closed
+ACHAMBERS                                     11892                        10/24/2010                                                             1,003         Closed
+ACHAMBERS                                                                                                                                         2,584
+ACOX                                           8801                        05/18/2011                                                             7,589         Closed
+ACOX                                           9192                        06/20/2011                                                            42,786         Closed
+ACOX                                           9242                        06/23/2011                                                             1,272         Closed
+ACOX                                          11936                        10/28/2010                                                             2,230         Closed
+ACOX                                          12129                        11/20/2010                                                             8,409         Closed
+ACOX                                                                                                                                             62,286
+ADAVIS                                        12076                        11/12/2010                                                             2,043         Closed
+ADAVIS                                                                                                                                            2,043
+ADOYLE                                         8940                        06/01/2011                                                             2,038         Closed
+ADOYLE                                                                                                                                            2,038
+AEBRON                                         8576                        04/05/2011                                                             1,024         Closed
+AEBRON                                        11075                        09/10/2010                                                            27,403         Closed
+AEBRON                                                                                                                                           28,427
+AFLETCHER                                      9140                        06/15/2011                                                           315,173         Closed
+AFLETCHER                                                                                                                                       315,173
+AHALL                                          9201                        06/20/2011                                                             1,218         Closed
+AHALL                                          9219                        06/21/2011                                                             2,011         Closed
+AHALL                                                                                                                                             3,229
+AHICKS                                         9200                        06/20/2011                                                            33,856         Closed
+AHICKS                                                                                                                                           33,856
+AHITE                                          8397                        11/08/2010                                                             2,111         Closed
+AHITE                                         11676                        10/09/2010                                                            18,046         Closed
+AHITE                                                                                                                                            20,157
+AHOLLAND                                       8651                        04/24/2011                                                             2,752         Closed
+AHOLLAND                                       9287                        06/25/2011                                                             2,035         Closed
+AHOLLAND                                      11963                        10/30/2010                                                             1,493         Closed
+
+
+Page ...                      3                                                                                                     10/21/2012                    10:37:06
+                                                                                  EMCA Holdings
+                                                                           Requisition Report
+Requester                          Requisition                             Requisition                                         Estimated                        Requisition
+                                   Number                                  Date                                           Requisition                           Status
+                                                                                                                                       Amount
+AHOLLAND                                                                                                                                          6,280
+AHUNT                                          8756                        05/11/2011                                                             5,280         Closed
+AHUNT                                                                                                                                             5,280
+AJOHNSON                                       9277                        06/25/2011                                                             1,915         Closed
+AJOHNSON                                      11550                        10/02/2010                                                            12,307         Closed
+AJOHNSON                                                                                                                                         14,222
+ALAKIN                                         9148                        06/16/2011                                                            15,566         Closed
+ALAKIN                                                                                                                                           15,566
+ALANCE                                         8588                        04/08/2011                                                            10,746         Closed
+ALANCE                                         9098                        06/13/2011                                                            12,437         Closed
+ALANCE                                         9235                        06/22/2011                                                             3,190         Closed
+ALANCE                                                                                                                                           26,373
+AMCARTHUR                                      8639                        04/21/2011                                                            33,602         Closed
+AMCARTHUR                                      8674                        04/28/2011                                                            19,264         Closed
+AMCARTHUR                                     11056                        09/09/2010                                                             1,170         Closed
+AMCARTHUR                                     12151                        11/23/2010                                                           125,880         Closed
+AMCARTHUR                                                                                                                                       179,916
+AMCCLOSKEY                                     9196                        06/20/2011                                                             1,924         Closed
+AMCCLOSKEY                                                                                                                                        1,924
+AMORRISON                                      8538                        03/16/2011                                                             2,148         Closed
+AMORRISON                                     11606                        10/05/2010                                                             3,627         Closed
+AMORRISON                                                                                                                                         5,775
+AMORROW                                       11678                        10/09/2010                                                             1,196         Closed
+AMORROW                                       12266                        01/05/2011                                                             8,232         Closed
+AMORROW                                                                                                                                           9,428
+AMOTLEY                                       11918                        10/27/2010                                                             6,050         Closed
+AMOTLEY                                       12043                        11/07/2010                                                             1,872         Closed
+AMOTLEY                                                                                                                                           7,922
+ANOBLE                                         8835                        05/22/2011                                                           128,700         Closed
+ANOBLE                                        11992                        11/02/2010                                                             1,335         Closed
+
+

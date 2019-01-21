@@ -66,12 +66,12 @@ public class Test50 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test50___Hebrew_fax_with_attachments() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -80,41 +80,97 @@ public class Test50 {
 	  testFuncs.myDebugPrinting("Step 1 - Send an Hebrew fax with xlsx attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test50_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 2 - Send an Hebrew fax with xls attachment
 	  testFuncs.myDebugPrinting("Step 2 - Send an Hebrew fax with xls attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test50_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 3 - Send an Hebrew fax with docx attachment
 	  testFuncs.myDebugPrinting("Step 3 - Send an Hebrew fax with docx attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test50_3.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test4() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
 	  // Step 4 - Send an Hebrew fax with doc attachment
 	  testFuncs.myDebugPrinting("Step 4 - Send an Hebrew fax with doc attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test50_4.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test5() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 5 - Send an Hebrew fax with pptx attachment
 	  testFuncs.myDebugPrinting("Step 5 - Send an Hebrew fax with pptx attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test50_5.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test6() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 6 - Send an Hebrew fax with ppt attachment
 	  testFuncs.myDebugPrinting("Step 6 - Send an Hebrew fax with ppt attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test50_6.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test7() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 7 - Send an Hebrew fax with rtf attachment
 	  testFuncs.myDebugPrinting("Step 7 - Send an Hebrew fax with rtf attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test50_7.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test8() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 8 - Send an Hebrew fax with txt attachment
 	  testFuncs.myDebugPrinting("Step 8 - Send an Hebrew fax with txt attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test50_8.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test9() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 9 - Send an Hebrew fax with pdf attachment
 	  testFuncs.myDebugPrinting("Step 9 - Send an Hebrew fax with pdf attachment");

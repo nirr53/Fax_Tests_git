@@ -58,11 +58,11 @@ public class Test45 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test45___Fax_with_different_attachment_names() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -71,7 +71,14 @@ public class Test45 {
 	  testFuncs.myDebugPrinting("Step 1 - Send a fax with attachment that has special characters in its name");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test45_1.txt");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
 	  // Step 2 - Send a fax with attachment that has a long body
 	  testFuncs.myDebugPrinting("Step 2 - Send a fax with attachment that has a long body");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test45_2.txt");

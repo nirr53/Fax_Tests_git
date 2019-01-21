@@ -59,11 +59,11 @@ public class Test7 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test7___Fax_body_tests() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -76,21 +76,35 @@ public class Test7 {
 	  testFuncs.myAssertTrue("Display-name header was not detected !!", bodyMsg.contains("Display Name in GUI"));  
 	  testFuncs.myAssertTrue("From header was not detected !!"        , bodyMsg.contains("Fax to Mail service2"));
 	  testFuncs.myAssertTrue("Subject header was not detected !!"	  , bodyMsg.contains("Fax_Message_Body"));
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 2 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 2 -  Deposit a fax");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test7_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");  
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");  
 	  testFuncs.myAssertTrue("Display-name header was not detected !!", bodyMsg.contains("Display Name in GUI2"));  
 	  testFuncs.myAssertTrue("From header was not detected !!"        , bodyMsg.contains("Fax to Mail service2"));
 	  testFuncs.myAssertTrue("Subject header was not detected !!"	  , bodyMsg.contains("Fax_Message_Body"));
-		
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+	  
 	  // Step 3 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 3 -  Deposit a fax");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test7_3.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
-	  bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");  
+	  String bodyMsg = testFuncs.readFile(testVars.getRootDir()  + "\\input\\" + testVars.getFaxHeaders()[1] + ".txt");  
 	  testFuncs.myAssertTrue("Display-name header was not detected !!", bodyMsg.contains("12345678901234567890123456789012345678901234567890"));  
 	  testFuncs.myAssertTrue("From header was not detected !!"        , bodyMsg.contains("Fax to Mail service2"));
 	  testFuncs.myAssertTrue("Subject header was not detected !!"	  , bodyMsg.contains("Fax_Message_Body"));  

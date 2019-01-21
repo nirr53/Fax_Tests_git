@@ -58,11 +58,11 @@ public class Test88 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test88___Fax_with_pdf_multiple_attachments() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -71,6 +71,13 @@ public class Test88 {
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax with pdf attachment that has multiple languages");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test88_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 2 -  Deposit a fax with body that has some languages (Unicode)
 	  testFuncs.myDebugPrinting("Step 2 -  Deposit a fax with body that has some languages (Unicode)");

@@ -59,11 +59,11 @@ public class Test43 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test43___Body_tests() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -73,12 +73,26 @@ public class Test43 {
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test43_1.txt");
 	  dataMap.put("maxWaitTime", "4000");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
 	  // Step 2 - Deposit a fax with empty body
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax with empty body");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test43_2.txt");
 	  dataMap.put("maxWaitTime", "4000");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 3 - Deposit a fax with bold body
 	  testFuncs.myDebugPrinting("Step 3 - Deposit a fax with bold body");

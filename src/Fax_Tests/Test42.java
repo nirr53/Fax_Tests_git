@@ -58,11 +58,11 @@ public class Test42 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
+    testFuncs = new GlobalFuncs(testVars); 
   }
 
   @Test
-  public void Test42___Fax_html_attachment() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -71,6 +71,13 @@ public class Test42 {
 	  testFuncs.myDebugPrinting("Step 1 -  Deposit fax with one html attachment");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test42_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 2 - Deposit fax with multiple html attachments
 	  testFuncs.myDebugPrinting("Step 2 - Deposit fax with multiple html attachments");

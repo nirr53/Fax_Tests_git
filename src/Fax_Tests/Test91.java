@@ -36,6 +36,8 @@ public class Test91 {
   GlobalVars 			testVars;
   GlobalFuncs			testFuncs;
   WebFuncs				webFuncs;
+  String 				attname = "attName_abcdefghijklmnopqrstuvqwxyz";
+
 
   // Default constructor for print the name of the used browser 
   public Test91(String browser) {
@@ -60,28 +62,33 @@ public class Test91 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test91___Attachment_name() throws Exception {
+  public void test0() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
+	  String[] extraData = {attname, "From Number Settings"};
+	  webFuncs.setConfiguration(91, "General Settings - Attachment name", extraData);
+  }
+  
+  @Test
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
-	  String attname = "attName_abcdefghijklmnopqrstuvqwxyz";
-	  
-	  // Activate script with the needed configuration
-//	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
-//	  String[] extraData = {attname, "From Number Settings"};
-//	  webFuncs.setConfiguration(91, "General Settings - Attachment name", extraData);
 		
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test91.eml");
 	  dataMap.put("fileNumber", "3"); 
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
-	  testFuncs.myWait(20000);
+	  testFuncs.myWait(60000);
 	  
 	  // Step 2 - Check fax
 	  testFuncs.myDebugPrinting("Step 2 - Check fax");
@@ -104,14 +111,23 @@ public class Test91 {
 	  } else {
 		  
 		  testFuncs.myFail(resultPath + " was not detected !!");
-	  }  
+	  }   
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");	
+	  String[] extraData = {"%PH_from%_%PH_to%", "From Number Settings"};		
+	  webFuncs.setConfiguration(91, "General Settings - Attachment name", extraData);
   }
 
   @After
   public void tearDown() throws Exception {
 	  
-//	String[] extraData = {"%PH_from%_%PH_to%", "From Number Settings"};
-//	webFuncs.setConfiguration(91, "General Settings - Attachment name", extraData);
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
     	

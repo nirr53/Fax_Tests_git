@@ -62,31 +62,50 @@ public class Test111 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs(); 
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars); 
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test111___Add_symbols_checkbox() throws Exception {
+  public void test0() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
-	  Map<String, String> dataMap = new HashMap<String, String>();
 
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData = {"1"};
 	  webFuncs.setConfiguration(111, "Add symbols checkbox", extraData);	
+  }
+  
+  @Test
+  public void test1() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	   
 	  // Step 1 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 1 - Deposit a fax");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test111.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap); 
+  }
+  
+  @Test
+  public void test2() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+  
 	  // Activate script with the needed configuration
 	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
 	  String[] extraData2 = {"0"};
-	  webFuncs.setConfiguration(111, "Add symbols checkbox", extraData2);	
-	   
+	  webFuncs.setConfiguration(111, "Add symbols checkbox", extraData2);
+  }
+  
+  @Test
+  public void test3() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+   
 	  // Step 2 - Deposit a fax
 	  testFuncs.myDebugPrinting("Step 2 - Deposit a fax");
 	  dataMap.put("maxWaitTime",  "700");
@@ -106,12 +125,21 @@ public class Test111 {
 	  testFuncs.myAssertTrue("File <" + fileName4.getName() + "> is missing !", fileName4.exists() && !fileName4.isDirectory());
 	  testFuncs.myAssertTrue("File <" + fileName5.getName() + "> is missing !", fileName5.exists() && !fileName5.isDirectory());
   }
+  
+  @Test
+  public void test4() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+
+	  // Activate script with the needed configuration
+	  testFuncs.myDebugPrinting("Activate script with the needed configuration");
+	  String[] extraData = {"1"};
+	  webFuncs.setConfiguration(111, "Add symbols checkbox", extraData);	 	
+  }
 
   @After
   public void tearDown() throws Exception {
 	  
-	String[] extraData = {"1"};
-	webFuncs.setConfiguration(111, "Add symbols checkbox", extraData);	  
     String verificationErrorString = verificationErrors.toString();
     if (!"".equals(verificationErrorString)) {
     	

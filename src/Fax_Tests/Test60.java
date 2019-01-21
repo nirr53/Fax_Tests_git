@@ -62,12 +62,12 @@ public class Test60 {
   public void setUp() throws Exception {
 	  	
 	testVars  = new GlobalVars();
-    testFuncs = new GlobalFuncs();
-    webFuncs  = new WebFuncs();
+    testFuncs = new GlobalFuncs(testVars);
+    webFuncs  = new WebFuncs(testFuncs, testVars);
   }
 
   @Test
-  public void Test60___PDF_attachment_languages() throws Exception {
+  public void test1() throws Exception {
 	  
 	  Log.startTestCase(this.getClass().getName());
 	  Map<String, String> dataMap = new HashMap<String, String>();
@@ -76,21 +76,49 @@ public class Test60 {
 	  testFuncs.myDebugPrinting("Step 1 - Deposit fax with pdf attachment in Arabic");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test60_1.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test2() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 2 - Deposit fax with pdf attachment in English
 	  testFuncs.myDebugPrinting("Step 2 - Deposit fax with pdf attachment in English");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test60_2.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test3() throws Exception {
 	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
+  
 	  // Step 3 - Deposit fax with pdf attachment in Hebrew
 	  testFuncs.myDebugPrinting("Step 3 - Deposit fax with pdf attachment in Hebrew");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test60_3.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test4() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 4 - Deposit fax with pdf attachment in Russian
 	  testFuncs.myDebugPrinting("Step 4 - Deposit fax with pdf attachment in Russian");
 	  dataMap.put("outputPath",  testVars.getOutputDirPath() + "Test60_4.eml");
 	  testFuncs.depositFax(testVars.getFaxHeaders(), dataMap);
+  }
+  
+  @Test
+  public void test5() throws Exception {
+	  
+	  Log.startTestCase(this.getClass().getName());
+	  Map<String, String> dataMap = new HashMap<String, String>();
 	  
 	  // Step 5 - Deposit fax with pdf attachment in Spanish
 	  testFuncs.myDebugPrinting("Step 5 - Deposit fax with pdf attachment in Spanish");
